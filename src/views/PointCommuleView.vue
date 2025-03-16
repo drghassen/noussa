@@ -1,6 +1,7 @@
 <template>
   <div class="main-content">
     <h2 class="title">Points cumulés</h2>
+
     <!-- Filtres -->
     <div class="filters">
       <select v-model="selectedSemester" class="filter-select">
@@ -14,7 +15,6 @@
         <option>2022/2023</option>
       </select>
 
-     
       <input type="text" v-model="searchQuery" placeholder="Rechercher..." class="search-input" />
     </div>
 
@@ -49,16 +49,10 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import { students } from '../constante/PointCommuleViewConstants';
 
-// 📌 Données des étudiants
-const students = ref([
-  { id: 1, name: "Ines Gribaa", promotion: "FIE4", points: 0.35 },
-  { id: 2, name: "Wilma Bougria", promotion: "FIE4", points: 0.5 },
-  { id: 3, name: "Nabilou Anoir", promotion: "FIE4", points: 0.2 },
-  { id: 4, name: "Élève 4", promotion: "FIE4", points: 0.25 },
-  { id: 5, name: "Élève 5", promotion: "FIE4", points: 0.1 },
-  { id: 6, name: "Élève 6", promotion: "FIE4", points: 0.4 },
-]);
+// 📌 Définir les données localement
+const studentsData = ref([...students]); // Copier les données pour éviter des problèmes de mutation
 
 // 📌 Filtres
 const selectedSemester = ref("Semestre 1");
@@ -76,12 +70,15 @@ const sortTable = (column) => {
     sortColumn.value = column;
     sortDirection.value = 1;
   }
-  students.value.sort((a, b) => (a[column] > b[column] ? sortDirection.value : -sortDirection.value));
+
+  studentsData.value = [...studentsData.value].sort((a, b) =>
+    a[column] > b[column] ? sortDirection.value : -sortDirection.value
+  );
 };
 
 // 📌 Filtrage des résultats
 const filteredStudents = computed(() => {
-  return students.value.filter((student) =>
+  return studentsData.value.filter((student) =>
     student.name.toLowerCase().includes(searchQuery.value.toLowerCase())
   );
 });
@@ -106,140 +103,4 @@ const nextPage = () => {
 };
 </script>
 
-<style scoped>
-.main-content {
-  padding: 20px;
-  font-family: 'Inter', sans-serif;
-  max-width: 1300px;
-  margin: 0 auto;
-  background-color: #f8f9fa;
-}
-
-.title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #4a1f80;
-  margin-bottom: 25px;
-  text-align: start;
-}
-
-/* 📌 Filtres */
-.filters {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 25px;
-  align-items: center;
-}
-
-.filter-select {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  background-color: white;
-  font-size: 14px;
-  color: #333;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.filter-select:focus {
-  border-color: #6A3FA0;
-  box-shadow: 0 0 8px rgba(106, 63, 160, 0.2);
-}
-
-.search-input {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  background-color: white;
-  font-size: 14px;
-  color: #333;
-  flex-grow: 1;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.search-input:focus {
-  border-color: #6A3FA0;
-  box-shadow: 0 0 8px rgba(106, 63, 160, 0.2);
-}
-
-
-
-/* 📌 Tableau */
-.table-container {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.custom-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.custom-table th {
-  
-  padding: 14px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #6A3FA0;
-  border-bottom: 2px solid #ddd;
-  text-align: left;
-}
-
-.custom-table th:hover {
-  background: linear-gradient(135deg, #8E5ACD, #6A3FA0);
-}
-
-.custom-table td {
-  padding: 14px;
-  border-bottom: 1px solid #ddd;
-  font-size: 14px;
-  color: #555;
-}
-
-.custom-table tr:hover {
-  background-color: rgba(106, 63, 160, 0.05);
-}
-
-/* 📌 Pagination */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-}
-
-.pagination button {
-  background: linear-gradient(135deg, #6A3FA0, #8E5ACD);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background 0.3s ease, transform 0.2s ease;
-  margin: 0 5px;
-}
-
-.pagination button:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-.pagination button:hover:not(:disabled) {
-  background: linear-gradient(135deg, #8E5ACD, #6A3FA0);
-  transform: translateY(-2px);
-}
-
-.pagination button:active:not(:disabled) {
-  transform: translateY(0);
-}
-
-.pagination span {
-  margin: 0 15px;
-  font-size: 14px;
-  color: #4a1f80;
-  font-weight: 500;
-}
-</style>
+<style scoped src="./PointCommuleView.css"></style>

@@ -163,7 +163,7 @@
 </template>
 
 <script>
-// Importez les constantes ici, en dehors de l'objet export default
+
 import { students, availablePromotions } from '../constante/students';
 
 export default {

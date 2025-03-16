@@ -1,7 +1,7 @@
 <template>
   <aside class="sidebar">
     <!-- Zone utilisateur -->
-    <div class="user-info" @click="toggleUserMenu">
+    <div class="user-info" @click="navigateToProfile">
       <div class="profile-pic">
         <img :src="user.profileImage" alt="Profile" v-if="user.profileImage" />
         <span v-else>{{ userInitials }}</span>
@@ -30,7 +30,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router'; // Importez useRouter
 
 // Données utilisateur
 const user = ref({
@@ -62,9 +62,10 @@ const isActive = (path) => {
   return route.path === path;
 };
 
-// Toggle user menu (optionnel)
-const toggleUserMenu = () => {
-  console.log('User menu clicked');
+// Navigation vers la vue Profil
+const router = useRouter(); // Utilisez useRouter pour la navigation
+const navigateToProfile = () => {
+  router.push({ path: '/ProfilView' }); // Naviguez vers ProfilView
 };
 </script>
 

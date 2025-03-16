@@ -15,14 +15,14 @@ import PointCommuleView from "@/views/PointCommuleView.vue";
 const routes = [
   { path: "/", name: "Accueil", component: AccueilView },
   { path: "/NotificationsView", name: "Notifications", component: NotificationsView },
-  { path: "/SessionsView", name: "Notifications", component: SessionsView },
-  { path: "/ProfilView", name: "ProfilView", component: ProfilView },
-  { path: "/ReferentView", name: "ReferentView", component: ReferentView },
-  { path: "/AttribuerPointsView", name: "AttribuerPointsView", component: AttribuerPointsView },
-  { path: "/ModifierAcces", name: "SaisirFiche", component: ModifierAcces },
-  { path: "/ModifierReferentielView", name: "ModifierReferentielView", component: ModifierReferentielView },
-  { path: "/HistoriqueView", name: "HistoriqueView", component: HistoriqueView },
-  { path: "/points-cumules", name: "points-cumules", component: PointCommuleView },
+  { path: "/SessionsView", name: "Sessions", component: SessionsView },
+  { path: "/ProfilView", name: "Profil", component: ProfilView }, // Route pour ProfilView
+  { path: "/ReferentView", name: "Referent", component: ReferentView },
+  { path: "/AttribuerPointsView", name: "AttribuerPoints", component: AttribuerPointsView },
+  { path: "/ModifierAcces", name: "ModifierAcces", component: ModifierAcces },
+  { path: "/ModifierReferentielView", name: "ModifierReferentiel", component: ModifierReferentielView },
+  { path: "/HistoriqueView", name: "Historique", component: HistoriqueView },
+  { path: "/points-cumules", name: "PointsCumules", component: PointCommuleView },
 ];
 
 const router = createRouter({
