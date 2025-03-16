@@ -83,8 +83,8 @@ onMounted(() => {
         labels: ["FIE1", "FIE2", "FIE3"],
         datasets: [
           {
-            data: [40, 35, 25],
-            backgroundColor: ["#36A2EB", "#FF6384", "#FFCD56"],
+            data: [40, 35, 25, 50, 20],
+            backgroundColor: ["#36A2EB", "#FF6384", "#FFCD56", "#08C5D1", "#DB6A8F"],
             hoverOffset: 10,
           },
         ],
