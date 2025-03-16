@@ -47,12 +47,12 @@ const userInitials = computed(() => {
 
 // Éléments du menu
 const menuItems = ref([
-  { path: '/saisir-fiche', text: 'Gérer les sessions', icon: 'fas fa-calendar-alt' },
+  { path: '/SessionsView', text: 'Gérer les sessions', icon: 'fas fa-calendar-alt' },
   { path: '/ReferentView', text: 'Envoyer les fiches aux référents', icon: 'fas fa-paper-plane' }, 
   { path: '/AttribuerPointsView', text: 'Attribuer les points', icon: 'fas fa-star' },
-  { path: '/historique', text: 'Historique', icon: 'fas fa-history' },
-  { path: '/modifier-referents', text: 'Modifier les référents', icon: 'fas fa-users-cog' },
-  { path: '/modifier-acces', text: 'Modifier les Accès', icon: 'fas fa-key' },
+  { path: '/HistoriqueView', text: 'Historique', icon: 'fas fa-history' },
+  { path: '/ModifierReferentielView', text: 'Modifier les référentiels', icon: 'fas fa-users-cog' },
+  { path: '/ModifierAcces', text: 'Modifier les Accès', icon: 'fas fa-key' },
   { path: '/points-cumules', text: 'Points cumulés', icon: 'fas fa-chart-line' },
 ]);
 

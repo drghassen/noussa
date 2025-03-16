@@ -50,7 +50,7 @@
             <td class="engagement-cell">{{ student.engagementType }}</td>
             <td class="summary-cell">{{ student.summary }}</td>
             <td>
-              <button @click="sendToReferent(student)">Choisir</button>
+              <button @click="openChooseModal(student)">Choisir</button>
             </td>
           </tr>
         </tbody>
@@ -135,6 +135,30 @@
         </div>
       </div>
     </div>
+
+    <!-- Nouvelle modale pour "Choisir" -->
+    <div v-if="isChooseModalOpen" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-modal" @click="closeChooseModal">&times;</span>
+        <div class="modal-header">
+          <h2>Référance</h2>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" v-model="referentEmail" placeholder="Entrez l'email du référent" />
+          </div>
+          <div class="form-group">
+            <label>Enseignant</label>
+            <input type="text" v-model="referentName" placeholder="Entrez le nom de l'enseignant" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-button confirm" @click="confirmReferent">Confirmer</button>
+          <button class="modal-button cancel" @click="closeChooseModal">Annuler</button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -153,7 +177,10 @@ export default {
       currentPage: 1,
       itemsPerPage: 5,
       isModalOpen: false,
+      isChooseModalOpen: false, // Nouvel état pour la modale "Choisir"
       selectedStudent: null,
+      referentEmail: '',
+      referentName: '',
     };
   },
   computed: {
@@ -209,10 +236,24 @@ export default {
     editActionType() {
       alert('Modifier le type d\'action');
     },
-    // Envoyer les fichiers au référent
-    sendToReferent(student) {
-      console.log('Envoyer au référent:', student);
-      alert(`Fichiers de ${student.name} envoyés au référent.`);
+    // Ouvrir la modale "Choisir"
+    openChooseModal(student) {
+      this.selectedStudent = student;
+      this.isChooseModalOpen = true;
+    },
+    // Fermer la modale "Choisir"
+    closeChooseModal() {
+      this.isChooseModalOpen = false;
+    },
+    // Confirmer le choix du référent
+    confirmReferent() {
+      if (this.referentEmail && this.referentName) {
+        console.log('Référent choisi:', this.referentEmail, this.referentName);
+        alert(`Référent ${this.referentName} (${this.referentEmail}) choisi pour ${this.selectedStudent.name}.`);
+        this.closeChooseModal();
+      } else {
+        alert('Veuillez remplir tous les champs.');
+      }
     },
     // Aller à la page précédente
     previousPage() {

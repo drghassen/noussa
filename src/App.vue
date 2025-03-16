@@ -24,8 +24,7 @@ import Topbar from "@/components/Topbar.vue";
 // Utiliser la route actuelle pour déterminer si la Sidebar doit être affichée
 const route = useRoute();
 const showSidebar = computed(() => {
-  // Masquer la Sidebar uniquement pour la route "ProfilView"
-  return route.name !== "ProfilView";
+  return route.name !== "ProfilView" && route.name !== "HistoriqueView" && route.name !== "ModifierReferentielView";
 });
 </script>
 
