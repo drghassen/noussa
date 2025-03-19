@@ -111,7 +111,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import { ELEVES, validerEnvoi } from "../constante/HistoriqueViewConstants";
+import { ELEVES, validerEnvoi } from "../../constante/HistoriqueViewConstants";
 
 const eleves = ref(ELEVES);
 const dateDebut = ref("");

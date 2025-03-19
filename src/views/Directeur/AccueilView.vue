@@ -131,16 +131,16 @@ onMounted(() => {
     });
   }
 
-  // 🍩 Doughnut Chart (Intérêt par promotion)
+  
   if (doughnutChartCanvas.value) {
     new Chart(doughnutChartCanvas.value, {
       type: "doughnut",
       data: {
-        labels: ["FIE1", "FIE2", "FIE3"],
+        labels: ["FIE1", "FIE2", "FIE3", "FIE4", "FIE5"],
         datasets: [
           {
-            data: [40, 35, 25],
-            backgroundColor: ["#6A3FA0", "#9C88FF", "#FF9F40"],
+            data: [40, 35, 25, 30, 20],
+            backgroundColor: ["#6A3FA0", "#9C88FF", "#FF9F40", "#693382", "#F6DC43"],
             borderWidth: 0,
             hoverOffset: 10,
           },

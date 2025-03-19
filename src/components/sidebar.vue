@@ -3,12 +3,12 @@
     <!-- Zone utilisateur -->
     <div class="user-info" @click="navigateToProfile">
       <div class="profile-pic">
-        <img :src="user.profileImage" alt="Profile" v-if="user.profileImage" />
+        <img :src="userData.profileImage" alt="Profile" v-if="userData.profileImage" />
         <span v-else>{{ userInitials }}</span>
       </div>
       <div class="user-details">
-        <h3 class="user-name">{{ user.name }}</h3>
-        <p class="user-email">{{ user.email }}</p>
+        <h3 class="user-name">{{ userData.name }}</h3>
+        <p class="user-email">{{ userData.email }}</p>
       </div>
     </div>
 
@@ -30,42 +30,59 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { useRoute, useRouter } from 'vue-router'; // Importez useRouter
+import { useRoute, useRouter } from 'vue-router';
 
-// Données utilisateur
-const user = ref({
-  name: 'Adrien Defossez',
-  email: 'adrien.defossez@univ-jfc.fr',
-  profileImage: '', // URL de l'image de profil
+// Utilisez la route actuelle pour déterminer le rôle
+const route = useRoute();
+const userRole = computed(() => {
+  return route.path.startsWith('/etudiant') ? 'etudiant' : 'directeur';
+});
+
+// Données utilisateur en fonction du rôle
+const userData = computed(() => {
+  return userRole.value === 'directeur'
+    ? { name: 'Adrien Defossez', email: 'adrien.defossez@univ-jfc.fr', profileImage: '' }
+    : { name: 'Ines Gribaa', email: 'ines.gribaa@univ-jfc.fr', profileImage: '' };
 });
 
 // Initiales de l'utilisateur
 const userInitials = computed(() => {
-  const names = user.value.name.split(' ');
+  const names = userData.value.name.split(' ');
   return names.map((name) => name[0]).join('');
 });
 
-// Éléments du menu
-const menuItems = ref([
-  { path: '/SessionsView', text: 'Gérer les sessions', icon: 'fas fa-calendar-alt' },
-  { path: '/ReferentView', text: 'Envoyer les fiches aux référents', icon: 'fas fa-paper-plane' }, 
-  { path: '/AttribuerPointsView', text: 'Attribuer les points', icon: 'fas fa-star' },
-  { path: '/HistoriqueView', text: 'Historique', icon: 'fas fa-history' },
-  { path: '/ModifierReferentielView', text: 'Modifier les référentiels', icon: 'fas fa-users-cog' },
-  { path: '/ModifierAcces', text: 'Modifier les Accès', icon: 'fas fa-key' },
-  { path: '/points-cumules', text: 'Points cumulés', icon: 'fas fa-chart-line' },
+// Éléments du menu pour le directeur
+const menuItemsDirecteur = ref([
+  { path: '/directeur/sessions', text: 'Gérer les sessions', icon: 'fas fa-calendar-alt' },
+  { path: '/directeur/referent', text: 'Envoyer les fiches aux référents', icon: 'fas fa-paper-plane' },
+  { path: '/directeur/attribuer-points', text: 'Attribuer les points', icon: 'fas fa-star' },
+  { path: '/directeur/historique', text: 'Historique', icon: 'fas fa-history' },
+  { path: '/directeur/modifier-referentiel', text: 'Modifier les référentiels', icon: 'fas fa-users-cog' },
+  { path: '/directeur/modifier-acces', text: 'Modifier les Accès', icon: 'fas fa-key' },
+  { path: '/directeur/points-cumules', text: 'Points cumulés', icon: 'fas fa-chart-line' },
 ]);
 
+// Éléments du menu pour l'étudiant
+const menuItemsEtudiant = ref([
+  { path: '/etudiant/saisir-fiche', text: 'Saisir une fiche', icon: 'fas fa-file-upload' },
+  { path: '/etudiant/historique-fiches', text: 'Consulter l’historique des fiches', icon: 'fas fa-history' },
+  { path: '/etudiant/proposer-activite', text: 'Proposer une activité hors référentiel', icon: 'fas fa-lightbulb' },
+]);
+
+// Sélectionnez les éléments du menu en fonction du rôle
+const menuItems = computed(() => {
+  return userRole.value === 'directeur' ? menuItemsDirecteur.value : menuItemsEtudiant.value;
+});
+
 // Vérifier si un lien est actif
-const route = useRoute();
 const isActive = (path) => {
   return route.path === path;
 };
 
 // Navigation vers la vue Profil
-const router = useRouter(); // Utilisez useRouter pour la navigation
+const router = useRouter();
 const navigateToProfile = () => {
-  router.push({ path: '/ProfilView' }); // Naviguez vers ProfilView
+  router.push({ path: '/directeur/profil' });
 };
 </script>
 

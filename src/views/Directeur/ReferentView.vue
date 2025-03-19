@@ -164,7 +164,7 @@
 
 <script>
 
-import { students, availablePromotions } from '../constante/students';
+import { students, availablePromotions } from '../../constante/students';
 
 export default {
   data() {

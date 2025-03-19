@@ -49,7 +49,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import { students } from '../constante/PointCommuleViewConstants';
+import { students } from '../../constante/PointCommuleViewConstants';
 
 // 📌 Définir les données localement
 const studentsData = ref([...students]); // Copier les données pour éviter des problèmes de mutation

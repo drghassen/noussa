@@ -88,7 +88,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { ELEVES, validerEnvoi } from "../constante/AttribuerPointsViewConstants";
+import { ELEVES, validerEnvoi } from "../../constante/AttribuerPointsViewConstants";
 
 const eleves = ref(ELEVES); // Déclarez eleves comme une référence
 const dateDebut = ref("");

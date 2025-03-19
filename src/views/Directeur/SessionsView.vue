@@ -64,7 +64,7 @@ import { ref } from "vue";
 import Datepicker from "@vuepic/vue-datepicker";
 import "@vuepic/vue-datepicker/dist/main.css";
 
-import { Sessions } from '../constante/SessionsViewConstants';
+import { Sessions } from '../../constante/SessionsViewConstants';
 
 const sessions = ref([...Sessions]); // ✅ Copie réactive des données
 const showModal = ref(false);

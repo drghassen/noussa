@@ -115,8 +115,8 @@
 
 <script>
 
-import { PROFILE_DATA, LOCK_ICON } from '../constante/profileconstants';
-import PasswordPopup from "../components/PasswordPopup.vue";
+import { PROFILE_DATA, LOCK_ICON } from '../../constante/profileconstants';
+import PasswordPopup from "../../components/PasswordPopup.vue";
 
 export default {
   name: "ProfileView",

@@ -41,7 +41,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { NOTIFICATIONS_DATA } from '../constante/notifconstants'; // Importer les constantes
+import { NOTIFICATIONS_DATA } from '../../constante/notifconstants'; // Importer les constantes
 
 // Utiliser les notifications simulées
 const notifications = ref(NOTIFICATIONS_DATA);
