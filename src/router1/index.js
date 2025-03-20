@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-// Import des vues pour le directeur
 import AccueilView from "@/views/Directeur/AccueilView.vue";
 import NotificationsView from "@/views/Directeur/NotificationsView.vue";
 import SessionsView from "@/views/Directeur/SessionsView.vue";
@@ -12,26 +11,30 @@ import ModifierReferentielView from "@/views/Directeur/ModifierReferentielView.v
 import HistoriqueView from "@/views/Directeur/HistoriqueView.vue";
 import PointCommuleView from "@/views/Directeur/PointCommuleView.vue";
 
-// Import des vues pour l'étudiant
 import DashboardEtudiantView from "@/views/Etudiant/DashboardEtudiantView.vue";
 import SaisirFicheView from "@/views/Etudiant/SaisirFicheView.vue";
 import HistoriqueFichesView from "@/views/Etudiant/HistoriqueFichesView.vue";
 import ProposerActiviteView from "@/views/Etudiant/ProposerActiviteView.vue";
-import ProfilEtudiantView from "@/views/Etudiant/ProfilView.vue";
+import ProfilEtudiantView from "@/views/Etudiant/ProfilEtudiantView.vue";
 import NotificationsEtudiantView from "@/views/Etudiant/NotificationsView.vue";
 
+import ServiceScolarite from "@/views/ServiceScolarite/ServiceScolarite.vue";
+
+import ReferentAcceuil from "@/views/Referent/ReferentAcceuil.vue";
+import HistoriqueReferent from "@/views/Referent/HistoriqueReferent.vue";
+import ProfilReferentView from "@/views/Referent/ProfilReferentView.vue";
+
 const routes = [
-  // Routes pour le directeur
   {
     path: "/directeur",
     name: "Directeur",
-    redirect: "/directeur/accueil", // Redirige vers l'accueil du directeur par défaut
+    redirect: "/directeur/accueil",
     children: [
       { path: "accueil", name: "AccueilDirecteur", component: AccueilView },
       { path: "notifications", name: "Notifications", component: NotificationsView },
       { path: "sessions", name: "Sessions", component: SessionsView },
       { path: "profil", name: "ProfilView", component: ProfilView },
-      { path: "referent", name: "Referent", component: ReferentView },
+      { path: "referent", name: "ReferentView", component: ReferentView },
       { path: "attribuer-points", name: "AttribuerPoints", component: AttribuerPointsView },
       { path: "modifier-acces", name: "ModifierAcces", component: ModifierAcces },
       { path: "modifier-referentiel", name: "ModifierReferentiel", component: ModifierReferentielView },
@@ -40,11 +43,10 @@ const routes = [
     ],
   },
 
-  // Routes pour l'étudiant
   {
     path: "/etudiant",
     name: "Etudiant",
-    redirect: "/etudiant/accueil", // Redirige vers l'accueil de l'étudiant par défaut
+    redirect: "/etudiant/accueil",
     children: [
       { path: "accueil", name: "AccueilEtudiant", component: DashboardEtudiantView },
       { path: "saisir-fiche", name: "SaisirFiche", component: SaisirFicheView },
@@ -55,20 +57,43 @@ const routes = [
     ],
   },
 
-  // Redirection par défaut (vers l'accueil du directeur ou de l'étudiant selon le rôle)
-  { 
-    path: "/", 
-    redirect: (to) => {
-      // Récupérez le rôle de l'utilisateur (exemple : depuis un store ou localStorage)
-      const userRole = localStorage.getItem("userRole") || "directeur"; // Par défaut, redirige vers le directeur
+  {
+    path: "/scolarite",
+    name: "Scolarite",
+    redirect: "/scolarite/accueil",
+    children: [
+      { path: "accueil", name: "AccueilScolarite", component: ServiceScolarite },
+    ],
+  },
 
-      // Redirige en fonction du rôle
+  {
+    path: "/referent",
+    name: "Referent",
+    redirect: "/referent/accueil",
+    children: [
+      { path: "accueil", name: "AccueilReferent", component: ReferentAcceuil },
+      { path: "notifications", name: "NotificationsReferentt", component: NotificationsEtudiantView },
+      { path: "profil", name: "ProfilReferent", component: ProfilReferentView },
+      { path: "historique", name: "HistoriqueReferent", component: HistoriqueReferent },
+    ],
+  },
+
+  {
+    path: "/",
+    redirect: () => {
+      const userRole = localStorage.getItem("userRole") || "directeur";
+
       if (userRole === "etudiant") {
         return { path: "/etudiant/accueil" };
-      } else {
+      } else if (userRole === "directeur") {
         return { path: "/directeur/accueil" };
+      } else if (userRole === "scolarite") {
+        return { path: "/scolarite/accueil" };
       }
-    }
+      else if (userRole === "referent") {
+        return { path: "/referent/accueil" };
+      }
+    },
   },
 ];
 

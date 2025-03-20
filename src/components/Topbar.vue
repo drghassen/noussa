@@ -43,6 +43,25 @@
         </router-link>
       </template>
 
+      <!-- Liens spécifiques au référent -->
+      <template v-if="userRole === 'referent'">
+        <router-link to="/referent/notifications" class="nav-link" :class="{ active: isActive('/referent/notifications') }">
+          <i class="fas fa-bell"></i>
+          <span>Notifications</span>
+          <div class="notif-icon" v-if="notifCount > 0">
+            <span class="notif-count">{{ notifCount }}</span>
+          </div>
+        </router-link>
+        <router-link to="/referent/profil" class="nav-link" :class="{ active: isActive('/referent/profil') }"> 
+          <i class="fas fa-user"></i>
+          <span>Profil</span>
+        </router-link>
+        <router-link to="/referent/historique" class="nav-link" :class="{ active: isActive('/referent/historique') }">
+          <i class="fas fa-history"></i>
+          <span>Historique</span>
+        </router-link>
+      </template>
+
       <!-- Déconnexion -->
       <div class="logout-container" @click="toggleDropdown">
         <div class="nav-link logout-link">
@@ -95,7 +114,11 @@ const isActive = (path) => {
 
 // Récupérer le rôle de l'utilisateur
 const userRole = computed(() => {
-  return route.path.startsWith('/etudiant') ? 'etudiant' : 'directeur';
+  // Supposons que le rôle est stocké dans la route ou dans un store
+  return route.path.startsWith('/directeur') ? 'directeur' : 
+         route.path.startsWith('/scolarite') ? 'scolarite' : 
+         route.path.startsWith('/referent') ? 'referent' : 
+         'etudiant';
 });
 
 // Mettre à jour userData en fonction du rôle
@@ -106,6 +129,12 @@ watch(
       userData.value = {
         name: 'Ines Gribaa',
         email: 'ines.gribaa@univ-jfc.fr',
+        profileImage: '',
+      };
+    } else if (newRole === 'referent') {
+      userData.value = {
+        name: 'Référent',
+        email: 'referent@univ-jfc.fr',
         profileImage: '',
       };
     } else {
@@ -124,6 +153,8 @@ const router = useRouter();
 const navigateToHome = () => {
   if (userRole.value === 'etudiant') {
     router.push('/etudiant/accueil');
+  } else if (userRole.value === 'referent') {
+    router.push('/referent/accueil');
   } else {
     router.push('/directeur/accueil');
   }

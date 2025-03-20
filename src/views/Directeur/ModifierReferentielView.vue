@@ -224,10 +224,11 @@ const deleteActivity = (index) => {
 
 /* Main Content */
 .main-content {
-  flex: 1;
   padding: 20px;
-  font-family: 'Inter', sans-serif;
-  background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
 }
 
 /* Référentiels */

@@ -45,7 +45,7 @@
                 <div v-else class="profile-pic-placeholder">
                   {{ profileInitials }}
                 </div>
-                <span class="role">Directeur</span>
+                <span class="role">Référent</span> <!-- Mettre à jour le rôle -->
               </div>
               <span class="notification-badge">8</span>
             </div>
@@ -115,23 +115,23 @@
   
   <script>
   
-  import { PROFILE_DATA_ETUDIANT, LOCK_ICON } from '../../constante/profileconstants';
+  import { PROFILE_DATA_REFERENT, LOCK_ICON } from '../../constante/profileconstants';
   import PasswordPopup from "../../components/PasswordPopup.vue";
   
   export default {
     name: "ProfileView",
     data() {
-      return {
-        activeTab: "profile", 
-        showPasswordPopup: false, 
-        profile: PROFILE_DATA_ETUDIANT, 
-        password: {
-          new: "",
-          confirm: "",
-        },
-        LockIcon: LOCK_ICON, 
-      };
+  return {
+    activeTab: "profile", 
+    showPasswordPopup: false, 
+    profile: PROFILE_DATA_REFERENT, 
+    password: {
+      new: "",
+      confirm: "",
     },
+    LockIcon: LOCK_ICON, 
+  };
+},
     components: {
       PasswordPopup,
     },
