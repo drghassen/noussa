@@ -1795,71 +1795,76 @@ INPUT ./cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg
 INPUT cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg
 INPUT ./cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg
 INPUT ./cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg
-INPUT ./cover/figures/quatre_profils_d'utilisateurs.png
-INPUT ./cover/figures/quatre_profils_d'utilisateurs.png
-INPUT cover/figures/quatre_profils_d'utilisateurs.png
-INPUT ./cover/figures/quatre_profils_d'utilisateurs.png
-INPUT ./cover/figures/quatre_profils_d'utilisateurs.png
-INPUT ./cover/figures/processus_evaluation_tierce_partie.png
-INPUT ./cover/figures/processus_evaluation_tierce_partie.png
-INPUT cover/figures/processus_evaluation_tierce_partie.png
-INPUT ./cover/figures/processus_evaluation_tierce_partie.png
-INPUT ./cover/figures/processus_evaluation_tierce_partie.png
-INPUT ./cover/figures/Architecture_initiale_d'IPANEMA.png
-INPUT ./cover/figures/Architecture_initiale_d'IPANEMA.png
-INPUT cover/figures/Architecture_initiale_d'IPANEMA.png
-INPUT ./cover/figures/Architecture_initiale_d'IPANEMA.png
-INPUT ./cover/figures/Architecture_initiale_d'IPANEMA.png
-INPUT ./cover/figures/jointures_successives_des_listes.png
-INPUT ./cover/figures/jointures_successives_des_listes.png
-INPUT cover/figures/jointures_successives_des_listes.png
-INPUT ./cover/figures/jointures_successives_des_listes.png
-INPUT ./cover/figures/jointures_successives_des_listes.png
-INPUT ./cover/figures/Ancien_workflow_alteryx.png
-INPUT ./cover/figures/Ancien_workflow_alteryx.png
-INPUT cover/figures/Ancien_workflow_alteryx.png
-INPUT ./cover/figures/Ancien_workflow_alteryx.png
-INPUT ./cover/figures/Ancien_workflow_alteryx.png
-INPUT ./cover/figures/valeur_anormalement_basse.png
-INPUT ./cover/figures/valeur_anormalement_basse.png
-INPUT cover/figures/valeur_anormalement_basse.png
-INPUT ./cover/figures/valeur_anormalement_basse.png
-INPUT ./cover/figures/valeur_anormalement_basse.png
-INPUT ./cover/figures/Nouveau_dashboard_Power_BI.png
-INPUT ./cover/figures/Nouveau_dashboard_Power_BI.png
-INPUT cover/figures/Nouveau_dashboard_Power_BI.png
-INPUT ./cover/figures/Nouveau_dashboard_Power_BI.png
-INPUT ./cover/figures/Nouveau_dashboard_Power_BI.png
+INPUT ./cover/figures/useripanema.png
+INPUT ./cover/figures/useripanema.png
+INPUT cover/figures/useripanema.png
+INPUT ./cover/figures/useripanema.png
+INPUT ./cover/figures/useripanema.png
+INPUT ./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png
+INPUT ./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png
+INPUT cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png
+INPUT ./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png
+INPUT ./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png
+INPUT ./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png
+INPUT ./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png
+INPUT cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png
+INPUT ./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png
+INPUT ./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png
+INPUT ./cover/figures/Architecture_initiale_d’IPANEMA1.png
+INPUT ./cover/figures/Architecture_initiale_d’IPANEMA1.png
+INPUT cover/figures/Architecture_initiale_d’IPANEMA1.png
+INPUT ./cover/figures/Architecture_initiale_d’IPANEMA1.png
+INPUT ./cover/figures/Architecture_initiale_d’IPANEMA1.png
+INPUT ./cover/figures/Principedeconstructiondel’anciennetableàplat.png
+INPUT ./cover/figures/Principedeconstructiondel’anciennetableàplat.png
+INPUT cover/figures/Principedeconstructiondel’anciennetableàplat.png
+INPUT ./cover/figures/Principedeconstructiondel’anciennetableàplat.png
+INPUT ./cover/figures/Principedeconstructiondel’anciennetableàplat.png
+INPUT ./cover/figures/AncienworkflowAlteryx1.png
+INPUT ./cover/figures/AncienworkflowAlteryx1.png
+INPUT cover/figures/AncienworkflowAlteryx1.png
+INPUT ./cover/figures/AncienworkflowAlteryx1.png
+INPUT ./cover/figures/AncienworkflowAlteryx1.png
+INPUT ./cover/figures/satisfactionparcritèrepourCebiphar.png
+INPUT ./cover/figures/satisfactionparcritèrepourCebiphar.png
+INPUT cover/figures/satisfactionparcritèrepourCebiphar.png
+INPUT ./cover/figures/satisfactionparcritèrepourCebiphar.png
+INPUT ./cover/figures/satisfactionparcritèrepourCebiphar.png
+INPUT ./cover/figures/NouveaudashboardPowerBI.png
+INPUT ./cover/figures/NouveaudashboardPowerBI.png
+INPUT cover/figures/NouveaudashboardPowerBI.png
+INPUT ./cover/figures/NouveaudashboardPowerBI.png
+INPUT ./cover/figures/NouveaudashboardPowerBI.png
 INPUT ./cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png
 INPUT ./cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png
 INPUT cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png
 INPUT ./cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png
 INPUT ./cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png
-INPUT ./cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png
-INPUT ./cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png
-INPUT cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png
-INPUT ./cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png
-INPUT ./cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png
-INPUT ./cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA.png
-INPUT ./cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA.png
-INPUT cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA.png
-INPUT ./cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA.png
-INPUT ./cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA.png
-INPUT ./cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres.png
-INPUT ./cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres.png
-INPUT cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres.png
-INPUT ./cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres.png
-INPUT ./cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres.png
-INPUT ./cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png
-INPUT ./cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png
-INPUT cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png
-INPUT ./cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png
-INPUT ./cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png
-INPUT ./cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.png
-INPUT ./cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.png
-INPUT cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.png
-INPUT ./cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.png
-INPUT ./cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.png
+INPUT ./cover/figures/FormalisationdubesoinduprojetIPANEMA.png
+INPUT ./cover/figures/FormalisationdubesoinduprojetIPANEMA.png
+INPUT cover/figures/FormalisationdubesoinduprojetIPANEMA.png
+INPUT ./cover/figures/FormalisationdubesoinduprojetIPANEMA.png
+INPUT ./cover/figures/FormalisationdubesoinduprojetIPANEMA.png
+INPUT ./cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png
+INPUT ./cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png
+INPUT cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png
+INPUT ./cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png
+INPUT ./cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png
+INPUT ./cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMAavantetaprèslarefonte.png
+INPUT ./cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMAavantetaprèslarefonte.png
+INPUT cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMAavantetaprèslarefonte.png
+INPUT ./cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMAavantetaprèslarefonte.png
+INPUT ./cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMAavantetaprèslarefonte.png
+INPUT ./cover/figures/En-tête documentaire standard appliqué au workflow DS_IPANEMA.png
+INPUT ./cover/figures/En-tête documentaire standard appliqué au workflow DS_IPANEMA.png
+INPUT cover/figures/En-tête documentaire standard appliqué au workflow DS_IPANEMA.png
+INPUT ./cover/figures/En-tête documentaire standard appliqué au workflow DS_IPANEMA.png
+INPUT ./cover/figures/En-tête documentaire standard appliqué au workflow DS_IPANEMA.png
+INPUT ./cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe technique des identifiants.png
+INPUT ./cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe technique des identifiants.png
+INPUT cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe technique des identifiants.png
+INPUT ./cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe technique des identifiants.png
+INPUT ./cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe technique des identifiants.png
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1875,32 +1880,32 @@ INPUT ./cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png
 INPUT cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png
 INPUT ./cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png
 INPUT ./cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png
-INPUT ./cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png
-INPUT ./cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png
-INPUT cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png
-INPUT ./cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png
-INPUT ./cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png
-INPUT ./cover/figures/All_results_TP.png
-INPUT ./cover/figures/All_results_TP.png
-INPUT cover/figures/All_results_TP.png
-INPUT ./cover/figures/All_results_TP.png
-INPUT ./cover/figures/All_results_TP.png
+INPUT ./cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png
+INPUT ./cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png
+INPUT cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png
+INPUT ./cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png
+INPUT ./cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png
+INPUT ./cover/figures/AllResultsTP1.png
+INPUT ./cover/figures/AllResultsTP1.png
+INPUT cover/figures/AllResultsTP1.png
+INPUT ./cover/figures/AllResultsTP1.png
+INPUT ./cover/figures/AllResultsTP1.png
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
-INPUT ./cover/figures/Vue_Risk_Global_(RG)_CDMO.png
-INPUT ./cover/figures/Vue_Risk_Global_(RG)_CDMO.png
-INPUT cover/figures/Vue_Risk_Global_(RG)_CDMO.png
-INPUT ./cover/figures/Vue_Risk_Global_(RG)_CDMO.png
-INPUT ./cover/figures/Vue_Risk_Global_(RG)_CDMO.png
+INPUT ./cover/figures/Vue Risk Global (RG)CDMO.png
+INPUT ./cover/figures/Vue Risk Global (RG)CDMO.png
+INPUT cover/figures/Vue Risk Global (RG)CDMO.png
+INPUT ./cover/figures/Vue Risk Global (RG)CDMO.png
+INPUT ./cover/figures/Vue Risk Global (RG)CDMO.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
-INPUT ./cover/figures/Vue_Global_Satisfaction.png
-INPUT ./cover/figures/Vue_Global_Satisfaction.png
-INPUT cover/figures/Vue_Global_Satisfaction.png
-INPUT ./cover/figures/Vue_Global_Satisfaction.png
-INPUT ./cover/figures/Vue_Global_Satisfaction.png
+INPUT ./cover/figures/VueGlobalSatisfaction.png
+INPUT ./cover/figures/VueGlobalSatisfaction.png
+INPUT cover/figures/VueGlobalSatisfaction.png
+INPUT ./cover/figures/VueGlobalSatisfaction.png
+INPUT ./cover/figures/VueGlobalSatisfaction.png
 INPUT ./chapters/conclusion.tex
 INPUT ./chapters/conclusion.tex
 INPUT ./chapters/conclusion.tex

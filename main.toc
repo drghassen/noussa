@@ -19,40 +19,40 @@
 \contentsline {section}{\numberline {2.3}Compréhension du besoin métier}{15}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Les acteurs et utilisateurs d’IPANEMA}{15}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Processus d’évaluation d’une Tierce Partie }{16}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Les niveaux de risque}{19}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Analyse de l’existant et diagnostic}{19}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Architecture initiale}{19}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Analyse du traitement initial }{20}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.3.3}Les niveaux de risque}{17}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Analyse de l’existant et diagnostic}{18}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Architecture initiale}{18}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Analyse du traitement initial }{19}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Limites et anomalies identifiées}{22}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Diagnostic}{26}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}Formalisation du besoin et des exigences}{27}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Expression du besoin : Diagramme « bête à cornes »}{27}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Besoins exprimés par les utilisateurs}{28}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.4.4}Diagnostic}{25}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Formalisation du besoin et des exigences}{26}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Expression du besoin : Diagramme « bête à cornes »}{26}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Besoins exprimés par les utilisateurs}{26}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Traduction en exigences fonctionnelles et techniques }{28}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Conception de la nouvelle architecture}{30}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Principes de conception}{30}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Architecture cible }{30}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Refonte de la préparation des données}{32}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Choix du modèle sémantique}{34}{subsection.2.6.4}%
-\contentsline {subsection}{\numberline {2.6.5} Mesures DAX principales}{37}{subsection.2.6.5}%
-\contentsline {section}{\numberline {2.7}Choix technologiques}{38}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Répartition des traitements entre Alteryx et Power Query}{38}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Choix de Power BI}{38}{subsection.2.7.2}%
-\contentsline {section}{\numberline {2.8}Restitution et interfaces}{39}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Vues du dashboard}{39}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}Environnement de développement et sécurisation}{42}{subsection.2.8.2}%
-\contentsline {section}{\numberline {2.9}Préparation du recettage}{43}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Résultats}{44}{section.2.10}%
-\contentsline {section}{\numberline {2.11}Conclusion}{45}{section.2.11}%
-\contentsline {starchapter}{Conclusion générale}{46}{chapter*.5}%
+\contentsline {section}{\numberline {2.6}Conception de la nouvelle architecture}{28}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Principes de conception}{28}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Architecture cible }{29}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Refonte de la préparation des données}{30}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Choix du modèle sémantique}{32}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5} Mesures DAX principales}{35}{subsection.2.6.5}%
+\contentsline {section}{\numberline {2.7}Choix technologiques}{36}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Répartition des traitements entre Alteryx et Power Query}{36}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Choix de Power BI}{37}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.8}Restitution et interfaces}{37}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Vues du dashboard}{37}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Environnement de développement et sécurisation}{41}{subsection.2.8.2}%
+\contentsline {section}{\numberline {2.9}Préparation du recettage}{42}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Résultats}{43}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Conclusion}{44}{section.2.11}%
+\contentsline {starchapter}{Conclusion générale}{45}{chapter*.5}%
 \partbegin 
-\contentsline {chapter}{Bibliographie}{48}{part*.6}%
-\contentsline {chapter}{Annexes}{49}{chapter*.8}%
-\contentsline {section}{Annexe 3 — Vue ``Risk Intrinsink (RI)'' du dashboard Power BI IPANEMA}{49}{section*.9}%
-\contentsline {section}{Annexe 4 — Vue ``Risk Compliance \& Performance (RCP) — Tous'' du dashboard Power BI IPANEMA}{49}{section*.10}%
-\contentsline {section}{Annexe 5 — Vue ``Risk Compliance \& Performance (RCP) — CDMO'' du dashboard Power BI IPANEMA}{50}{section*.11}%
-\contentsline {section}{Annexe 6 — Vue ``Risk Global (RG) — Tous'' du dashboard Power BI IPANEMA}{50}{section*.12}%
-\contentsline {section}{Annexe 7 — Vue ``TP Qualification Status'' du dashboard Power BI IPANEMA}{51}{section*.13}%
-\contentsline {section}{Annexe 8 — Vue ``Evaluated Projects List'' du dashboard Power BI IPANEMA}{51}{section*.14}%
-\contentsline {section}{Annexe 9 — Vue ``Quality Agreements'' du dashboard Power BI IPANEMA}{52}{section*.15}%
-\contentsline {section}{Annexe 10 — Vue ``Satisfaction'' du dashboard Power BI IPANEMA}{52}{section*.16}%
+\contentsline {chapter}{Bibliographie}{47}{part*.6}%
+\contentsline {chapter}{Annexes}{48}{chapter*.8}%
+\contentsline {section}{Annexe 3 — Vue ``Risk Intrinsink (RI)'' du dashboard Power BI IPANEMA}{48}{section*.9}%
+\contentsline {section}{Annexe 4 — Vue ``Risk Compliance \& Performance (RCP) — Tous'' du dashboard Power BI IPANEMA}{48}{section*.10}%
+\contentsline {section}{Annexe 5 — Vue ``Risk Compliance \& Performance (RCP) — CDMO'' du dashboard Power BI IPANEMA}{49}{section*.11}%
+\contentsline {section}{Annexe 6 — Vue ``Risk Global (RG) — Tous'' du dashboard Power BI IPANEMA}{49}{section*.12}%
+\contentsline {section}{Annexe 7 — Vue ``TP Qualification Status'' du dashboard Power BI IPANEMA}{50}{section*.13}%
+\contentsline {section}{Annexe 8 — Vue ``Evaluated Projects List'' du dashboard Power BI IPANEMA}{50}{section*.14}%
+\contentsline {section}{Annexe 9 — Vue ``Quality Agreements'' du dashboard Power BI IPANEMA}{51}{section*.15}%
+\contentsline {section}{Annexe 10 — Vue ``Satisfaction'' du dashboard Power BI IPANEMA}{51}{section*.16}%

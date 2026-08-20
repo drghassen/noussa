@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.19)  20 AUG 2026 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.19)  20 AUG 2026 17:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1176,7 +1176,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (main.mtc3) [5
 
 ] [6] [7]
-<cover/figures/archii_avant_apres.png, id=472, 1541.76pt x 913.4125pt>
+<cover/figures/archii_avant_apres.png, id=474, 1541.76pt x 913.4125pt>
 File: cover/figures/archii_avant_apres.png Graphic file (type png)
 <use cover/figures/archii_avant_apres.png>
 Package pdftex.def Info: cover/figures/archii_avant_apres.png  used on input li
@@ -1190,7 +1190,7 @@ Package minitoc Info: I0006
 [12
 
 ]
-<cover/figures/processusde_maîtrise_des_Tierces.jpg, id=496, 2409.0pt x 448.67
+<cover/figures/processusde_maîtrise_des_Tierces.jpg, id=498, 2409.0pt x 448.67
 625pt>
 File: cover/figures/processusde_maîtrise_des_Tierces.jpg Graphic file (type jp
 g)
@@ -1199,7 +1199,7 @@ Package pdftex.def Info: cover/figures/processusde_maîtrise_des_Tierces.jpg  u
 sed on input line 49.
 (pdftex.def)             Requested size: 465.23125pt x 86.646pt.
  [13 <./cover/figures/processusde_maîtrise_des_Tierces.jpg>]
-<cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg, id=502, 1027.84pt x 494.84
+<cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg, id=504, 1027.84pt x 494.84
 875pt>
 File: cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg Graphic file (type jpg
 )
@@ -1208,133 +1208,128 @@ Package pdftex.def Info: cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg  us
 ed on input line 82.
 (pdftex.def)             Requested size: 465.23125pt x 223.98616pt.
  [14 <./cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg>]
-<cover/figures/quatre_profils_d'utilisateurs.png, id=507, 341.47575pt x 316.181
-24pt>
-File: cover/figures/quatre_profils_d'utilisateurs.png Graphic file (type png)
-<use cover/figures/quatre_profils_d'utilisateurs.png>
-Package pdftex.def Info: cover/figures/quatre_profils_d'utilisateurs.png  used 
-on input line 142.
-(pdftex.def)             Requested size: 465.23125pt x 430.77272pt.
- [15] [16 <./cover/figures/quatre_profils_d'utilisateurs.png>]
-<cover/figures/processus_evaluation_tierce_partie.png, id=517, 316.7835pt x 440
-.847pt>
-File: cover/figures/processus_evaluation_tierce_partie.png Graphic file (type p
+<cover/figures/useripanema.png, id=509, 1090.0725pt x 623.32875pt>
+File: cover/figures/useripanema.png Graphic file (type png)
+<use cover/figures/useripanema.png>
+Package pdftex.def Info: cover/figures/useripanema.png  used on input line 142.
+
+(pdftex.def)             Requested size: 401.22942pt x 229.42961pt.
+ [15 <./cover/figures/useripanema.png>]
+<cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png, id=515, 10
+90.0725pt x 465.23813pt>
+File: cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png Graphi
+c file (type png)
+<use cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png>
+Package pdftex.def Info: cover/figures/Processus_d’évaluation_d’une_Tierce
+_Partie1.png  used on input line 171.
+(pdftex.def)             Requested size: 401.22942pt x 171.24094pt.
+<cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png, id=516, 10
+90.0725pt x 1453.43pt>
+File: cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png Graphi
+c file (type png)
+<use cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png>
+Package pdftex.def Info: cover/figures/Processus_d’évaluation_d’une_Tierce
+_Partie2.png  used on input line 178.
+(pdftex.def)             Requested size: 401.22942pt x 534.96631pt.
+ [16 <./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 185--198
+
+ []
+
+[17 <./cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png (PNG 
+copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 199--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--230
+
+ []
+
+[18]
+<cover/figures/Architecture_initiale_d’IPANEMA1.png, id=530, 1541.76pt x 1027
+.84pt>
+File: cover/figures/Architecture_initiale_d’IPANEMA1.png Graphic file (type p
 ng)
-<use cover/figures/processus_evaluation_tierce_partie.png>
-Package pdftex.def Info: cover/figures/processus_evaluation_tierce_partie.png  
-used on input line 171.
-(pdftex.def)             Requested size: 465.23125pt x 647.43188pt.
- [17]
-Overfull \vbox (24.09624pt too high) has occurred while \output is active []
+<use cover/figures/Architecture_initiale_d’IPANEMA1.png>
+Package pdftex.def Info: cover/figures/Architecture_initiale_d’IPANEMA1.png  
+used on input line 268.
+(pdftex.def)             Requested size: 465.23125pt x 310.1423pt.
+<cover/figures/Principedeconstructiondel’anciennetableàplat.png, id=531, 149
+2.8272pt x 530.73282pt>
+File: cover/figures/Principedeconstructiondel’anciennetableàplat.png Graphic
+ file (type png)
+<use cover/figures/Principedeconstructiondel’anciennetableàplat.png>
+Package pdftex.def Info: cover/figures/Principedeconstructiondel’anciennetabl
+eàplat.png  used on input line 284.
+(pdftex.def)             Requested size: 465.23125pt x 165.40009pt.
+ [19 <./cover/figures/Architecture_initiale_d’IPANEMA1.png (PNG copy)>]
+<cover/figures/AncienworkflowAlteryx1.png, id=537, 1453.43pt x 1090.0725pt>
+File: cover/figures/AncienworkflowAlteryx1.png Graphic file (type png)
+<use cover/figures/AncienworkflowAlteryx1.png>
+Package pdftex.def Info: cover/figures/AncienworkflowAlteryx1.png  used on inpu
+t line 298.
+(pdftex.def)             Requested size: 465.23125pt x 348.9135pt.
 
-
-[18 <./cover/figures/processus_evaluation_tierce_partie.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 178--191
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--223
-
- []
-
-[19]
-<cover/figures/Architecture_initiale_d'IPANEMA.png, id=532, 629.35126pt x 368.5
-77pt>
-File: cover/figures/Architecture_initiale_d'IPANEMA.png Graphic file (type png)
-
-<use cover/figures/Architecture_initiale_d'IPANEMA.png>
-Package pdftex.def Info: cover/figures/Architecture_initiale_d'IPANEMA.png  use
-d on input line 261.
-(pdftex.def)             Requested size: 465.23125pt x 272.46149pt.
-<cover/figures/jointures_successives_des_listes.png, id=533, 955.77075pt x 216.
-81pt>
-File: cover/figures/jointures_successives_des_listes.png Graphic file (type png
-)
-<use cover/figures/jointures_successives_des_listes.png>
-Package pdftex.def Info: cover/figures/jointures_successives_des_listes.png  us
-ed on input line 277.
-(pdftex.def)             Requested size: 465.23125pt x 105.53647pt.
- [20 <./cover/figures/Architecture_initiale_d'IPANEMA.png>]
-<cover/figures/Ancien_workflow_alteryx.png, id=539, 597.432pt x 460.72125pt>
-File: cover/figures/Ancien_workflow_alteryx.png Graphic file (type png)
-<use cover/figures/Ancien_workflow_alteryx.png>
-Package pdftex.def Info: cover/figures/Ancien_workflow_alteryx.png  used on inp
-ut line 291.
-(pdftex.def)             Requested size: 465.23125pt x 358.78467pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--306
+[20 <./cover/figures/Principedeconstructiondel’anciennetableàplat.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 303--313
 
  []
 
-[21 <./cover/figures/jointures_successives_des_listes.png> <./cover/figures/Anc
-ien_workflow_alteryx.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 335--358
+[21 <./cover/figures/AncienworkflowAlteryx1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 342--365
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 373--378
+Underfull \hbox (badness 10000) in paragraph at lines 380--385
 
  []
 
-<cover/figures/valeur_anormalement_basse.png, id=550, 239.6955pt x 215.00325pt>
+<cover/figures/satisfactionparcritèrepourCebiphar.png, id=551, 1321.93875pt x 
+1198.4775pt>
+File: cover/figures/satisfactionparcritèrepourCebiphar.png Graphic file (type 
+png)
+<use cover/figures/satisfactionparcritèrepourCebiphar.png>
+Package pdftex.def Info: cover/figures/satisfactionparcritèrepourCebiphar.png 
+ used on input line 395.
+(pdftex.def)             Requested size: 330.42041pt x 299.56378pt.
+<cover/figures/NouveaudashboardPowerBI.png, id=552, 1663.21375pt x 952.55875pt>
 
-File: cover/figures/valeur_anormalement_basse.png Graphic file (type png)
-<use cover/figures/valeur_anormalement_basse.png>
-Package pdftex.def Info: cover/figures/valeur_anormalement_basse.png  used on i
-nput line 388.
-(pdftex.def)             Requested size: 465.23125pt x 417.31575pt.
-[23]
-<cover/figures/Nouveau_dashboard_Power_BI.png, id=555, 615.4995pt x 352.31625pt
->
-File: cover/figures/Nouveau_dashboard_Power_BI.png Graphic file (type png)
-<use cover/figures/Nouveau_dashboard_Power_BI.png>
-Package pdftex.def Info: cover/figures/Nouveau_dashboard_Power_BI.png  used on 
-input line 404.
-(pdftex.def)             Requested size: 465.23125pt x 266.31163pt.
- [24 <./cover/figures/valeur_anormalement_basse.png>]
-<cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png, id=561, 7
+File: cover/figures/NouveaudashboardPowerBI.png Graphic file (type png)
+<use cover/figures/NouveaudashboardPowerBI.png>
+Package pdftex.def Info: cover/figures/NouveaudashboardPowerBI.png  used on inp
+ut line 411.
+(pdftex.def)             Requested size: 465.23125pt x 266.43846pt.
+[23 <./cover/figures/satisfactionparcritèrepourCebiphar.png (PNG copy)>]
+<cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png, id=557, 7
 26.91576pt x 373.395pt>
 File: cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png Graph
 ic file (type png)
 <use cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png>
 Package pdftex.def Info: cover/figures/Extrait_de_la_liste_SharePoint_CriteriaE
-valuation.png  used on input line 418.
+valuation.png  used on input line 425.
 (pdftex.def)             Requested size: 465.23125pt x 238.97768pt.
- [25 <./cover/figures/Nouveau_dashboard_Power_BI.png>] [26 <./cover/figures/Ext
-rait_de_la_liste_SharePoint_CriteriaEvaluation.png>]
-<cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png, id=573, 512.51476
-pt x 397.485pt>
-File: cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png Graphic file 
-(type png)
-<use cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png>
-Package pdftex.def Info: cover/figures/Formalisation_du_besoin_du_projet_IPANEM
-A.png  used on input line 475.
-(pdftex.def)             Requested size: 465.23125pt x 360.82034pt.
- [27]
-Underfull \hbox (badness 1648) in paragraph at lines 510--510
+
+[24 <./cover/figures/NouveaudashboardPowerBI.png (PNG copy)>] [25 <./cover/figu
+res/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png>]
+<cover/figures/FormalisationdubesoinduprojetIPANEMA.png, id=568, 1070.49937pt x
+ 706.13812pt>
+File: cover/figures/FormalisationdubesoinduprojetIPANEMA.png Graphic file (type
+ png)
+<use cover/figures/FormalisationdubesoinduprojetIPANEMA.png>
+Package pdftex.def Info: cover/figures/FormalisationdubesoinduprojetIPANEMA.png
+  used on input line 482.
+(pdftex.def)             Requested size: 283.22162pt x 186.82402pt.
+
+Underfull \hbox (badness 1648) in paragraph at lines 517--517
 []|\T1/ptm/m/n/10.95 Traitement ex-pli-cite des va-leurs man-
  []
 
-
-Underfull \hbox (badness 2073) in paragraph at lines 537--537
+[26 <./cover/figures/FormalisationdubesoinduprojetIPANEMA.png>] [27]
+Underfull \hbox (badness 2073) in paragraph at lines 544--544
 []|\T1/ptm/m/n/10.95 Duplications, va-leurs man-quantes in-ter-pr�-t�es
- []
-
-[28 <./cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png>] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 549--551
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 552--555
-
  []
 
 
@@ -1343,279 +1338,290 @@ Underfull \hbox (badness 10000) in paragraph at lines 556--558
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 566--570
+Underfull \hbox (badness 10000) in paragraph at lines 559--562
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--576
+Underfull \hbox (badness 10000) in paragraph at lines 563--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--584
+Underfull \hbox (badness 10000) in paragraph at lines 573--577
 
  []
 
-<cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA.png,
- id=589, 903.97725pt x 157.18726pt>
-File: cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA
-.png Graphic file (type png)
-<use cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA.
-png>
-Package pdftex.def Info: cover/figures/Architecture_générale_de_la_chaîne_de
-_traitement_IPANEMA.png  used on input line 595.
-(pdftex.def)             Requested size: 465.23125pt x 80.89597pt.
-[30]
-<cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres
-.png, id=594, 377.0085pt x 358.941pt>
-File: cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_
-apres.png Graphic file (type png)
-<use cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_a
-pres.png>
-Package pdftex.def Info: cover/figures/Comparaison_de_l'architecture_Data_et_d�
-�cisionnelle_avant_apres.png  used on input line 606.
-(pdftex.def)             Requested size: 465.23125pt x 442.94072pt.
- [31 <./cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANE
-MA.png> <./cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_a
-vant_apres.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 616--622
-
- []
-
-<cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png, id=6
-02, 1013.58675pt x 227.6505pt>
-File: cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png 
-Graphic file (type png)
-<use cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png>
-Package pdftex.def Info: cover/figures/documentaire_standard_appliqué_au_workf
-low_DS_IPANEMA.png  used on input line 632.
-(pdftex.def)             Requested size: 465.23125pt x 104.49123pt.
-<cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.png, 
-id=603, 989.49675pt x 269.20575pt>
-File: cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.
-png Graphic file (type png)
-<use cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.p
-ng>
-Package pdftex.def Info: cover/figures/Formule_REGEX_Replace_appliquée_pour_ne
-ttoyer_le_préfixe.png  used on input line 645.
-(pdftex.def)             Requested size: 465.23125pt x 126.5719pt.
-[32 <./cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png
->]
-Underfull \hbox (badness 10000) in paragraph at lines 650--662
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 578--583
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--667
+Underfull \hbox (badness 10000) in paragraph at lines 584--591
+
+ []
+
+<cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png, id=584
+, 1678.27pt x 944.52875pt>
+File: cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png Gr
+aphic file (type png)
+<use cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png>
+Package pdftex.def Info: cover/figures/Architecturegénéraledelachaînedetrait
+ementIPANEMA.png  used on input line 602.
+(pdftex.def)             Requested size: 283.22162pt x 159.38594pt.
+<cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMAavan
+tetaprèslarefonte.png, id=585, 1258.7025pt x 1258.7025pt>
+File: cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEM
+Aavantetaprèslarefonte.png Graphic file (type png)
+<use cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMA
+avantetaprèslarefonte.png>
+Package pdftex.def Info: cover/figures/Comparaisondel’architectureDataetdéci
+sionnelled’IPANEMAavantetaprèslarefonte.png  used on input line 613.
+(pdftex.def)             Requested size: 283.22162pt x 283.21504pt.
+[29 <./cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png (
+PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 623--629
+
+ []
+
+<cover/figures/En-tête documentaire standard appliqué au workflow DS_IPANEMA.
+png, id=590, 2183.15625pt x 725.71124pt>
+File: cover/figures/En-tête documentaire standard appliqué au workflow DS_IPA
+NEMA.png Graphic file (type png)
+<use cover/figures/En-tête documentaire standard appliqué au workflow DS_IPAN
+EMA.png>
+Package pdftex.def Info: cover/figures/En-tête documentaire standard appliqué
+ au workflow DS_IPANEMA.png  used on input line 639.
+(pdftex.def)             Requested size: 465.23125pt x 154.64069pt.
+[30 <./cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANE
+MAavantetaprèslarefonte.png (PNG copy)>]
+<cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe techn
+ique des identifiants.png, id=595, 1896.08376pt x 835.12pt>
+File: cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe 
+technique des identifiants.png Graphic file (type png)
+<use cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe t
+echnique des identifiants.png>
+Package pdftex.def Info: cover/figures/Formule REGEX_Replace appliquée pour ne
+ttoyer le préfixe technique des identifiants.png  used on input line 652.
+(pdftex.def)             Requested size: 465.23125pt x 204.90564pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--669
+
+ []
+
+[31 <./cover/figures/En-tête documentaire standard appliqué au workflow DS_IP
+ANEMA.png (PNG copy)> <./cover/figures/Formule REGEX_Replace appliquée pour ne
+ttoyer le préfixe technique des identifiants.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 670--674
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--674
+Underfull \hbox (badness 10000) in paragraph at lines 675--681
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--694
+Underfull \hbox (badness 10000) in paragraph at lines 692--701
 
  []
 
-[33 <./cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe
-.png>]
-Overfull \hbox (2.10513pt too wide) in paragraph at lines 714--714
+
+Overfull \hbox (2.10513pt too wide) in paragraph at lines 721--721
 []\T1/cmtt/m/n/10.95 PartnerRisks_refPartner
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--714
+Underfull \hbox (badness 10000) in paragraph at lines 721--721
 \T1/ptm/m/n/10.95 +
  []
 
 
-Overfull \hbox (7.7635pt too wide) in paragraph at lines 714--714
+Overfull \hbox (7.7635pt too wide) in paragraph at lines 721--721
 \T1/cmtt/m/n/10.95 PartnerRisks_refCampaign
  []
 
 <cover/figures/Modèle_sémantique_Power_BI_relations_entre_les_tables .png, id
-=614, 708.84825pt x 446.8695pt>
+=601, 708.84825pt x 446.8695pt>
 File: cover/figures/Modèle_sémantique_Power_BI_relations_entre_les_tables .pn
 g Graphic file (type png)
 <use cover/figures/Modèle_sémantique_Power_BI_relations_entre_les_tables .png
 >
 Package pdftex.def Info: cover/figures/Modèle_sémantique_Power_BI_relations_e
-ntre_les_tables .png  used on input line 724.
+ntre_les_tables .png  used on input line 731.
 (pdftex.def)             Requested size: 465.23125pt x 293.28465pt.
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 729--736
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 736--743
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 737--740
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--747
-
- []
-
-[35 <./cover/figures/Modèle_sémantique_Power_BI_relations_entre_les_tables .p
+[33 <./cover/figures/Modèle_sémantique_Power_BI_relations_entre_les_tables .p
 ng>]
-<cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png, id=62
-6, 337.86224pt x 372.1905pt>
+Underfull \hbox (badness 10000) in paragraph at lines 744--747
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--754
+
+ []
+
+<cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png, id=61
+3, 337.86224pt x 372.1905pt>
 File: cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png G
 raphic file (type png)
 <use cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png>
 Package pdftex.def Info: cover/figures/Table_DIM_Criteria_triée_par_Criteria_r
-efCampaign_Id.png  used on input line 761.
-(pdftex.def)             Requested size: 465.23125pt x 512.52736pt.
- [36 <./cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png
->]
-Underfull \hbox (badness 10000) in paragraph at lines 774--778
+efCampaign_Id.png  used on input line 768.
+(pdftex.def)             Requested size: 283.22162pt x 312.01318pt.
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 781--785
+
+ []
+
+[35 <./cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 829--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--826
+Underfull \hbox (badness 10000) in paragraph at lines 834--839
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 840--845
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 856--861
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 862--869
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 883--887
+
+ []
+
+<cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png, id=627, 1677.
+26625pt x 944.52875pt>
+File: cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png Graphic f
+ile (type png)
+<use cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png>
+Package pdftex.def Info: cover/figures/Paged’accueil du dashboard Power BI IP
+ANEMA.png  used on input line 894.
+(pdftex.def)             Requested size: 465.23125pt x 261.98732pt.
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 827--832
+<cover/figures/AllResultsTP1.png, id=633, 1467.4825pt x 1080.035pt>
+File: cover/figures/AllResultsTP1.png Graphic file (type png)
+<use cover/figures/AllResultsTP1.png>
+Package pdftex.def Info: cover/figures/AllResultsTP1.png  used on input line 90
+7.
+(pdftex.def)             Requested size: 465.23125pt x 342.38818pt.
+ [38 <./cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png (PNG co
+py)>]
+Underfull \hbox (badness 10000) in paragraph at lines 912--916
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 833--838
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 849--854
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 855--862
-
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 876--880
-
- []
-
-<cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png, id=641, 772.08
-45pt x 433.62pt>
-File: cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png Graphic fi
-le (type png)
-<use cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png>
-Package pdftex.def Info: cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPA
-NEMA.png  used on input line 887.
-(pdftex.def)             Requested size: 465.23125pt x 261.28558pt.
-<cover/figures/All_results_TP.png, id=642, 620.3175pt x 457.71pt>
-File: cover/figures/All_results_TP.png Graphic file (type png)
-<use cover/figures/All_results_TP.png>
-Package pdftex.def Info: cover/figures/All_results_TP.png  used on input line 9
-00.
-(pdftex.def)             Requested size: 465.23125pt x 343.27467pt.
-[39 <./cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 905--909
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 910--916
+Underfull \hbox (badness 10000) in paragraph at lines 917--923
 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 9
-19.
+26.
 (C:\Users\dridi\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<cover/figures/Vue_Risk_Global_(RG)_CDMO.png, id=648, 699.8145pt x 417.35925pt>
-
-File: cover/figures/Vue_Risk_Global_(RG)_CDMO.png Graphic file (type png)
-<use cover/figures/Vue_Risk_Global_(RG)_CDMO.png>
-Package pdftex.def Info: cover/figures/Vue_Risk_Global_(RG)_CDMO.png  used on i
-nput line 924.
-(pdftex.def)             Requested size: 465.23125pt x 277.45125pt.
- [40 <./cover/figures/All_results_TP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 929--934
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 939--942
-
- []
-
-<cover/figures/Vue_Global_Satisfaction.png, id=654, 663.6795pt x 464.33475pt>
-File: cover/figures/Vue_Global_Satisfaction.png Graphic file (type png)
-<use cover/figures/Vue_Global_Satisfaction.png>
-Package pdftex.def Info: cover/figures/Vue_Global_Satisfaction.png  used on inp
-ut line 951.
-(pdftex.def)             Requested size: 465.23125pt x 325.49973pt.
-[41 <./cover/figures/Vue_Risk_Global_(RG)_CDMO.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 963--969
+<cover/figures/Vue Risk Global (RG)CDMO.png, id=638, 1669.23625pt x 948.54375pt
+>
+File: cover/figures/Vue Risk Global (RG)CDMO.png Graphic file (type png)
+<use cover/figures/Vue Risk Global (RG)CDMO.png>
+Package pdftex.def Info: cover/figures/Vue Risk Global (RG)CDMO.png  used on in
+put line 931.
+(pdftex.def)             Requested size: 465.23125pt x 264.36018pt.
+ [39 <./cover/figures/AllResultsTP1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 936--941
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 970--981
+Underfull \hbox (badness 10000) in paragraph at lines 946--949
 
  []
 
-[42 <./cover/figures/Vue_Global_Satisfaction.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 991--994
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 995--1001
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1002--1007
+<cover/figures/VueGlobalSatisfaction.png, id=643, 1503.6175pt x 1053.9375pt>
+File: cover/figures/VueGlobalSatisfaction.png Graphic file (type png)
+<use cover/figures/VueGlobalSatisfaction.png>
+Package pdftex.def Info: cover/figures/VueGlobalSatisfaction.png  used on input
+ line 958.
+(pdftex.def)             Requested size: 465.23125pt x 326.09006pt.
+[40 <./cover/figures/Vue Risk Global (RG)CDMO.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 970--976
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1027
+Underfull \hbox (badness 10000) in paragraph at lines 977--988
 
  []
 
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+[41 <./cover/figures/VueGlobalSatisfaction.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 998--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1008
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1014
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1034
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1067
 []|\T1/ptm/m/n/10.95 Restituer cor-rec-te-ment les
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 1060--1060
+Underfull \hbox (badness 2197) in paragraph at lines 1067--1067
 \T1/ptm/m/n/10.95 de chaque en-re-gis-tre-ment par
  []
 
-[44]) (chapters/conclusion.tex [45]) [46
+[43]) (chapters/conclusion.tex [44]) [45
 
-] [47
+] [46
 
-] (chapters/Annexe.tex [48
+] (chapters/Annexe.tex [47
 
 ]
-[49
+[48
 
 
-] [50] [51]) [52]
+] [49] [50]) [51]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
 \openout4 = `main.maf'.
 
- [53] (main.aux)
+ [52] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -1624,10 +1630,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9B095D3CAAD803C27CF2E16B16BE5DC8;13967.
  ) 
 Here is how much of TeX's memory you used:
- 32873 strings out of 467871
- 656911 string characters out of 5428443
+ 32881 strings out of 467871
+ 657886 string characters out of 5428443
  1110098 words of memory out of 5000000
- 61020 multiletter control sequences out of 15000+600000
+ 61028 multiletter control sequences out of 15000+600000
  693150 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,10n,104p,674b,772s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1636,9 +1642,9 @@ Here is how much of TeX's memory you used:
 Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/
 fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (59 pages, 4989229 bytes).
+Output written on main.pdf (58 pages, 19325287 bytes).
 PDF statistics:
- 835 PDF objects out of 1000 (max. 8388607)
+ 822 PDF objects out of 1000 (max. 8388607)
  153 named destinations out of 1000 (max. 500000)
- 717 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 722 words of extra memory for PDF output out of 10000 (max. 10000000)
 
