@@ -1,16 +1,19 @@
 %\documentclass[a4paper,12pt]{report}
-\documentclass{report}
+\documentclass[11pt]{report}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
-\usepackage{lmodern}
+\usepackage{mathptmx}
 \usepackage{graphicx}  % sans draft = les vraies images sont affichées
 \usepackage{geometry}
 \geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
 \usepackage{setspace}
+\singlespacing
 \usepackage{color}
-\usepackage{parskip}
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.35em}
 \usepackage{titling}
 \usepackage{tikz}
 \usepackage{float}
@@ -21,15 +24,13 @@
 \usepackage{enumitem}
 \usepackage{csquotes}
 \usepackage[most]{tcolorbox}
-\usepackage{biblatex}
-\usepackage{minitoc}
 \usepackage{hyperref}
-\dominitoc
+\usepackage[nohints]{minitoc}
+\AtBeginEnvironment{thebibliography}{\raggedright}
 
 
 
 
-\addbibresource{refs.bib}
 %==========================================%
 %==========================================%
 \newcommand*{\blankpage}{%
@@ -45,7 +46,6 @@
 \makeatother
 %__________________________________________%
 %__________________________________________%
-\usepackage{minitoc}
 \renewcommand{\mtctitle}{Sommaire}
 % \setcounter{minitocdepth}{2}
 \dominitoc
@@ -89,14 +89,11 @@
 %\input{./chapters/chapitre3}
 %\input{./chapters/chapitre4}
 \input{./chapters/conclusion}
-\input{./chapters/Annexe}
 %__________________Bibliography_______________________________%	 
 %\bibliographystyle{alpha}
 %\bibliographystyle{plain}
 \part*{BIBLIOGRAPHIE}
 \addcontentsline{toc}{chapter}{Bibliographie}
-%\bibliography{refs}
-\printbibliography
 \begin{thebibliography}{9}
 
 % \bibitem{docker}
@@ -152,6 +149,7 @@ W3C. \textit{Web Content Accessibility Guidelines (WCAG) 2.1}. 2018. \url{https:
 
 
 \end{thebibliography}
+\input{./chapters/Annexe}
 
 %_________________%
 \end{document}

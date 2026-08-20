@@ -5,32 +5,29 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Problématique de l’étude}{\reset@font\mtcSSfont 14}{subsection.2.2.3}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Compréhension du besoin métier}{\reset@font\mtcSfont 15}{section.2.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Les acteurs et utilisateurs d’IPANEMA}{\reset@font\mtcSSfont 15}{subsection.2.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Processus d’évaluation d’une Tierce Partie }{\reset@font\mtcSSfont 15}{subsection.2.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Les niveaux de risque}{\reset@font\mtcSSfont 16}{subsection.2.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Analyse de l’existant et diagnostic}{\reset@font\mtcSfont 17}{section.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Architecture initiale}{\reset@font\mtcSSfont 17}{subsection.2.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Analyse du traitement initial }{\reset@font\mtcSSfont 18}{subsection.2.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Limites et anomalies identifiées}{\reset@font\mtcSSfont 19}{subsection.2.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.4}Diagnostic}{\reset@font\mtcSSfont 22}{subsection.2.4.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Formalisation du besoin et des exigences}{\reset@font\mtcSfont 22}{section.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Expression du besoin : Diagramme « bête à cornes »}{\reset@font\mtcSSfont 22}{subsection.2.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Campagne de tests du premier module de la plateforme}{\reset@font\mtcSfont 22}{section.2.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.1}Objectif de la campagne}{\reset@font\mtcSSfont 23}{subsection.2.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.2}MÃ©thodologie}{\reset@font\mtcSSfont 23}{subsection.2.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.3}RÃ©sultats des tests}{\reset@font\mtcSSfont 23}{subsection.2.6.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.4}Ã‰volutions fonctionnelles dÃ©veloppÃ©es en complÃ©ment}{\reset@font\mtcSSfont 24}{subsection.2.6.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}DÃ©veloppement des Ã©volutions fonctionnelles dÃ©veloppÃ©es en complÃ©ment}{\reset@font\mtcSfont 25}{section.2.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.7.1}Objectifs fonctionnels}{\reset@font\mtcSSfont 25}{subsection.2.7.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.7.2}Ã‰tude conceptuelle de lâ€™application }{\reset@font\mtcSSfont 26}{subsection.2.7.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Langage de modÃ©lisation UML}{\reset@font\mtcSSSfont 26}{section*.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Diagramme de cas dâ€™utilisation}{\reset@font\mtcSSSfont 26}{section*.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode  ModÃ¨le conceptuel de donnÃ©es}{\reset@font\mtcSSSfont 27}{section*.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.7.3}Technologies et outils utilisÃ©s}{\reset@font\mtcSSfont 28}{subsection.2.7.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Frontend }{\reset@font\mtcSSSfont 28}{section*.8}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Backend / API}{\reset@font\mtcSSSfont 29}{section*.9}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Base de donnÃ©es}{\reset@font\mtcSSSfont 30}{section*.10}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode  Environnement de dÃ©veloppement}{\reset@font\mtcSSSfont 30}{section*.11}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.7.4}Organisation et gestion de lâ€™intÃ©gration et du versioning }{\reset@font\mtcSSfont 31}{subsection.2.7.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Structure du projet}{\reset@font\mtcSSSfont 31}{section*.12}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Gestion de versions avec Git}{\reset@font\mtcSSSfont 31}{section*.13}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.8}Conclusion}{\reset@font\mtcSfont 32}{section.2.8}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Processus d’évaluation d’une Tierce Partie }{\reset@font\mtcSSfont 16}{subsection.2.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Les niveaux de risque}{\reset@font\mtcSSfont 19}{subsection.2.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Analyse de l’existant et diagnostic}{\reset@font\mtcSfont 19}{section.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Architecture initiale}{\reset@font\mtcSSfont 19}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Analyse du traitement initial }{\reset@font\mtcSSfont 20}{subsection.2.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Limites et anomalies identifiées}{\reset@font\mtcSSfont 22}{subsection.2.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.4}Diagnostic}{\reset@font\mtcSSfont 26}{subsection.2.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Formalisation du besoin et des exigences}{\reset@font\mtcSfont 27}{section.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Expression du besoin : Diagramme « bête à cornes »}{\reset@font\mtcSSfont 27}{subsection.2.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Besoins exprimés par les utilisateurs}{\reset@font\mtcSSfont 28}{subsection.2.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.3}Traduction en exigences fonctionnelles et techniques }{\reset@font\mtcSSfont 28}{subsection.2.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Conception de la nouvelle architecture}{\reset@font\mtcSfont 30}{section.2.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.1}Principes de conception}{\reset@font\mtcSSfont 30}{subsection.2.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.2}Architecture cible }{\reset@font\mtcSSfont 30}{subsection.2.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.3}Refonte de la préparation des données}{\reset@font\mtcSSfont 32}{subsection.2.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.4}Choix du modèle sémantique}{\reset@font\mtcSSfont 34}{subsection.2.6.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.5} Mesures DAX principales}{\reset@font\mtcSSfont 37}{subsection.2.6.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Choix technologiques}{\reset@font\mtcSfont 38}{section.2.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.7.1}Répartition des traitements entre Alteryx et Power Query}{\reset@font\mtcSSfont 38}{subsection.2.7.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.7.2}Choix de Power BI}{\reset@font\mtcSSfont 38}{subsection.2.7.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.8}Restitution et interfaces}{\reset@font\mtcSfont 39}{section.2.8}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.8.1}Vues du dashboard}{\reset@font\mtcSSfont 39}{subsection.2.8.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.8.2}Environnement de développement et sécurisation}{\reset@font\mtcSSfont 42}{subsection.2.8.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.9}Préparation du recettage}{\reset@font\mtcSfont 43}{section.2.9}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.10}Résultats}{\reset@font\mtcSfont 44}{section.2.10}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.11}Conclusion}{\reset@font\mtcSfont 45}{section.2.11}}

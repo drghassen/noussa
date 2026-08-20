@@ -1,6 +1,12 @@
 \chapter{ RAPPORT D’ÉTUDE : Refonte de la chaîne de traitement et de valorisation des données d’IPANEMA }
 \minitoc
 \label{chap2}
+
+\newcommand{\boxedfullwidthimage}[1]{%
+    \fbox{\includegraphics[width=\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax]{#1}}%
+}
+\setlength{\emergencystretch}{3em}
+
 \newpage
 
 %=====================================%
@@ -17,8 +23,8 @@ architecture Data et décisionnelle.
 \label{sec:sec22}
 %=====================================% 
 \subsection{ IPANEMA et la maîtrise des Tierces Parties }
-IPANEMA, acronyme de International Partners Network & Management, est une solution 
-informatique utilisée au sein de la R&D Dermo-Cosmétique & Personal Care (DC&PC) de 
+IPANEMA, acronyme de International Partners Network \& Management, est une solution 
+informatique utilisée au sein de la R\&D Dermo-Cosmétique \& Personal Care (DC\&PC) de 
 Pierre Fabre pour accompagner le processus de maîtrise des Tierces Parties. Dans ce 
 contexte, une Tierce Partie désigne une entité extérieure au groupe dont l’activité peut avoir 
 un impact direct ou indirect sur la qualité d’un produit ou sur la sécurité du patient, du 
@@ -40,7 +46,7 @@ Cette dimension est au cœur du projet présenté dans ce rapport.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=5.5cm]{cover/figures/processusde_maîtrise_des_Tierces.jpg}}
+    \boxedfullwidthimage{cover/figures/processusde_maîtrise_des_Tierces.jpg}
     \caption{Positionnement d’IPANEMA dans le processus de maîtrise des Tierces Parties.}
     \label{fig:processusde_maîtrise_des_Tierces}
 \end{figure}
@@ -73,8 +79,8 @@ Qualité.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=5.5cm]{cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg}}
-    \caption{Périmètre du projet IPANEMA v2 : répartition entre la Partie A (application Power Apps, prestataire externe) et la Partie B (Data & Reporting, périmètre de mon projet).}
+    \boxedfullwidthimage{cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg}
+    \caption{Périmètre du projet IPANEMA v2 : répartition entre la Partie A (application Power Apps, prestataire externe) et la Partie B (Data \& Reporting, périmètre de mon projet).}
     \label{fig:Perimètre_du_projet_IPANEMA_v2}
 \end{figure}
 
@@ -123,7 +129,7 @@ Le \textbf{Cotateur} appartient aux équipes métier en relation avec la Tierce 
 directement dans le processus d’évaluation en renseignant les critères qui relèvent de son 
 périmètre. 
 
-Enfin, le profil \text{Consultation} dispose d’un accès en lecture aux informations et 
+Enfin, le profil \textbf{Consultation} dispose d’un accès en lecture aux informations et 
 évaluations finalisées, sans possibilité de modification. 
 
 Cette diversité de profils implique que les données produites par IPANEMA ne répondent 
@@ -133,7 +139,7 @@ devront être modélisées, comme le montre la partie suivante.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.25\textwidth]{cover/figures/quatre_profils_d'utilisateurs.png}}
+    \boxedfullwidthimage{cover/figures/quatre_profils_d'utilisateurs.png}
     \caption{Les quatre profils d'utilisateurs d'IPANEMA et leur rôle dans le processus d'évaluation des Tierces Parties.}
     \label{fig:quatre_profils_d'utilisateurs}
 \end{figure}
@@ -162,7 +168,7 @@ diagnostic présenté en 2.3.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.25\textwidth]{cover/figures/processus_evaluation_tierce_partie.png}}
+    \boxedfullwidthimage{cover/figures/processus_evaluation_tierce_partie.png}
     \caption{Processus d'évaluation d'une Tierce Partie, de la création de la campagne au reporting. }
     \label{processus_evaluation_tierce_partie}
 \end{figure}
@@ -252,8 +258,8 @@ granularités différentes dans une même table a progressivement montré ses li
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.25\textwidth]{cover/figures/Architecture_initiale_d'IPANEMA.png}}
-    \caption{Architecture initiale d'IPANEMA : des sources de données jusqu'à la restitution de l'équipe Qualité (AQ R&D DCPC).}
+    \boxedfullwidthimage{cover/figures/Architecture_initiale_d'IPANEMA.png}
+    \caption{Architecture initiale d'IPANEMA : des sources de données jusqu'à la restitution de l'équipe Qualité (AQ R\&D DCPC).}
     \label{Architecture_initiale_d'IPANEMA}
 \end{figure}
 
@@ -268,7 +274,7 @@ principe de manière simplifiée.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.25\textwidth]{cover/figures/jointures_successives_des_listes.png}}
+    \boxedfullwidthimage{cover/figures/jointures_successives_des_listes.png}
     \caption{Principe de construction de l'ancienne table à plat : jointures successives des listes SharePoint en cascade.}
     \label{jointures_successives_des_listes}
 \end{figure}
@@ -282,7 +288,7 @@ loin dans ce chapitre.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.25\textwidth]{cover/figures/Ancien_workflow_alteryx.png}}
+    \boxedfullwidthimage{cover/figures/Ancien_workflow_alteryx.png}
     \caption{Ancien workflow Alteryx.}
     \label{Ancien_workflow_alteryx}
 \end{figure}
@@ -318,7 +324,7 @@ Ces duplications pouvaient avoir une incidence directe sur certains indicateurs.
 comptage réalisé sans tenir compte de la granularité réelle des données risquait alors de 
 comptabiliser plusieurs fois un même objet métier.
 
-\text{b) Disparition de certains enregistrements}\\
+\textbf{b) Disparition de certains enregistrements}\\
 Le phénomène inverse pouvait également se produire. Selon le type de jointure et la 
 disponibilité des clés utilisées pour rapprocher les sources, certains enregistrements pouvaient 
 ne pas être conservés dans le jeu de données final. \\
@@ -379,7 +385,7 @@ cohérente et satisfaisante.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.1\textwidth]{cover/figures/valeur_anormalement_basse.png}}
+    \boxedfullwidthimage{cover/figures/valeur_anormalement_basse.png}
     \caption{Ancien dashboard Tableau : satisfaction par critère pour Cebiphar (campagne 2025), avec une valeur anormalement basse sur le critère Innovation (0,39).}
     \label{valeur_anormalement_basse}
 \end{figure}
@@ -395,7 +401,7 @@ les autres critères de ce partenaire.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.1\textwidth]{cover/figures/Nouveau_dashboard_Power_BI.png}}
+    \boxedfullwidthimage{cover/figures/Nouveau_dashboard_Power_BI.png}
     \caption{Nouveau dashboard Power BI : satisfaction par critère pour Cebiphar (campagne 2025), avec une valeur corrigée de 1,00 sur le critère Innovation.}
     \label{Nouveau_dashboard_Power_BI}
 \end{figure}
@@ -409,7 +415,7 @@ le calcul de la moyenne.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.1\textwidth]{cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png}}
+    \boxedfullwidthimage{cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png}
     \caption{Extrait de la liste SharePoint CriteriaEvaluation, filtré sur le critère Innovation : les notes effectivement attribuées valent toutes 1, confirmant la valeur restituée par Power BI.}
     \label{Extrait_de_la_liste_SharePoint_CriteriaEvaluation}
 \end{figure}
@@ -457,7 +463,7 @@ Afin de formaliser la finalité du projet indépendamment des choix technologiqu
 besoin a été représenté à l’aide du diagramme « bête à cornes ». \\
 Il permet de répondre à trois questions fondamentales : \\
 \textbf{À qui le système rend-il service ?}
-Aux équipes Qualité de la R&D DC&PC chargées du suivi des Tierces Parties. \\
+Aux équipes Qualité de la R\&D DC\&PC chargées du suivi des Tierces Parties. \\
 \textbf{Sur quoi agit-il ?}
 Sur les données issues de l’évaluation et du suivi des Tierces Parties. \\
 \textbf{Dans quel but ? }
@@ -466,7 +472,7 @@ des risques associés.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.1\textwidth]{cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png}}
+    \boxedfullwidthimage{cover/figures/Formalisation_du_besoin_du_projet_IPANEMA.png}
     \caption{Formalisation du besoin du projet IPANEMA selon la méthode « bête à cornes »}
     \label{Formalisation_du_besoin_du_projet_IPANEMA}
 \end{figure}
@@ -482,319 +488,598 @@ réunions d'avancement et des retours sur les versions successives du dashboard.
 grandes catégories de besoins se dégagent, chacune distinguant ce qui a été exprimé par 
 les utilisateurs de sa traduction technique.
 
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{@{} >{\bfseries\raggedright\arraybackslash}p{3cm} X X @{}}
+\hline
+Catégorie & \textbf{Besoin exprimé} & \textbf{Traduction technique} \\
+\hline
+Fiabilité des données & Ne pas afficher les partenaires non évalués ; garantir des statuts à jour et cohérents entre les vues & Filtrage explicite sur le statut d'évaluation ; correction de la logique de sélection du dernier enregistrement par Tierce Partie \\
+
+Distinction évaluation/note & Pouvoir différencier une absence d'évaluation d'une note réellement attribuée à 0 & Traitement explicite des valeurs manquantes en amont du calcul des risques (cf. 2.3.3) \\
+
+Fraîcheur des données & Disposer de données actualisées quotidiennement, exprimé lors du déploiement sur le serveur & Planification du rafraîchissement à la fois du flux Alteryx et du modèle Power BI, alignée sur le rythme quotidien des extraits SharePoint et de l'export TrackWise (cf. 2.3.1) \\
+
+Lisibilité visuelle & Harmoniser les couleurs et l'ordre des niveaux de risque ; améliorer l'échelle et la taille des textes & Palette conditionnelle unique et mise en forme homogène sur l'ensemble des visuels \\
+
+Nomenclature & Utiliser des noms significatifs plutôt que des noms techniques de tables et colonnes & Renommage des champs exposés dans le modèle sémantique \\
+
+Ergonomie & Faciliter la navigation et le filtrage (accès direct à l'application, filtres sur statut actif) & Ajustements dans les limites permises par Power BI \\
+\hline
+\end{tabularx}
+\caption{Synthèse des besoins et traductions techniques}
+\end{table}
+
+Ce recueil de besoins, associé au diagnostic établi en 2.3, a permis de formaliser les 
+exigences fonctionnelles et techniques présentées ci-après.
+
+\subsection{Traduction en exigences fonctionnelles et techniques }
+
+Les besoins détaillés en 2.4.2 se rattachent à un nombre restreint d'exigences 
+structurantes, qui ont orienté la conception de la nouvelle architecture présentée en 2.5. 
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{@{} l X X @{}}
+\hline
+\textbf{ID} & \textbf{Exigence} & \textbf{Limite identifiée (cf. 2.3)} \\
+\hline
+E01 & Disposer de données fiables & Duplications, valeurs manquantes interprétées comme des notes \\
+E02 & Restituer correctement les risques RI, RCP et RG & Complexité des calculs, incohérence entre vues \\
+E03 & Garantir l'unicité et l'actualité de chaque enregistrement par Tierce Partie & Statuts obsolètes remontés \\
+E04 & Assurer une actualisation quotidienne de bout en bout, du flux Alteryx jusqu'au modèle Power BI & Rythme quotidien des sources (SharePoint, TrackWise) non exploité jusqu'au dashboard \\
+E05 & Faciliter l'analyse par une restitution lisible et homogène & Lisibilité, performances \\
+E06 & Faciliter la maintenance par un modèle structuré & Table unique complexe \\
+E07 & Intégrer la restitution à l'écosystème Microsoft & Reporting sous Tableau \\
+\hline
+\end{tabularx}
+\caption{Synthèse des exigences et limites identifiées}
+\end{table}
+
+Ces exigences ont vocation à être reprises lors de l'évaluation finale de la solution, 
+dans le cadre des ateliers de recette évoqués en 1.4, afin de vérifier dans quelle mesure la 
+version livrée y répond effectivement. 
 
 %=====================================%
-\section{Campagne de tests du premier module de la plateforme} 
+\section{Conception de la nouvelle architecture} 
 %---------------------------------------------------------%
+\subsection{Principes de conception}
+Le diagnostic a conduit à remettre en question le principe consistant à réunir l’ensemble 
+des données nécessaires au reporting dans une table unique. \\
 
-Dans la continuitÃ© de la phase de dÃ©veloppement, une campagne de tests a Ã©tÃ© menÃ©e afin de valider la premiÃ¨re version du module de recrutement des bÃ©nÃ©ficiaires de la plateforme RI2S. Cette Ã©tape avait pour objectif de garantir la conformitÃ© fonctionnelle et technique des premiÃ¨res fonctionnalitÃ©s livrÃ©es, et dâ€™Ã©valuer la robustesse de la solution en vue dâ€™une mise en production progressive.
+La solution retenue repose sur un principe différent : conserver séparément les 
+ensembles de données correspondant à des granularités différentes et reconstruire leurs 
+relations au niveau du modèle sémantique Power BI. \\
 
+Cette approche permet de limiter les jointures destructrices réalisées en amont et de 
+conserver plus fidèlement la structure logique des données métier. \\
 
+L’objectif n’est donc plus de produire une table contenant toutes les informations, mais 
+de produire plusieurs tables cohérentes, chacune possédant une granularité clairement 
+définie. 
 
-\subsection{Objectif de la campagne}
-Cette campagne de tests visait Ã  valider la conformitÃ© fonctionnelle et technique du premier module de la plateforme RI2S, centrÃ© sur le processus de recrutement des bÃ©nÃ©ficiaires.
-Lâ€™objectif Ã©tait de sâ€™assurer que les fonctionnalitÃ©s critiques rÃ©pondent aux spÃ©cifications initiales et que la solution soit suffisamment robuste et fiable pour un usage progressif sur le terrain.
-\subsection{MÃ©thodologie}
-Les tests ont Ã©tÃ© rÃ©alisÃ©s en environnement local de dÃ©veloppement, sur navigateurs Chrome et Firefox, Ã  lâ€™aide de donnÃ©es fictives respectant les formats rÃ©glementaires.
-Les cas de test ont Ã©tÃ© construits Ã  partir de scÃ©narios mÃ©tiers validÃ©s avec lâ€™Ã©quipe RI2S, en cohÃ©rence avec les maquettes produites en amont et les fonctionnalitÃ©s prÃ©vues pour ce premier module.
-
-Chaque fonctionnalitÃ© a Ã©tÃ© testÃ©e manuellement, Ã  travers des parcours utilisateurs complets, en interaction directe avec les composants de lâ€™interface. Lâ€™Ã©valuation a portÃ© sur les Ã©lÃ©ments suivants :
-\begin{itemize}
-    \item La conformitÃ© fonctionnelle des formulaires et traitements
-    \item La fluiditÃ© de navigation dans les diffÃ©rentes interfaces
-    \item La traÃ§abilitÃ© des actions utilisateur
-    \item La sÃ©curitÃ© des accÃ¨s et la conformitÃ© RGPD
-    \item Le comportement multi-supports (desktop, tablette, mobile)
-    \item la rÃ©silience face aux erreurs (donnÃ©es invalides, rÃ©seau, navigation directe, injections)
-\end{itemize}
-Dans lâ€™ensemble, le module sâ€™est rÃ©vÃ©lÃ© conforme aux spÃ©cifications dÃ©finies et aux maquettes prÃ©vues. Les fonctionnalitÃ©s ont rÃ©pondu aux exigences formelles du cahier des charges, assurant une base solide pour le dÃ©marrage opÃ©rationnel.
-
-Toutefois, certaines situations rencontrÃ©es dans les Ã©changes avec les utilisateurs et les retours terrain ont mis en lumiÃ¨re des besoins dâ€™ajustement ou de personnalisation plus poussÃ©e, particuliÃ¨rement en matiÃ¨re de flexibilitÃ© du processus, de suivi ou dâ€™intÃ©gration de profils variÃ©s.
-Ces Ã©lÃ©ments ont motivÃ© la conception dâ€™un module complÃ©mentaire, mieux alignÃ© avec les pratiques observÃ©es sur le terrain.
-
-\subsection{RÃ©sultats des tests}
-Lâ€™ensemble des tests a permis de valider les fonctionnalitÃ©s principales :
-\begin{itemize}
-    \item CrÃ©ation et modification de bÃ©nÃ©ficiaires
-    \item Association Ã  une expÃ©rimentation existante
-    \item ContrÃ´le des champs obligatoires et des formats
-    \item Gestion des statuts (en attente, actif, inactif)
-    \item SÃ©curitÃ© des accÃ¨s selon le rÃ´le utilisateur
-    \item Protection contre les erreurs ou usages anormaux (injection, double soumission, accÃ¨s direct non autorisÃ©)
-    \item CompatibilitÃ© mobile et stabilitÃ© rÃ©seau
-\end{itemize}
-Les cas de test ont tous Ã©tÃ© exÃ©cutÃ©s avec succÃ¨s, sans comportement bloquant. Le systÃ¨me sâ€™est montrÃ© stable, sÃ©curisÃ© et conforme aux attentes fonctionnelles de cette premiÃ¨re version.
-
-\subsection{Ã‰volutions fonctionnelles dÃ©veloppÃ©es en complÃ©ment}
-En rÃ©ponse aux constats issus de la phase de tests et des retours utilisateurs, un module complÃ©mentaire a Ã©tÃ© dÃ©veloppÃ© pour Ã©largir les possibilitÃ©s fonctionnelles de la plateforme. Il intÃ¨gre plusieurs composants clÃ©s :
-\begin{enumerate}
-    
-
-    \item \textbf{Formulaire coordinateur (ajout de bÃ©nÃ©ficiaire)}
-    Ce formulaire permet une saisie conditionnelle, avec des champs qui sâ€™adaptent automatiquement en fonction de lâ€™expÃ©rimentation sÃ©lectionnÃ©e et du statut du bÃ©nÃ©ficiaire.
-    Il assure la complÃ©tude des informations nÃ©cessaires Ã  chaque Ã©tape du processus dâ€™inclusion et facilite un suivi structurÃ© et cohÃ©rent.
-    
-    \item \textbf{Page dâ€™ajout dâ€™expÃ©rimentation}
-    Cette interface permet aux gestionnaires de configurer une expÃ©rimentation en dÃ©finissant :le nom de lâ€™expÃ©rimentation,les cohortes concernÃ©es,et les champs de donnÃ©es attendus Ã  chaque Ã©tape (initialisation, suivi, clÃ´ture).
-    Elle offre une logique de paramÃ©trage avancÃ©, permettant une meilleure adaptation aux spÃ©cificitÃ©s de chaque projet.
-    
-    \item \textbf{Annuaire des personnes}
-    Cette page centralise tous les profils enregistrÃ©s dans le systÃ¨me (bÃ©nÃ©ficiaires, aidants, professionnels), avec : une barre de recherche rapide, des filtres par rÃ´le, une interface fluide facilitant la consultation et la coordination interprofessionnelle.
-    
-    \item \textbf{Formulaire infirmiÃ¨re coordinatrice (fiche de suivi)}
-    Un formulaire spÃ©cifique permet de consigner les informations de suivi (cliniques, sociales ou organisationnelles) des bÃ©nÃ©ficiaires, Ã  destination des infirmiÃ¨res coordinatrices.
-    Il favorise la traÃ§abilitÃ© du parcours, dans une logique pluridisciplinaire.
-    
-    \item \textbf{Page dâ€™ajout dâ€™un usager professionnel}
-    Cette page permet de rÃ©fÃ©rencer les intervenants professionnels (infirmiers, psychologues, assistants sociauxâ€¦) en associant leur rÃ´le, leur structure, et leur rattachement Ã  une expÃ©rimentation ou un bÃ©nÃ©ficiaire.
-\end{enumerate}
+\subsection{Architecture cible }
 
 
+La nouvelle architecture s'organise autour d'une chaîne de traitement en quatre étapes, 
+depuis la collecte de la donnée jusqu'à sa restitution auprès de l'équipe Qualité : l'application 
+source PowerApp IPANEMA, les listes SharePoint qui en constituent les sources de données, 
+la couche ETL Alteryx, et enfin la couche de visualisation Power BI. \\
 
-La campagne de tests a permis de valider une premiÃ¨re version stable, conforme et sÃ©curisÃ©e du module 1.
-Elle a Ã©galement mis en Ã©vidence des besoins plus fins, liÃ©s Ã  la souplesse dâ€™usage, Ã  la modularitÃ© des processus, et Ã  une meilleure prise en compte des rÃ©alitÃ©s du terrain.
+La chaîne débute avec l'application IPANEMA elle-même, point d'entrée de toute la 
+donnée traitée par la suite : développée par un prestataire externe sur la plateforme Microsoft 
+PowerApps, elle est utilisée par les métiers pour saisir et évaluer les informations relatives à 
+chaque Tierce Partie, selon la méthodologie de calcul du niveau de risque définie dans son 
+cahier des charges (cf. 2.2.3). \\
 
-Le dÃ©veloppement du module complÃ©mentaire sâ€™inscrit dans cette dynamique dâ€™amÃ©lioration continue. Il constitue une rÃ©ponse concrÃ¨te aux attentes exprimÃ©es par les utilisateurs, tout en renforÃ§ant la capacitÃ© Ã©volutive de la plateforme RI2S pour accompagner les prochaines Ã©tapes du projet.
-%---------------------------------------------------------%
-\section{DÃ©veloppement des Ã©volutions fonctionnelles dÃ©veloppÃ©es en complÃ©ment}
-%---------------------------------------------------------%
+Une fois saisies dans l'application, ces évaluations ne restent pas cantonnées à 
+PowerApp : elles sont automatiquement répercutées dans un ensemble de listes SharePoint, 
+chacune correspondant à une table du modèle de données (partenaires, évaluations, critères, 
+campagnes...). Ces listes ne sont à aucun moment modifiées manuellement, ni par l'équipe 
+Qualité ni par mon équipe : elles constituent une image fidèle et à jour des données saisies 
+via l'application, et servent de source unique de vérité pour l'ensemble de la chaîne de 
+traitement en aval. \\
 
-Ã€ lâ€™issue de la campagne de tests du premier module de la plateforme RI2S, plusieurs besoins mÃ©tiers ont Ã©mergÃ©. Ceux-ci portaient principalement sur la souplesse dâ€™utilisation, la personnalisation des parcours bÃ©nÃ©ficiaires, et la capacitÃ© Ã  intervenir rapidement sur le terrain. Pour y rÃ©pondre, des Ã©volutions fonctionnelles complÃ©mentaires ont Ã©tÃ© spÃ©cifiÃ©es par lâ€™Ã©quipe RI2S  pour un dÃ©veloppement rapide, sous forme dâ€™un prototype dâ€™application.
-
-Cette application a Ã©tÃ© pensÃ©e comme un module Ã©volutif , destinÃ© Ã  faciliter :
-\begin{itemize}
-    \item Lâ€™ajout rapide de bÃ©nÃ©ficiaires ,
-    \item Le suivi pluridisciplinaire par des intervenants de terrain,
-    \item Lâ€™adaptation des formulaires Ã  diffÃ©rents contextes dâ€™expÃ©rimentation.
-    \item La visualisation des personnes impliquÃ©es dans le processus, ainsi que la possibilitÃ© de filtrer les rÃ©sultats selon diffÃ©rents critÃ¨res (rÃ´le, statut, etc.), permettent une lecture rapide et ciblÃ©e des informations.
-\end{itemize}
-
-
-\subsection{Objectifs fonctionnels}
-
-
-Lâ€™application a Ã©tÃ© conÃ§ue pour rÃ©pondre aux besoins concrets du suivi des bÃ©nÃ©ficiaires, en automatisant et structurant les tÃ¢ches clÃ©s du processus.
-Elle permet notamment :
-\begin{itemize}
-    \item La consultation centralisÃ©e du dossier du bÃ©nÃ©ficiaire
-    \item La saisie des observations de suivi, quâ€™elles soient cliniques ou sociales
-    \item Une visualisation claire du statut dâ€™inclusion et de lâ€™avancement du parcours
-    \item Un accÃ¨s rapide aux coordonnÃ©es des aidants associÃ©s
-\end{itemize}
-En parallÃ¨le, lâ€™application vise Ã  rÃ©duire la charge administrative, en remplaÃ§ant les supports papier et fichiers externes (comme les feuilles Excel), ce qui permet un gain de temps notable pour les intervenants. La centralisation des donnÃ©es et lâ€™accÃ¨s rapide Ã  lâ€™information rendent la consultation plus fluide, plus fiable, et mieux adaptÃ©e aux rÃ©alitÃ©s du terrain.
-
-Pour garantir un accompagnement efficace, le formulaire a Ã©tÃ© structurÃ© afin de guider les coordinateurs Ã  travers les diffÃ©rentes Ã©tapes du parcours. Lâ€™interface repose sur une logique de progression par statuts, permettant Ã  lâ€™utilisateur de suivre lâ€™historique des actions, de complÃ©ter les champs pertinents Ã  chaque phase, et de maintenir une continuitÃ© dans le suivi.
-
-Cette structuration renforce la coordination entre les membres de lâ€™Ã©quipe, assure la traÃ§abilitÃ© des informations, et favorise une appropriation cohÃ©rente des outils. Elle sâ€™aligne Ã©galement sur le processus dâ€™inclusion dÃ©jÃ  mis en Å“uvre dans RI2S, afin dâ€™assurer une continuitÃ© des pratiques.
-
-Enfin, une interface dÃ©diÃ©e a Ã©tÃ© dÃ©veloppÃ©e pour permettre lâ€™ajout de nouvelles expÃ©rimentations. Lors de la crÃ©ation dâ€™un projet, le gestionnaire peut configurer les statuts du parcours ainsi que les donnÃ©es Ã  collecter Ã  chaque Ã©tape (initialisation, suivi, clÃ´ture, etc.). Cette souplesse permet dâ€™adapter lâ€™application aux spÃ©cificitÃ©s de chaque expÃ©rimentation, tout en conservant une structure homogÃ¨ne Ã  lâ€™Ã©chelle de la plateforme.
-
-\subsection{Ã‰tude conceptuelle de lâ€™application }
-
-Pour Ã©laborer cette application, nous devons Ã©tablir une conception modeste pour atteindre le but de notre projet, pour cela nous devons choisir un langage de modÃ©lisation adaptable avec nos besoins. Donc, nous avons optÃ© pour le langage UML :
-\subsubsection{Langage de modÃ©lisation UML}
-UML est un langage de modÃ©lisation qui permet de reprÃ©senter graphiquement les besoins des utilisateurs. Il est attribuÃ© Ã  lâ€™architecture,la conception et la mise en oeuvre de systÃ¨mes logiciels complexes par leur structure aussi bien que leur comportement.
+Ces listes SharePoint, une fois disponibles, doivent encore être nettoyées, mises en 
+cohérence et articulées entre elles avant de pouvoir alimenter un modèle de restitution fiable 
+— c'est le rôle de la couche ETL (Extract, Transform, Load : extraction, transformation et 
+chargement des données) de la chaîne, assurée par Alteryx. Les traitements Alteryx 
+permettent de préparer plusieurs ensembles de données structurés selon leur fonction et leur 
+granularité, qui alimentent ensuite le modèle sémantique Power BI, dans lequel sont définies 
+les relations et les mesures nécessaires à la restitution. 
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.25\textwidth]{logos/UML.png}}
-    \caption{Le CHIC membre du consortium}
+    \boxedfullwidthimage{cover/figures/Architecture_générale_de_la_chaîne_de_traitement_IPANEMA.png}
+    \caption{Architecture générale de la chaîne de traitement IPANEMA.}
+    \label{Architecture_générale_de_la_chaîne_de_traitement_IPANEMA}
 \end{figure}
 
-
-
-\subsubsection{Diagramme de cas dâ€™utilisation}
-Le diagramme de cas dâ€™utilisation constitue la premiÃ¨re Ã©tape de lâ€™analyse UML en :
-\begin{itemize}
-    \item ModÃ©lisant les besoins des utilisateurs.
-    \item Identifiant les grandes fonctionnalitÃ©s et les limites du systÃ¨me.
-    \item ReprÃ©sentant les interactions entre le systÃ¨me et ses utilisateurs.
-\end{itemize}
-La figure ci-dessous reprÃ©sente le diagramme de cas dâ€™utilisation global de notre projet :
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=0.85\textwidth]{cover/figures/UseCaseDiagram1.png}}
-    \caption{Diagramme de cas dâ€™utilisation}
-\end{figure}
-
-\subsubsection{ ModÃ¨le conceptuel de donnÃ©es}
-Le ModÃ¨le Conceptuel de DonnÃ©es (MCD) permet de reprÃ©senter de maniÃ¨re abstraite les donnÃ©es manipulÃ©es par le systÃ¨me, indÃ©pendamment de toute considÃ©ration technique ou de langage de programmation. Il dÃ©crit les entitÃ©s principales, leurs attributs ainsi que les relations entre elles, avec leurs cardinalitÃ©s. 
-
-Dans notre contexte, le MCD illustre clairement comment les usagers RI2S, les expÃ©rimentations, les statuts, les champs personnalisÃ©s et les rattachements interagissent. Cette modÃ©lisation est essentielle pour structurer la base de donnÃ©es, garantir la cohÃ©rence des informations, et faciliter la comprÃ©hension mÃ©tier du fonctionnement global du systÃ¨me.
+Le changement réalisé ne se résume donc pas au remplacement de Tableau par Power 
+BI. Il repose également sur une refonte de la manière dont les données sont préparées et 
+organisées avant leur restitution. 
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.9\textwidth]{mcd_chic.drawio.png}}
-    \caption{ModÃ¨le conceptuel de donnÃ©es}
+    \boxedfullwidthimage{cover/figures/Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres.png}
+    \caption{Comparaison de l'architecture Data et décisionnelle d'IPANEMA avant et après la refonte}
+    \label{Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres}
 \end{figure}
 
-\subsection{Technologies et outils utilisÃ©s}
-Mon projet repose sur une pile technologique moderne, cohÃ©rente et adaptÃ©e aux contraintes de dÃ©veloppement et aux exigences de lâ€™application. Chaque technologie a Ã©tÃ© sÃ©lectionnÃ©e avec attention pour son efficacitÃ©, sa stabilitÃ© et sa compatibilitÃ© avec mes compÃ©tences.
+Les sections suivantes détaillent, brique par brique, les choix retenus pour cette nouvelle 
+architecture : la refonte de la préparation des données sous Alteryx, puis la construction du 
+modèle sémantique et des mesures associées dans Power BI.
 
+\subsection{Refonte de la préparation des données}
+Conformément au principe retenu en 2.5.1, le nouveau workflow Alteryx ne produit plus 
+une table unique, mais six tables de sortie distinctes, chacune correspondant à un grain métier 
+précis : DIM\_Campaign, DIM\_Criteria, DIM\_Partners, DIM\_Projects, FACT\_Evaluation et 
+FACT\_PartnerRisks. Cette organisation en containers séparés, chacun dédié à la construction 
+d'une table, remplace la logique de jointures en cascade décrite en 2.3.2 et permet de traiter 
+indépendamment la préparation de chaque entité avant sa restitution dans Power BI. \\
 
- \subsubsection{Frontend }
-Le dÃ©veloppement de lâ€™interface utilisateur a Ã©tÃ© rÃ©alisÃ© en JavaScript natif sans framework, afin de conserver un contrÃ´le total sur le rendu graphique et le comportement des composants. Ce choix permet dâ€™obtenir une interface lÃ©gÃ¨re, rapide et entiÃ¨rement maÃ®trisÃ©e.
-
-Cette couche frontend a Ã©tÃ© conÃ§ue pour Ãªtre parfaitement interopÃ©rable avec la partie backend dÃ©veloppÃ©e en Django. Lâ€™Ã©change des donnÃ©es se fait via des appels Ã  une API REST, assurant une bonne sÃ©paration des responsabilitÃ©s entre la prÃ©sentation (frontend) et la logique mÃ©tier (backend).
-\begin{figure}[H]
-    \centering
-    \begin{minipage}[t]{0.22\linewidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth]{logos/js.png}}
-        \caption{JavaScript}
-    \end{minipage}
-    \hspace{1cm}
-    \begin{minipage}[t]{0.22\linewidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth]{logos/html.png}}
-        \caption{HTML}
-    \end{minipage}
-    \hspace{1cm}
-    \begin{minipage}[t]{0.22\linewidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth]{logos/css.png}}
-        \caption{CSS}
-    \end{minipage}
-\end{figure}
-
-\begin{itemize}
-    \item \textbf{JavaScript} : langage principal utilisÃ© pour crÃ©er une interface interactive sans dÃ©pendance Ã  un framework externe.
-    \item \textbf{HTML/CSS} : structuration et stylisation des pages, avec une attention portÃ©e Ã  la lisibilitÃ©, Ã  lâ€™ergonomie et Ã  lâ€™accessibilitÃ©.
-\end{itemize}
-
-
-
-\subsubsection{Backend / API}
-
-La partie backend de lâ€™application repose sur le framework "Django", choisi pour sa fiabilitÃ©, sa structure modulaire et sa capacitÃ© Ã  accÃ©lÃ©rer le dÃ©veloppement web. Pour la mise en place de lâ€™API RESTful, "Django REST Framework" a Ã©tÃ© utilisÃ©, permettant dâ€™exposer des endpoints clairs, sÃ©curisÃ©s et maintenables. Afin de faciliter lâ€™intÃ©gration et les tests, la documentation technique de lâ€™API est gÃ©nÃ©rÃ©e automatiquement via Swagger.
+Le workflow respecte le standard documentaire en vigueur au sein de l'équipe, appliqué 
+systématiquement à l'ensemble des flux Alteryx développés : un en-tête normalisé précise 
+l'objectif du workflow, son statut d'avancement, son numéro de version et sa durée d'exécution, 
+tandis qu'une structure de répertoires commune (IN, OUT, TEMP, DOC) organise ses fichiers d'entrée, de sortie et de travail. Cette convention, en garantissant une prise en main homogène 
+d'un workflow à l'autre au sein de l'équipe, répond directement à l'exigence de maintenabilité 
+identifiée en 2.4.3 (E06).
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}[t]{0.25\linewidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth]{logos/django.png}}
-        \caption{Django}
-    \end{minipage}
-    \hspace{1.5cm}
-    \begin{minipage}[t]{0.25\linewidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth]{logos/dj-rest.png}}
-        \caption{Django REST Framework}
-    \end{minipage}
-    \hspace{1.5cm}
-    \begin{minipage}[t]{0.25\linewidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth]{logos/swagger.png}}
-        \caption{Swagger}
-    \end{minipage}
+    \boxedfullwidthimage{cover/figures/documentaire_standard_appliqué_au_workflow_DS_IPANEMA.png}
+    \caption{En-tête documentaire standard appliqué au workflow DS\_IPANEMA, conforme à la convention utilisée par l'équipe sur l'ensemble de ses flux Alteryx}
+    \label{documentaire_standard_appliqué_au_workflow_DS_IPANEMA}
 \end{figure}
 
-\begin{itemize}
-    \item \textbf{Django (Python)} : serveur applicatif principal, garantissant structure, performance et sÃ©curitÃ©.
-    \item \textbf{Django REST Framework} : construction de lâ€™API REST avec gestion des sÃ©rialisations, permissions et pagination.
-    \item \textbf{Swagger} : documentation interactive gÃ©nÃ©rÃ©e automatiquement pour faciliter les tests et lâ€™intÃ©gration cÃ´tÃ© client.
-\end{itemize}
-
-
-\subsubsection{Base de donnÃ©es}
-
-Le systÃ¨me de gestion de base de donnÃ©es utilisÃ© pour ce projet est PostgreSQL, une solution relationnelle robuste, performante et largement utilisÃ©e dans les environnements professionnels. Pour lâ€™administration de la base, lâ€™outil graphique "pgAdmin" a Ã©tÃ© employÃ©, facilitant la visualisation des donnÃ©es, lâ€™exÃ©cution des requÃªtes et la gestion des schÃ©mas.
+La plupart des tables partagent une même difficulté initiale, liée au format des identifiants issus 
+des listes SharePoint : ces champs comportent, du fait du fonctionnement interne de 
+SharePoint, un préfixe numérique suivi de ";\#" avant la valeur réellement exploitable. Une 
+expression régulière est donc appliquée systématiquement en amont, sur l'ensemble des 
+tables concernées, pour extraire la valeur utile et fiabiliser les clés de rapprochement.
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}[t]{0.25\linewidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth]{logos/postgre.png}}
-        \caption {PostgreSQL}
-    \end{minipage}
-    \hspace{1.5cm}
-    \begin{minipage}[t]{0.25\linewidth}
-        \centering
-        \fbox{\includegraphics[width=\linewidth]{logos/pgadmin.png}}
-        \caption {pgAdmin}
-    \end{minipage}
+    \boxedfullwidthimage{cover/figures/Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe.png}
+    \caption{Formule REGEX\_Replace appliquée pour nettoyer le préfixe technique des identifiants SharePoint (exemple sur Projects\_refPartnairID).}
+    \label{Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe}
 \end{figure}
 
-\begin{itemize}
-    \item \textbf{PostgreSQL} : base de donnÃ©es relationnelle utilisÃ©e pour stocker et organiser lâ€™ensemble des donnÃ©es mÃ©tier.
-    \item \textbf{pgAdmin} : interface graphique facilitant lâ€™administration, la requÃªte et lâ€™analyse des donnÃ©es.
-\end{itemize}
+C'est la construction de DIM\_Partners qui a demandé le traitement le plus approfondi, 
+car elle combine plusieurs sources hétérogènes : la liste des partenaires elle-même, les 
+référentiels de sous-traitance et de sous-type d'activité, ainsi qu'un extrait TrackWise. Ce 
+dernier a nécessité un travail de mise en forme préalable à son intégration, les lignes du fichier 
+source étant découpées de manière imprévisible par des sauts de ligne : il a fallu les recoller, 
+éclater les colonnes séparées par un caractère pipe, promouvoir la première ligne comme en
+tête, puis convertir les dates d'accord qualité dans un format exploitable. Une déduplication a 
+ensuite été appliquée pour ne conserver, par Tierce Partie, que l'enregistrement le plus récent 
+tout en conservant les lignes présentant des statuts différents, conformément à une demande 
+explicite de l'équipe Qualité soucieuse de ne pas masquer un changement de statut réel. Les 
+enregistrements dépourvus d'identifiant partenaire valide ont enfin été écartés avant la jointure 
+finale. \\
 
+La table FACT\_Evaluation, quant à elle, rapproche les évaluations de critères, les 
+évaluations elles-mêmes et les projets évalués associés, chacun préalablement nettoyé de 
+ses identifiants techniques, pour aboutir à une table de faits dont le grain correspond à une 
+note attribuée à un critère dans le cadre d'une évaluation donnée. \\
 
-\subsubsection{ Environnement de dÃ©veloppement}
+Plusieurs containers intègrent enfin une étape de contrôle explicite avant leur sortie, 
+matérialisée par un message d'alerte destiné à l'équipe Qualité en cas de champ requis laissé 
+vide. Cette vérification répond directement à l'anomalie de confusion entre valeur manquante 
+et note attribuée, décrite en 2.3.3 : elle permet de détecter une donnée incomplète avant qu'elle 
+n'atteigne la couche de restitution, plutôt que de la laisser interprétée par défaut comme une 
+valeur favorable. \\
 
-Le dÃ©veloppement de lâ€™application a Ã©tÃ© rÃ©alisÃ© dans un environnement lÃ©ger et flexible, permettant une bonne productivitÃ© tout en restant simple Ã  configurer. Lâ€™Ã©diteur de code utilisÃ© est "Visual Studio Code", reconnu pour sa rapiditÃ©, son interface ergonomique et son vaste catalogue dâ€™extensions adaptÃ©es Ã  JavaScript, Python et Ã  la gestion de projets modernes.
+Les six tables produites sont finalement exportées au format Excel et publiées dans la 
+zone d'échange du serveur d'entreprise, dans un répertoire réseau dédié au projet IPANEMA, 
+avec conservation d'une sauvegarde de la version précédente pour chaque table. Ce 
+répertoire constitue la source à laquelle se connecte directement Power BI, assurant la 
+continuité entre la préparation des données sous Alteryx et leur exploitation dans le modèle 
+sémantique : une organisation qui répond également à l'exigence d'actualisation quotidienne 
+identifiée en 2.4.3 (E04), le rafraîchissement du workflow Alteryx alimentant directement les 
+fichiers sources consultés par Power BI.
+
+\subsection{Choix du modèle sémantique}
+En modélisation décisionnelle, on distingue classiquement deux types de tables. Les 
+tables de dimension décrivent le "qui, quoi, quand" d'un processus métier : elles portent les 
+informations descriptives et stables, qu'on utilise pour filtrer ou regrouper une analyse. Ici, un 
+partenaire, un critère, une campagne, un projet. Les tables de faits, à l'inverse, portent les 
+événements mesurables : les données qui varient et qu'on cherche à quantifier ou à agréger, 
+comme une note attribuée ou un niveau de risque calculé. Une dimension se lit comme un 
+référentiel ("qui sont mes partenaires ?"), une table de faits comme un journal d'événements 
+("quelles notes ont été attribuées ?"). Cette distinction structure l'ensemble du modèle 
+sémantique construit pour IPANEMA. \\
+
+Les six tables produites par le workflow Alteryx sont ainsi organisées, dans Power BI, 
+selon un modèle en constellation : plusieurs tables de faits reliées à des dimensions 
+communes.
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{@{} l l X l @{}}
+\hline
+\textbf{Table} & \textbf{Type} & \textbf{Grain (1 ligne =)} & \textbf{Clé} \\
+\hline
+DIM\_Campaign & Dimension & 1 campagne d'évaluation annuelle & \texttt{Campaign\_ID} \\
+DIM\_Criteria & Dimension & 1 critère d'évaluation & \texttt{Criteria\_ID} \\
+DIM\_Partners & Dimension & 1 Tierce Partie & \texttt{Partners\_ID} \\
+DIM\_Projects & Dimension & 1 projet, rattaché à un partenaire & \texttt{Projects\_ID} \\
+\hline
+FACT\_Evaluation & Fait & 1 note attribuée à un critère, dans une évaluation & \texttt{CriteriaEvaluation\_ID} \\
+FACT\_PartnerRisks & Fait & 1 niveau de risque pour un partenaire, dans une campagne & \parbox[t]{4.5cm}{\texttt{PartnerRisks\_refPartner Id} \\ + \texttt{PartnerRisks\_refCampaign Id}} \\
+\hline
+\end{tabularx}
+\caption{Description des tables de dimensions et de faits du modèle sémantique}
+\end{table}
+
+À ces six tables s'ajoutent trois tables techniques : Measure, conteneur des mesures 
+DAX, DIM\_Calendar, pour les analyses temporelles, et Last Refresh, qui expose la date 
+d'actualisation du modèle.
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.25\linewidth]{cover/figures/logo_vscode.jpg}}
-    \caption { Logo Visual Studio Code}
+    \boxedfullwidthimage{cover/figures/Modèle_sémantique_Power_BI_relations_entre_les_tables .png}
+    \caption{ Modèle sémantique Power BI : relations entre les tables de dimension et les deux tables de faits.}
+    \label{Modèle_sémantique_Power_BI_relations_entre_les_tables}
 \end{figure}
 
-\begin{itemize}
-    \item \textbf{Visual Studio Code} : environnement de dÃ©veloppement lÃ©ger, personnalisable, et adaptÃ© au travail sur des projets web fullstack.
-\end{itemize}
+Toutes les relations du modèle sont de type un-à-plusieurs, orientées des dimensions 
+vers les tables de faits : chaque ligne de dimension (un critère, un partenaire, une campagne, 
+un projet) peut être référencée par plusieurs lignes de faits, jamais l'inverse. Un même 
+partenaire est concerné par de nombreuses évaluations, mais chaque évaluation ne concerne 
+qu'un seul partenaire. Cette discipline garantit que les filtres appliqués sur une dimension se 
+propagent correctement vers les mesures calculées, sans risque d'ambiguïté dans les 
+agrégations.\\
 
+FACT\_Evaluation, la table la plus dense du modèle, se relie à quatre dimensions : 
+DIM\_Criteria, DIM\_Projects, DIM\_Partners et DIM\_Campaign, chaque note de critère héritant 
+ainsi du contexte complet de l'évaluation à laquelle elle appartient. \\
 
+FACT\_PartnerRisks, de grain plus agrégé, ne se relie qu'à DIM\_Partners et 
+DIM\_Campaign, cohérent avec son niveau de synthèse par partenaire et par campagne plutôt 
+que par critère individuel. Les deux tables de faits ne sont pas reliées directement entre elles : leur rapprochement, lorsqu'il est nécessaire pour une analyse croisée, s'effectue par 
+l'intermédiaire des dimensions partagées : c'est la structure même d'un modèle en 
+constellation, par opposition à un modèle en étoile qui n'aurait qu'une seule table de faits 
+centrale. \\
 
-    
+DIM\_Criteria illustre par ailleurs comment le modèle répond à l'exigence d'historisation 
+identifiée en 2.2.3 : une pondération de critère peut être révisée d'une campagne à l'autre, 
+mais cette révision ne doit jamais modifier rétroactivement le résultat des évaluations 
+passées. Le modèle y répond en conservant, pour chaque campagne, une copie du critère 
+propre à cette campagne — identifiée par un identifiant élevé (520 et suivants) et rattachée 
+via Criteria\_refCampaign Id — distincte des critères de base (identifiants 1 à 15, sans 
+campagne associée). Chaque évaluation reste ainsi liée à la version du critère, et donc à la 
+pondération, qui était réellement en vigueur au moment où elle a été réalisée, garantissant 
+qu'un changement de règle en 2025 ne vienne pas fausser rétroactivement le niveau de 
+risque calculé pour une évaluation de 2024. 
 
-  %=====================================%
- \subsection{Organisation et gestion de lâ€™intÃ©gration et du versioning }
+\begin{figure}[H]
+    \centering
+    \boxedfullwidthimage{cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png}
+    \caption{Table DIM\_Criteria triée par Criteria\_refCampaign Id : coexistence des critères par défaut et de leurs copies versionnées par campagne.}
+    \label{Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id}
+\end{figure}
+
+Ce mécanisme de versionnement, bien qu'invisible pour l'utilisateur final du dashboard, 
+constitue l'un des apports les plus significatifs de la refonte : il transforme une règle métier 
+implicite (la nécessité de préserver l'historique des évaluations) en une propriété structurelle 
+du modèle de données, plutôt que de la laisser reposer sur une vigilance manuelle lors de 
+chaque mise à jour des critères.
+
+\subsection{ Mesures DAX principales}
+
+Le modèle sémantique s'appuie sur un ensemble de mesures DAX, centralisées dans la 
+table technique Measure (cf. 2.5.4), qui traduisent en calculs exploitables les règles métier 
+identifiées tout au long de ce chapitre. Quatre d'entre elles illustrent la diversité des logiques 
+mises en œuvre. \\
+
+Note\_Moyenne\_Critere calcule la moyenne des notes attribuées sur FACT\_Evaluation, 
+en excluant explicitement les critères au statut "non évalué" — quelle que soit la variante du 
+libellé rencontrée (cf. 2.3.3, anomalie identifiée sur la colonne refEvaluationLevel). Cette 
+mesure constitue l'application directe, au niveau du modèle, de la distinction entre absence 
+d'évaluation et note réellement attribuée qui a structuré une grande partie du diagnostic et de 
+la conception.
+
+\textbf{Figure X — Mesure DAX Note\_Moyenne\_Critere : exclusion des critères non évalués du calcul.}
+
+Nb\_Partenaires compte le nombre de partenaires distincts présents dans 
+FACT\_Evaluation, à partir de la clé Evaluation\_refPartner. Cette mesure, plus simple dans 
+sa logique, sert de brique de base à plusieurs indicateurs de synthèse du dashboard.
+
+\textbf{Figure X — Mesure DAX Nb\_Partenaires : comptage distinct des partenaires évalués.}
+
+Global\_Satisfaction\_Ratio exprime, en pourcentage, la part des partenaires évalués sur 
+l'ensemble des partenaires enregistrés dans le modèle. La mesure calcule d'abord un total 
+de référence — le nombre de partenaires distincts, indépendamment de tout filtre actif, grâce 
+à la fonction ALL — puis rapporte à ce total le nombre de partenaires distincts dans le 
+contexte de filtre courant. Cette construction en deux temps permet au ratio de rester 
+interprétable même lorsque l'utilisateur filtre le dashboard sur une campagne ou une Tierce 
+Partie spécifique, le dénominateur restant fixe.
+
+\textbf{Figure X — Mesure DAX Global\_Satisfaction\_Ratio : calcul du ratio à dénominateur fixe.}
+
+RCP\_CDMO\_Level traduit directement, sous forme de mesure, la logique de seuils 
+définie dans le cahier des charges pour classer le niveau de RCP des Tierces Parties de 
+type CDMO (cf. 2.2.3) : en fonction de la valeur moyenne obtenue, la mesure restitue LOW, 
+MEDIUM ou HIGH selon les bornes définies, avec une valeur de repli explicite ("PROBLEME - PAS POSSIBLE") en cas de configuration imprévue — une sécurité qui permet de détecter 
+immédiatement un cas de figure non couvert par la règle initiale plutôt que de le laisser 
+passer silencieusement.
+
+\textbf{Figure X — Mesure DAX RCP\_CDMO\_Level : classification du niveau de RCP par seuils.}
+
+Ces quatre mesures illustrent la diversité des besoins couverts par le modèle : filtrage 
+conditionnel des données manquantes, agrégation simple, calcul de ratio à dénominateur 
+fixe, et classification par seuils — autant de logiques qui, dans l'ancienne architecture, 
+auraient dû être recalculées ou dupliquées à chaque niveau de la chaîne, alors qu'elles sont 
+ici définies une seule fois et appliquées uniformément à l'ensemble des vues du dashboard, 
+conformément au principe de centralisation décrit en 2.6.2.
+
+\section{Choix technologiques}
+\subsection{Répartition des traitements entre Alteryx et Power Query}
+Le choix de conserver Alteryx comme outil de préparation des données, plutôt que de 
+reporter l'ensemble des traitements sur Power Query au sein même de Power BI, repose sur 
+plusieurs considérations techniques et organisationnelles.
+\\
+
+Le flux Alteryx existant assurait déjà l'interface avec les sources de données (listes 
+SharePoint et export TrackWise) et intégrait la logique de récupération et de première 
+transformation de ces données. Retravailler ce flux déjà en place représentait une démarche 
+moins risquée et plus rapide que de reconstruire l'ensemble de la chaîne de préparation à 
+partir de zéro dans Power Query.\\
+
+Ce choix répond également à un principe de séparation des responsabilités entre la 
+préparation des données et leur restitution. En conservant la logique de structuration dans 
+Alteryx, indépendamment de l'outil de visualisation utilisé en aval, les traitements de 
+préparation restent réutilisables si l'environnement décisionnel du groupe venait à évoluer de 
+nouveau (comme cela a déjà été le cas lors du passage de Tableau à Power BI). \\
+
+Cette répartition permet enfin de décharger le moteur Power Query de Power BI des 
+transformations les plus lourdes, notamment le rapprochement et la structuration des dix-neuf 
+sources selon leur granularité. Les calculs relatifs aux niveaux de risque RI, RCP et RG sont 
+quant à eux réalisés directement dans Power BI, au moyen de mesures DAX s'appuyant sur 
+le modèle sémantique. C’est un choix qui permet de conserver ces calculs au plus près des 
+données restituées et de bénéficier du recalcul dynamique en fonction des filtres appliqués 
+par l'utilisateur.
+
+\subsection{Choix de Power BI}
+
+La migration du reporting de Tableau vers Power BI s'inscrit dans une évolution engagée 
+à l'échelle du groupe : la stratégie SI de Pierre Fabre, combinée à une analyse budgétaire et 
+aux fonctionnalités offertes par Power BI, ainsi qu'à son intégration native avec l'écosystème 
+Microsoft déjà largement déployé au sein du groupe, conduit à une migration progressive vers 
+cet outil. \\
+
+Au-delà de ce contexte stratégique, deux caractéristiques techniques de Power BI se 
+sont révélées particulièrement adaptées aux besoins du projet. D'une part, Power BI prend 
+nativement en charge les modèles construits autour de plusieurs tables de faits reliées à des 
+dimensions communes : la structure en constellation retenue en 2.5.4 pour distinguer 
+FACT\_Evaluation et FACT\_PartnerRisks. Une telle architecture est plus difficile à mettre en 
+œuvre de façon fiable sous Tableau, où le rapprochement de plusieurs tables de faits sur des 
+dimensions partagées peut produire des résultats inattendus. \\
+
+D'autre part, Power BI centralise les mesures DAX au niveau du modèle sémantique : 
+une fois qu'un indicateur (un niveau de RI, de RCP ou de RG) y est défini, sa logique de 
+calcul s'applique de façon identique à l'ensemble des vues qui l'utilisent. Cette centralisation 
+constitue une réponse structurelle à l'anomalie identifiée en 2.3.3 sur l'indicateur de 
+satisfaction Innovation de Cebiphar, où l'écart observé entre Tableau et Power BI provenait 
+précisément d'une logique de calcul définie séparément au niveau de chaque vue, plutôt que 
+centralisée. En construisant les indicateurs de risque comme des mesures uniques au 
+niveau du modèle, le nouveau dashboard prévient structurellement ce type de divergence 
+entre les différentes restitutions.
+
+\section{Restitution et interfaces}
+\subsection{Vues du dashboard}
+
+Le dashboard Power BI restitue les données préparées selon douze vues, accessibles 
+depuis une page d'accueil commune. Cette organisation reprend, en les faisant évoluer, 
+les principales vues déjà disponibles sous Tableau, tout en intégrant les corrections 
+issues du diagnostic présenté en 2.3. \\
+
+Home Page présente le contexte de l'outil, un bouton d'information détaillant son 
+objectif, la date de dernière actualisation du modèle, ainsi qu'un menu de navigation 
+vers l'ensemble des autres vues, organisées par thème.
+
+\begin{figure}[H]
+    \centering
+    \boxedfullwidthimage{cover/figures/Page_d'accueil_du_dashboard_Power_BI_IPANEMA.png}
+    \caption{Page d'accueil du dashboard Power BI IPANEMA, avec menu de navigation vers l'ensemble des vues. }
+    \label{Page_d'accueil_du_dashboard_Power_BI_IPANEMA}
+\end{figure}
+
+All Results TP offre une vision transversale d'une Tierce Partie sélectionnée : 
+satisfaction moyenne globale, statut de satisfaction qualitatif, points forts et axes 
+d'amélioration remontés lors des évaluations, accords qualité associés, satisfaction 
+détaillée par critère, et liste des projets évalués. C'est la vue la plus dense du 
+dashboard, pensée comme point d'entrée synthétique sur un partenaire donné.
+
+\begin{figure}[H]
+    \centering
+    \boxedfullwidthimage{cover/figures/All_results_TP.png}
+    \caption{Vue "All Results TP" : synthèse transversale d'une Tierce Partie sélectionnée.}
+    \label{All_results_TP}
+\end{figure}
+
+Risk Intrinsink (RI) restitue la répartition des Tierces Parties par niveau de Risque 
+Intrinsèque (cf. 2.2.3), sous forme de graphique en anneau et d'histogramme par type 
+de tiers, complétés par un tableau détaillé listant chaque partenaire avec son type 
+d'activité et son niveau de RI (cf. Annexe 3). \\
+
+Risk Compliance \& Performance (RCP) — Tous (cf. Annexe 4) et RCP — CDMO (cf. 
+Annexe 5) présentent, selon la même logique de répartition, le niveau de RCP des 
+Tierces Parties. La vue "Tous" couvre l'ensemble des partenaires, tandis que la vue 
+"CDMO" isole les Tierces Parties de ce statut et introduit des indicateurs spécifiques à 
+leur mode de calcul (cf. 2.5.5, mesure RCP\_CDMO\_Level), reflétant la distinction de 
+traitement déjà identifiée dans les échanges avec l'équipe Qualité. \\
+
+Risk Global (RG) — Tous (cf. Annexe 6) et RG — CDMO suivent la même logique de 
+duplication pour le Risque Global, avec sur la vue "Tous" un histogramme distinguant 
+les quatre niveaux LOW à VERY HIGH issus de la grille de correspondance RI × RCP 
+(cf. 2.2.3). 
  
-  %--------------------------------%
-Le dÃ©veloppement de lâ€™application a Ã©tÃ© structurÃ© de maniÃ¨re rigoureuse afin dâ€™assurer la clartÃ©, la maintenabilitÃ© et la fiabilitÃ© du projet. Bien que rÃ©alisÃ© en autonomie, le projet a suivi une dÃ©marche mÃ©thodique inspirÃ©e des standards professionnels, notamment en matiÃ¨re dâ€™organisation du code, de gestion des versions et de suivi des tÃ¢ches.
-
-\subsubsection{Structure du projet}
-Lâ€™architecture du projet repose sur une sÃ©paration claire entre les diffÃ©rentes composantes :
-\begin{itemize}
-   \item \textbf{backend/} : contient les services applicatifs, les modÃ¨les, la gestion des droits dâ€™accÃ¨s, ainsi que les vues REST.
-    
-    \item \textbf{gestion/} : structure principale du projet Django, regroupant les paramÃ¨tres de configuration, les URL, et la dÃ©finition des applications.
-    
-    \item \textbf{media/} : rÃ©pertoire dÃ©diÃ© aux fichiers mÃ©dias gÃ©nÃ©rÃ©s ou utilisÃ©s par lâ€™application.
-    
-    \item \textbf{schema.json} : document dÃ©crivant la structure de lâ€™API ou des donnÃ©es Ã©changÃ©es.
-    
-    \item \textbf{db.sqlite3} : utilisÃ© uniquement en phase de dÃ©veloppement local avant connexion Ã  la base PostgreSQL.
-    
-    \item \textbf{requirements.txt} : liste des dÃ©pendances Python nÃ©cessaires au fonctionnement de lâ€™environnement.
-    
-    \item m\textbf{anage.py} : outil de gestion central du projet Django (migrations, serveur, administration, etc.).
-\end{itemize}
-Cette organisation facilite la comprÃ©hension du code, sa maintenance, et pose les bases dâ€™une application Ã©volutive.
-
-\subsubsection{Gestion de versions avec Git}
-Git a Ã©tÃ© utilisÃ© comme outil principal de gestion de version. Une branche principale (main) a servi de base stable pour lâ€™intÃ©gration des dÃ©veloppements. Chaque nouvelle fonctionnalitÃ© a fusionnÃ©e via une pull request aprÃ¨s vÃ©rification et tests.
-\begin{itemize}
 \begin{figure}[H]
-        \centering
-        \begin{minipage}[t]{0.20\linewidth}
-            \centering
-            \fbox{\includegraphics[width=\linewidth]{git-logo.png}}
-            \caption{Logo Git}
-            \label{fig:logo-git}
-        \end{minipage}
-        \hspace{1cm}
-        \begin{minipage}[t]{0.20\linewidth}
-            \centering
-            \fbox{\includegraphics[width=\linewidth]{GitHub-logoo.png}}
-            \caption{Logo GitHub}
-            \label{fig:logo-github}
-        \end{minipage}
-    \end{figure}
+    \centering
+    \boxedfullwidthimage{cover/figures/Vue_Risk_Global_(RG)_CDMO.png}
+    \caption{Vue "Risk Global (RG) — CDMO" : répartition du Risque Global pour les Tierces Parties de statut CDMO.}
+    \label{Vue_Risk_Global_(RG)_CDMO}
+\end{figure}
 
-    \item Git + GitHub : assurent la gestion de versions, la collaboration entre dÃ©veloppeurs, et le suivi structurÃ© des Ã©volutions du projet.gestion de versions, collaboration et intÃ©gration continue.
+TP Qualification Status restitue la répartition des Tierces Parties selon leur statut de 
+qualification TrackWise (qualifiée, en attente de qualification), avec un tableau 
+détaillant, pour chaque partenaire, son statut actuel et le commentaire d'audit associé 
+— une vue directement concernée par la correction apportée sur la sélection du dernier 
+enregistrement en date (cf. 2.4.2, cf. Annexe 7). \\
+
+Evaluated Projects List liste l'ensemble des projets évalués par Tierce Partie, avec leurs 
+références commerciales, leur statut d'avancement et les commentaires associés (cf. 
+Annexe 8).
+
+Quality Agreements recense, pour chaque Tierce Partie, l'existence et les 
+caractéristiques de son accord qualité TrackWise, croisées avec son niveau de risque 
+intrinsèque et son statut de qualification (cf. Annexe 9). \\
+
+Satisfaction (cf. Annexe 10) et Global Satisfaction restituent la satisfaction par critère et 
+la satisfaction globale, comparées entre Tierces Parties sous forme d'histogrammes à 
+mise en forme conditionnelle, avec un avertissement explicite rappelant le sens de 
+lecture de l'échelle colorée — une précaution née de l'ambiguïté potentielle entre 
+satisfaction et insatisfaction relevée lors des échanges avec les utilisateurs. 
+
+\begin{figure}[H]
+    \centering
+    \boxedfullwidthimage{cover/figures/Vue_Global_Satisfaction.png}
+    \caption{Vue "Global Satisfaction" : comparaison de la satisfaction globale entre Tierces Parties.}
+    \label{Vue_Global_Satisfaction}
+\end{figure}
+
+Ces douze vues, prises ensemble, couvrent l'ensemble des besoins fonctionnels 
+identifiés en 2.4.2 : elles retracent les niveaux de risque, la satisfaction, le statut de 
+qualification et les projets évalués pour chaque Tierce Partie, dans un environnement 
+dont l'accès et la publication sont détaillés ci-après.
+
+\subsection{Environnement de développement et sécurisation}
+
+Le développement du dashboard s'effectue en local, dans Power BI Desktop : chaque 
+nouvelle version est construite et testée avant d'être transmise à l'équipe Qualité pour 
+retour, selon la démarche itérative décrite en 1.5. Cette séparation entre 
+l'environnement de travail et la version consultée par les utilisateurs a notamment 
+permis d'intégrer les corrections successives — sur les couleurs, les filtres ou les 
+calculs — sans perturber l'usage du dashboard en cours de validation. \\
+
+La publication du dashboard sur le service Power BI ne relève cependant pas de mon 
+périmètre direct. Bien que techniquement en capacité de publier, cette action est 
+assurée par mon maître d'apprentissage, à qui l'accès de publication a été accordé 
+dans l'attente de la désignation d'un Data Product Owner sur ce périmètre — rôle prévu 
+par la gouvernance du groupe mais non encore attribué à ce stade. Cette organisation 
+répond à une logique visant à centraliser la publication auprès d'un responsable 
+identifié par produit de données, afin d'éviter la prolifération de dashboards redondants 
+ou obsolètes — une dérive déjà observée sous l'ancien environnement Tableau. La 
+publication du workflow Alteryx suit en revanche une logique différente : celle-ci reste 
+sous ma responsabilité directe, le workflow alimentant ensuite le dashboard une fois 
+publié. \\
+
+L'accès au dashboard publié est restreint à une liste d'utilisateurs définie en amont, 
+plutôt qu'ouvert à l'ensemble des collaborateurs disposant d'une licence Power BI. 
+Cette restriction répond à un double enjeu : garantir que seules les personnes 
+concernées par le suivi des Tierces Parties consultent des données de risque et de 
+qualité sensibles, et éviter la dispersion des usages qui avait progressivement rendu 
+l'ancien environnement Tableau difficile à maintenir.
+
+\section{Préparation du recettage}
+
+Le développement de la solution étant arrivé à son terme sur le plan fonctionnel et technique 
+(cf. 1.4), la dernière étape avant la mise en production consiste à soumettre le dashboard à 
+une recette fonctionnelle élargie à l'ensemble des profils utilisateurs d'IPANEMA. \\
+
+Une première phase de test a pu être menée par l'équipe Qualité pendant ma mobilité 
+internationale, avant la période des congés estivaux — une organisation qui a permis de ne 
+pas interrompre totalement la dynamique de validation malgré mon indisponibilité sur cette 
+période (cf. chapitre 3, planning). L'organisation de la recette élargie à l'ensemble des profils 
+utilisateurs, sous forme d'ateliers dédiés, a en revanche été décalée à la rentrée, en raison 
+des contraintes de calendrier propres à la période estivale. \\
+
+Le principe retenu pour cette recette élargie consiste à organiser des demi-journées d'ateliers 
+dédiés, plutôt qu'une validation à distance ou asynchrone. Ce choix répond à la nature des 
+données restituées par IPANEMA : les indicateurs de risque et de satisfaction gagnent à être 
+interprétés collectivement, avec la possibilité d'échanger immédiatement sur un résultat 
+inattendu plutôt que de le signaler après coup. \\
+
+Chaque atelier sera construit autour de scénarios représentatifs des usages d'IPANEMA, 
+définis pour chaque profil utilisateur identifié en 2.2.1 — Administrateur, Assurance Qualité, 
+Cotateur et Consultation. Cette approche par scénario permet de vérifier la solution non pas 
+de manière exhaustive, critère par critère, mais du point de vue de l'usage réel qu'en fera 
+chaque type d'utilisateur, en cohérence avec les besoins recueillis en 2.4.2. 
+\\
+Trois axes de vérification structureront ces ateliers :
+
+\begin{itemize}[label=\textbullet, leftmargin=*]
+    \item \textbf{la cohérence des données}, en confrontant les valeurs restituées par le dashboard à des cas connus, selon la même démarche que celle appliquée à l'exemple Cebiphar (cf. 2.3.3) ;
+    \item \textbf{la conformité des indicateurs}, en vérifiant que les niveaux de RI, RCP et RG calculés respectent les règles métier définies dans le cahier des charges (cf. 2.2.3) ;
+    \item \textbf{l'adéquation du dashboard avec les usages métier}, en évaluant si chaque vue répond effectivement au besoin identifié pour le profil concerné.
 \end{itemize}
-Lâ€™utilisation de GitHub a permis de relier les fonctionnalitÃ©s aux correctifs, et dâ€™assurer un suivi structurÃ© du projet.
 
+Les retours déjà recueillis lors de la première phase de test, ainsi que ceux qui seront collectés 
+lors des ateliers à venir, permettront de distinguer deux catégories d'action : les anomalies 
+devant être corrigées avant la mise en production, et les demandes d'amélioration relevant 
+d'une évolution ultérieure de la solution, susceptibles d'alimenter les versions suivantes 
+évoquées dans les échanges avec l'équipe Qualité (cf. 2.4.2). \\
 
-  %--------------------------------%
-Le dÃ©veloppement de lâ€™application sâ€™est appuyÃ© sur un socle technologique moderne, cohÃ©rent et Ã©volutif. Les choix techniques rÃ©alisÃ©s (JavaScripy + Django, SQL Postgre) ont permis de rÃ©pondre efficacement aux besoins fonctionnels tout en assurant une architecture sÃ©curisÃ©e et performante. Lâ€™organisation rigoureuse du versioning et lâ€™utilisation de Docker ont renforcÃ© la stabilitÃ© de lâ€™environnement de travail. Lâ€™ensemble de ces Ã©lÃ©ments a permis dâ€™aboutir Ã  une application complÃ¨te, intuitive et prÃªte pour son dÃ©ploiement en condition rÃ©elle.
+Cette préparation constitue la dernière étape avant de pouvoir statuer sur l'atteinte des 
+exigences formalisées en 2.4.3, dont l'état d'avancement est présenté dans la section 
+suivante. 
 
+\section{Résultats}
 
+À ce stade du projet, les sept exigences formalisées en 2.4.3 peuvent être confrontées à l'état 
+d'avancement réel de la solution. Cette confrontation permet de distinguer ce qui relève d'une 
+réalisation technique déjà aboutie de ce qui reste conditionné aux ateliers de recette présentés 
+en 2.8.
 
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{@{} l p{5cm} X @{}}
+\hline
+\textbf{ID} & \textbf{Exigence} & \textbf{État} \\
+\hline
+E01 & Disposer de données fiables & Atteint sur le plan technique --- le mécanisme de distinction entre absence d'évaluation et note attribuée est implémenté et vérifié sur le cas Cebiphar (cf. 2.3.3) ; confirmation attendue en recette sur d'autres cas \\
+
+E02 & Restituer correctement les risques RI, RCP et RG & Atteint --- les mesures DAX correspondantes sont opérationnelles et centralisées au niveau du modèle (cf. 2.5.5), garantissant leur cohérence entre les différentes vues \\
+
+E03 & Garantir l'unicité et l'actualité de chaque enregistrement par Tierce Partie & Atteint sur le plan technique --- la correction portant sur la sélection du dernier enregistrement en date a été implémentée (cf. 2.4.2) ; à confirmer sur l'ensemble des cas lors des ateliers \\
+
+E04 & Assurer une actualisation quotidienne de bout en bout & Atteint --- le rafraîchissement du workflow Alteryx et du modèle Power BI est aligné sur le rythme quotidien des sources (cf. 2.5.3) \\
+
+E05 & Faciliter l'analyse par une restitution lisible et homogène & Partiellement atteint --- l'essentiel des demandes de lisibilité (couleurs, échelles, textes) a été traité (cf. 2.4.2) ; validation définitive de l'ergonomie prévue en recette \\
+
+E06 & Faciliter la maintenance par un modèle structuré & Atteint --- le passage d'une table unique à un modèle en constellation documenté (cf. 2.5.3, 2.5.4) répond directement à cette exigence \\
+
+E07 & Intégrer la restitution à l'écosystème Microsoft & Atteint --- le dashboard est publié et opérationnel sur le service Power BI (cf. 2.7.2) \\
+\hline
+\end{tabularx}
+\caption{État d'avancement des exigences}
+\end{table}
+
+Cinq des sept exigences peuvent ainsi être considérées comme atteintes sur le plan technique, 
+une sixième (E05) comme partiellement atteinte, la restitution étant fonctionnelle mais son 
+ergonomie restant à valider dans le détail avec les utilisateurs. Aucune exigence n'a été 
+identifiée comme non traitée à ce stade. \\
+Cette synthèse confirme le constat déjà établi en 1.4 : le développement de la solution est 
+techniquement abouti, mais sa validation définitive reste conditionnée à la confrontation avec l'ensemble des utilisateurs lors des ateliers de recette. C'est cette même nuance qui structure 
+la conclusion de ce chapitre.
+ 
 %---------------------------------------------------------%
 \section{Conclusion}
 %---------------------------------------------------------%
-Le travail prÃ©sentÃ© dans ce chapitre a permis de structurer un socle applicatif solide, testÃ©, et adaptÃ© aux besoins identifiÃ©s sur le terrain. Le dÃ©veloppement initial, enrichi par un module complÃ©mentaire ciblÃ©, a permis de rÃ©pondre aux enjeux de flexibilitÃ©, de traÃ§abilitÃ© et de coordination du projet RI2S. Lâ€™ensemble sâ€™appuie sur une architecture moderne, une gestion rigoureuse du code, et une approche centrÃ©e sur les usages rÃ©els, prÃ©parant ainsi la plateforme Ã  ses prochaines Ã©volutions.
+Ce rapport d'étude a détaillé la démarche ayant conduit à la refonte de la chaîne Data et 
+décisionnelle d'IPANEMA : un diagnostic montrant que les limites de l'ancien dashboard 
+relevaient de la préparation des données plutôt que de l'outil de visualisation, et une réponse 
+fondée sur un modèle en constellation où les indicateurs de risque sont désormais calculés 
+une seule fois, de façon cohérente sur l'ensemble des vues. \\
+La confrontation aux exigences formalisées en 2.4.3 montre un développement 
+techniquement abouti, dont la validation définitive reste conditionnée aux ateliers de recette 
+en préparation. Les modalités de conduite de ce projet sont développées dans la partie 
+suivante.
+
+\setlength{\emergencystretch}{0pt}

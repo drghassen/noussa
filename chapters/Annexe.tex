@@ -1,168 +1,109 @@
-\newpage
-\section*{Annexe – Éléments complémentaires}
-\addcontentsline{toc}{chapter}{Annexe – Éléments complémentaires}
+\clearpage
+\chapter*{Annexes}
+\addcontentsline{toc}{chapter}{Annexes}
 
-Cette annexe regroupe les éléments visuels, ressources externes et documents techniques ayant accompagné le projet tout au long de son développement. Elle constitue une trace complète de la démarche de conception, de suivi et de réalisation du module développé dans le cadre du programme RI2S.
-
-\vspace{1em}
-\noindent\textbf{1. Interfaces de l’application}
-
-Les interfaces ont été conçues à partir de maquettes validées avec l’équipe projet, puis implémentées manuellement en HTML et CSS, que j’ai rendues dynamiques à l’aide de JavaScript. Une attention particulière a été portée à l’ergonomie et à l’adaptabilité mobile.
-
-Ce travail a été poussé dans le dépôt Git principal du projet, afin de l’intégrer au back-end en cours de développement par un autre membre de l’équipe. Cette démarche collaborative visait à accélérer l’assemblage du premier module de la plateforme, dans le but de démarrer rapidement la phase de tests fonctionnels et d’obtenir des retours concrets sur les premiers parcours utilisateurs.
-
-
-
-\vspace{0.8em}
-\noindent\textbf{2. Document de tests du module 1}
-
-Le document suivant présente les cas de test fonctionnels, les scénarios utilisateurs simulés, ainsi que les résultats observés lors de la première phase de validation du module initial.
-
-\begin{itemize}
-  \item Document de test (Google Drive) :\\
-  \href{https://drive.google.com/drive/folders/1yMH4jeZPcP-7MVVPAIfBOBe98Q8RGCXF?usp=drive_link}{\texttt{Document de test du module 1}}
-\end{itemize}
-
-\vspace{0.8em}
-\noindent\textbf{3. Dépôt du projet complet (front-end et back-end)}
-
-L’intégralité du code source développé durant le stage est disponible sur GitHub. Ce dépôt contient l’interface utilisateur en JavaScript natif, le back-end en Django avec API REST, ainsi que la base de données PostgreSQL et les outils d’administration.
-
-\begin{itemize}
-  \item Dépôt GitHub maquette HTML/css :\\
-  \href{depot git}{\texttt{https://github.com/IGRIBAA/RI2S2.git}}
-\end{itemize}
-
-
-\begin{itemize}
-  \item Dépôt GitHub complet :\\
-  \href{depot git}{\texttt{https://github.com/IGRIBAA/front-back.git}}
-\end{itemize}
-
-\vspace{1em}
-Les figures suivantes présentent différentes interfaces développées pour le module complémentaire RI2S. Elles illustrent les pages de saisie, de suivi, et de gestion des expérimentations. L’ergonomie, la clarté des champs, et l’organisation des statuts ont été pensées en lien avec les besoins des coordinateurs et intervenants de terrain.
-
+\newcommand{\captureannexe}[1]{%
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Rapport-PTUT/figures/prtail.jpg}
-  \caption{Portail d’accueil de l’expérimentation – Accès aux principales fonctionnalités}
+    \centering
+    \fbox{%
+        \begin{minipage}[c][6cm][c]{0.92\textwidth}
+            \centering
+            \textit{Capture à insérer : #1}
+        \end{minipage}
+    }
 \end{figure}
+}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Rapport-PTUT/figures/usager.jpg}
-  \caption{Formulaire d’ajout d’un Usager RI2S}
-\end{figure}
+\section*{Annexe 3 — Vue ``Risk Intrinsink (RI)'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 3 — Vue ``Risk Intrinsink (RI)'' du dashboard Power BI IPANEMA}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Rapport-PTUT/figures/pro.jpg}
-  \caption{Adaptation des données selon le type d'usager ( professionnel)}
-\end{figure}
+Cette vue restitue la répartition des Tierces Parties selon leur niveau de Risque
+Intrinsèque (LOW, MEDIUM, HIGH), calculé conformément à la méthodologie décrite
+en 2.2.3. Un graphique en anneau présente la répartition globale des niveaux de risque,
+complété par un histogramme croisant ces niveaux avec le type de Tierce Partie
+(sous-traitant clinique ou non clinique, prestataire de service, CDMO, distributeur
+commercial et/ou pharmaceutique). Un tableau détaillé liste, pour chaque partenaire,
+son type de tiers, son activité, son type de sous-traitance et son niveau de RI, permettant
+une lecture individuelle en complément de la vue synthétique.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Rapport-PTUT/figures/nonpro.jpg}
-  \caption{Adaptation des données selon le type d'usager ( non professionnel)}
-\end{figure}
+\captureannexe{vue Risk Intrinsink (RI)}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Rapport-PTUT/figures/ajout benef.jpg}
-  \caption{Ajout de bénéficiaires}
-\end{figure}
+\section*{Annexe 4 — Vue ``Risk Compliance \& Performance (RCP) — Tous''\\du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 4 — Vue ``Risk Compliance \& Performance (RCP) — Tous'' du dashboard Power BI IPANEMA}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Rapport-PTUT/figures/liste4.jpg}
-  \caption{Interface de gestion des usagers RI2S : Liste de personnes}
-\end{figure}
+Cette vue présente la répartition de l'ensemble des Tierces Parties selon leur niveau de
+Risque Conformité et Performance, sans distinction de statut CDMO. Comme pour la
+vue RI, un graphique en anneau et un histogramme par type de tiers offrent une vision
+synthétique, tandis qu'un tableau restitue le détail par partenaire, incluant la note RCP
+obtenue et le niveau de risque correspondant.
 
+\captureannexe{vue Risk Compliance \& Performance (RCP) — Tous}
 
+\section*{Annexe 5 — Vue ``Risk Compliance \& Performance (RCP) — CDMO''\\du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 5 — Vue ``Risk Compliance \& Performance (RCP) — CDMO'' du dashboard Power BI IPANEMA}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Rapport-PTUT/figures/expé.jpg}
-  \caption{Création d'une experimentation ( informations générales)}
-\end{figure}
+Cette vue isole les Tierces Parties de statut CDMO afin de restituer leur niveau de RCP
+selon une logique de calcul spécifique (cf. 2.5.5, mesure RCP\_CDMO\_Level). Le tableau
+associé présente, pour chaque partenaire, la moyenne des notes RCP obtenues, le
+premier niveau de risque enregistré ainsi que la moyenne toutes campagnes confondues,
+permettant de suivre l'évolution du niveau de risque d'une Tierce Partie CDMO dans le
+temps.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Rapport-PTUT/figures/expé2.jpg}
-  \caption{Création d'une expérimentation en personnalisant les champs des données à saisir}
-\end{figure}
+\captureannexe{vue Risk Compliance \& Performance (RCP) — CDMO}
 
-\newpage
-\noindent\textbf{Maquette statique }
+\section*{Annexe 6 — Vue ``Risk Global (RG) — Tous''\\du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 6 — Vue ``Risk Global (RG) — Tous'' du dashboard Power BI IPANEMA}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{cap4.jpg}
-  \caption{Ajout et configuration des expérimentations par le gestionnaire }
-\end{figure}
+Cette vue restitue la répartition de l'ensemble des Tierces Parties selon leur niveau de
+Risque Global, résultant de la combinaison matricielle du RI et du RCP décrite en 2.2.3.
+L'histogramme distingue les quatre niveaux possibles — LOW, MEDIUM, HIGH et
+VERY HIGH — croisés avec le type de tiers, offrant une vision d'ensemble du niveau de
+risque final porté par chaque catégorie de partenaires.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{cap5.jpg}
-  \caption{Saisie des données liées à l'expérimentation - Fichiers, capteurs, téléassistance }
-\end{figure}
+\captureannexe{vue Risk Global (RG) — Tous}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{cap6.jpg}
-  \caption{Formulaire des conditions de vie du bénéficiaire – Logement, autonomie,
-équipements }
-\end{figure}
+\section*{Annexe 7 — Vue ``TP Qualification Status'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 7 — Vue ``TP Qualification Status'' du dashboard Power BI IPANEMA}
 
+Cette vue restitue le statut de qualification de chaque Tierce Partie tel qu'enregistré
+dans TrackWise, indépendamment de la campagne d'évaluation en cours. Le tableau
+détaille, pour chaque partenaire, son statut actuel (qualifiée ou en attente de
+qualification), le commentaire d'audit associé ainsi que son niveau de Risque
+Intrinsèque. Cette vue a fait l'objet d'une correction spécifique portant sur la sélection
+du dernier enregistrement en date par Tierce Partie, afin de ne restituer que le statut
+réellement à jour (cf. 2.4.2).
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{cap7.jpg}
-  \caption{Ajout d’un professionnel de santé rattaché au bénéficiaire }
-\end{figure}
+\captureannexe{vue TP Qualification Status}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{cap8.jpg}
-  \caption{Visualisation du formulaire avec les différents champs obligatoires }
-\end{figure}
+\section*{Annexe 8 — Vue ``Evaluated Projects List'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 8 — Vue ``Evaluated Projects List'' du dashboard Power BI IPANEMA}
 
+Cette vue liste l'ensemble des projets évalués, rattachés à leur Tierce Partie respective.
+Le tableau présente, pour chaque projet, sa référence commerciale, son code de
+spécification, sa stratégie de développement, son étape d'avancement, ainsi que les
+commentaires renseignés par l'utilisateur ayant créé l'évaluation.
 
+\captureannexe{vue Evaluated Projects List}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{visite_prog.jpg}
-  \caption{Statut « Visite programmée » – Initialisation d’un parcours d’expérimentation}
-\end{figure}
+\section*{Annexe 9 — Vue ``Quality Agreements'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 9 — Vue ``Quality Agreements'' du dashboard Power BI IPANEMA}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{install_prog.jpg}
-  \caption{Statut « Installation programmée » – Préparation logistique de la mise en place}
-\end{figure}
+Cette vue recense, pour chaque Tierce Partie, l'existence et les caractéristiques de son
+accord qualité enregistré dans TrackWise. Le tableau croise cette information avec le
+niveau de Risque Intrinsèque du partenaire, son statut de qualification, le statut de son
+produit ainsi que la date de mise à jour de l'accord, offrant une vision consolidée des
+engagements qualité en vigueur.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{actif.jpg}
-  \caption{Statut « Actif » – Expérimentation en cours avec saisie des fichiers liés}
-\end{figure}
+\captureannexe{vue Quality Agreements}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{interrompu.jpg}
-  \caption{Statut « Interrompu » – Arrêt temporaire ou définitif avec mention des causes}
-\end{figure}
+\section*{Annexe 10 — Vue ``Satisfaction''\\du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 10 — Vue ``Satisfaction'' du dashboard Power BI IPANEMA}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{fini.jpg}
-  \caption{Statut « Fini » – Parcours complété, avec possibilité de consulter les données saisies}
-\end{figure}
+Cette vue compare la satisfaction obtenue par chaque Tierce Partie sur les six critères
+d'évaluation RCP Métier (compétences techniques, innovation, qualité des livrables,
+réactivité et respect des délais, relationnel, traçabilité). Les histogrammes appliquent
+une mise en forme conditionnelle par couleur, accompagnée d'un avertissement
+rappelant explicitement le sens de lecture de l'échelle — une précaution destinée à éviter
+toute confusion entre un niveau de satisfaction élevé et un niveau d'insatisfaction élevé.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth]{desinstall.jpg}
-  \caption{Statut « Désinstallé » – Clôture technique du dispositif, saisie du motif}
-\end{figure}
-
-
+\captureannexe{vue Satisfaction}
