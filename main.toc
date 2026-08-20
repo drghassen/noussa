@@ -1,0 +1,53 @@
+\babel@toc {french}{}\relax 
+\contentsline {xchapter}{}{ii}{chapter*.1}%
+\contentsline {section}{\textbf {Liste des acronymes} }{2}{chapter*.3}%
+\contentsline {starchapter}{Introduction générale}{3}{chapter*.4}%
+\contentsline {chapter}{\numberline {1} Refonte de la chaîne Data et décisionnelle d'IPANEMA Introduction }{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Contexte et problématique}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objectifs et critères d'évaluation}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Réponse apportée}{8}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Réalisations et résultats obtenus}{9}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Principaux éléments de management du projet}{10}{section.1.6}%
+\contentsline {section}{\numberline {1.7} Conclusion}{11}{section.1.7}%
+\contentsline {chapter}{\numberline {2} RAPPORT D’ÉTUDE : Refonte de la chaîne de traitement et de valorisation des données d’IPANEMA }{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2} Contexte et problématique}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1} IPANEMA et la maîtrise des Tierces Parties }{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2} Périmètre du projet IPANEMA V2 }{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Problématique de l’étude}{14}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Compréhension du besoin métier}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Les acteurs et utilisateurs d’IPANEMA}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Processus d’évaluation d’une Tierce Partie }{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Les niveaux de risque}{16}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Analyse de l’existant et diagnostic}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Architecture initiale}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Analyse du traitement initial }{18}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Limites et anomalies identifiées}{19}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Diagnostic}{22}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Formalisation du besoin et des exigences}{22}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Expression du besoin : Diagramme « bête à cornes »}{22}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6}Campagne de tests du premier module de la plateforme}{22}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Objectif de la campagne}{23}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}MÃ©thodologie}{23}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}RÃ©sultats des tests}{23}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Ã‰volutions fonctionnelles dÃ©veloppÃ©es en complÃ©ment}{24}{subsection.2.6.4}%
+\contentsline {section}{\numberline {2.7}DÃ©veloppement des Ã©volutions fonctionnelles dÃ©veloppÃ©es en complÃ©ment}{25}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Objectifs fonctionnels}{25}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Ã‰tude conceptuelle de lâ€™application }{26}{subsection.2.7.2}%
+\contentsline {subsubsection}{Langage de modÃ©lisation UML}{26}{section*.5}%
+\contentsline {subsubsection}{Diagramme de cas dâ€™utilisation}{26}{section*.6}%
+\contentsline {subsubsection}{ ModÃ¨le conceptuel de donnÃ©es}{27}{section*.7}%
+\contentsline {subsection}{\numberline {2.7.3}Technologies et outils utilisÃ©s}{28}{subsection.2.7.3}%
+\contentsline {subsubsection}{Frontend }{28}{section*.8}%
+\contentsline {subsubsection}{Backend / API}{29}{section*.9}%
+\contentsline {subsubsection}{Base de donnÃ©es}{30}{section*.10}%
+\contentsline {subsubsection}{ Environnement de dÃ©veloppement}{30}{section*.11}%
+\contentsline {subsection}{\numberline {2.7.4}Organisation et gestion de lâ€™intÃ©gration et du versioning }{31}{subsection.2.7.4}%
+\contentsline {subsubsection}{Structure du projet}{31}{section*.12}%
+\contentsline {subsubsection}{Gestion de versions avec Git}{31}{section*.13}%
+\contentsline {section}{\numberline {2.8}Conclusion}{32}{section.2.8}%
+\contentsline {starchapter}{Conclusion générale}{33}{chapter*.14}%
+\contentsline {chapter}{Annexe – Éléments complémentaires}{34}{section*.15}%
+\partbegin 
+\contentsline {chapter}{Bibliographie}{55}{part*.16}%

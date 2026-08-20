@@ -1,0 +1,135 @@
+ \usepackage{fancyhdr}
+ \usepackage[utf8]{inputenc}
+ \usepackage[T1]{fontenc}
+ \usepackage[francais]{babel}
+ \usepackage{graphicx}
+  \usepackage[backend=bibtex,sorting=none]{biblatex}
+ \usepackage{caption}
+ \usepackage{float}
+ \usepackage[french]{algorithm2e}
+ \usepackage{algorithmic}
+ \usepackage{amsmath}
+ \usepackage{ragged2e}
+ \usepackage[table,xcdraw]{xcolor}
+ \usepackage{booktabs}
+ \usepackage{arabtex}
+ \usepackage{multirow}
+ \usepackage{longtable}
+ \usepackage[a4paper, lmargin=2.5cm, rmargin=2.5cm, tmargin=2.5cm, bmargin=2.5cm]{geometry}
+\graphicspath{{./figures/}} % pour les images 
+ \usepackage{pdfpages} 
+% \usepackage{refstyle}
+ \usepackage{setspace}
+ \usepackage{blindtext}
+ 
+ \onehalfspacing
+ 
+ \renewcommand{\headrulewidth}{0.4pt}
+ \renewcommand{\footrulewidth}{0.4pt}
+ 
+\usepackage{hyperref}
+\hypersetup{
+	pdfpagelabels,
+	plainpages=false,
+	%linktocpage,
+	colorlinks=true, %colorise les liens
+	breaklinks=true, %permet le retour à la ligne dans les liens trop longs
+	urlcolor= blue, %couleur des hyperliens
+	linkcolor= blue, %couleur des liens internes
+	citecolor=red, %couleur des références
+	%pdftitle={Rapport de stage}, %informations apparaissant dans
+	pdfauthor={ }, %les informations du document
+	pdfsubject={Rapport de PFE  2024} %sous Acrobat.
+} 
+
+
+ %===========================================================%
+\usepackage{listings} % pour ecriture codes programmes
+\usepackage{color} % pour couleur de code
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92} 
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    %numbers=left,  
+	frame=lrtb,
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ \lstset{style=mystyle}
+%===========================================================%
+\usepackage[french]{minitoc}
+
+ 
+ 
+ %============for glossaries=====================%
+ \usepackage[nomain,acronym ]{glossaries}
+% \usepackage[xindy,acronym=true]{glossaries}
+ \renewcommand*{\glstextformat}[1]{\textcolor{black}{#1}} 
+ 
+ \makeglossaries
+ 
+ 
+ %==================end=======================%
+ 
+ 
+ \usepackage[toc,page]{appendix}
+ 
+ \newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+ \usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+\lstdefinelanguage{Yaml}{
+  keywords={spec, containers, name}, % ,... all the keyword you want
+  keywordstyle=\color{blue}\bfseries,
+  moredelim=[is][commentstyle]{||}{££}, % invisible custom delimiters
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{\#},
+  commentstyle=\color{olive}\ttfamily,
+  stringstyle=\color{orange}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\usepackage{comment}

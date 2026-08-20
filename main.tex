@@ -1,0 +1,157 @@
+%\documentclass[a4paper,12pt]{report}
+\documentclass{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{graphicx}  % sans draft = les vraies images sont affichées
+\usepackage{geometry}
+\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{parskip}
+\usepackage{titling}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage[most]{tcolorbox}
+\usepackage{biblatex}
+\usepackage{minitoc}
+\usepackage{hyperref}
+\dominitoc
+
+
+
+
+\addbibresource{refs.bib}
+%==========================================%
+%==========================================%
+\newcommand*{\blankpage}{%
+	\vspace*{\fill}
+	{\centering This page intentionally left blank. \par}
+	\vspace{\fill}}
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+	\blankpage
+	\thispagestyle{empty}
+	\newpage
+	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+%__________________________________________%
+%__________________________________________%
+\usepackage{minitoc}
+\renewcommand{\mtctitle}{Sommaire}
+% \setcounter{minitocdepth}{2}
+\dominitoc
+\newcommand{\titresection}[1]{%
+  \vspace{1.5em}%
+  {\LARGE\bfseries #1}\par%
+  \vspace{0.5em}%
+}
+
+\begin{document}
+
+\input{./cover/pagedegarde} % Uncomment this line to include the cover page
+%\clearpage
+\pagenumbering{roman}	
+
+%\blankpage
+%__________________frontmatter______________%
+\input{./chapters/maitre_de_stage}
+ 
+%\input{./frontmatter/page_signaletique}
+\input{./frontmatter/Resume}
+%\input{./frontmatter/remerciements}
+
+
+	
+%____toc_______________________________________%	
+%____toc_______________________________________%	
+\tableofcontents
+\mtcaddchapter % compense listoffigures pour le compteur minitoc
+\newpage
+\listoffigures
+%\listoftables
+\pagenumbering{arabic}
+\input{./frontmatter/Glossaire}
+	
+%__________________chapters__________________________________%
+\setcounter{minitocdepth}{2}
+\input{./chapters/introduction}
+\input{./chapters/chapitre1}
+\input{./chapters/chapitre2}
+%\input{./chapters/chapitre3}
+%\input{./chapters/chapitre4}
+\input{./chapters/conclusion}
+\input{./chapters/Annexe}
+%__________________Bibliography_______________________________%	 
+%\bibliographystyle{alpha}
+%\bibliographystyle{plain}
+\part*{BIBLIOGRAPHIE}
+\addcontentsline{toc}{chapter}{Bibliographie}
+%\bibliography{refs}
+\printbibliography
+\begin{thebibliography}{9}
+
+% \bibitem{docker}
+% Docker. \textit{Docker Documentation}. Available at: \url{https://docs.docker.com/}
+
+% \bibitem{kubernetes}
+% Kubernetes. \textit{Kubernetes Documentation}. Available at: \url{https://kubernetes.io/docs/}
+
+% \bibitem{scrum}
+% Scrum Guide. Ken Schwaber \& Jeff Sutherland. \textit{The Scrum Guide}. 2020. Available at: \url{https://scrumguides.org/}
+
+% \bibitem{kanban}
+% Kanban. David J. Anderson. \textit{Kanban: Successful Evolutionary Change for Your Technology Business}. Blue Hole Press, 2010.
+\bibitem{django}
+Django Software Foundation. \textit{Django Documentation}. Disponible sur : \url{https://docs.djangoproject.com/}
+
+\bibitem{drf}
+Tom Christie. \textit{Django REST Framework – API Guide}. Disponible sur : \url{https://www.django-rest-framework.org/}
+
+\bibitem{postgres}
+PostgreSQL Global Development Group. \textit{PostgreSQL Official Documentation}. Disponible sur : \url{https://www.postgresql.org/}
+
+\bibitem{swagger}
+SmartBear Software. \textit{Swagger OpenAPI Specification}. Disponible sur : \url{https://swagger.io/specification/}
+
+\bibitem{mdn}
+Mozilla Developer Network. \textit{MDN Web Docs (HTML, CSS, JS)}. Disponible sur : \url{https://developer.mozilla.org/}
+
+\bibitem{uml}
+Booch, Grady, Rumbaugh, James, Jacobson, Ivar. \textit{The Unified Modeling Language User Guide}. Addison-Wesley, 2005.
+
+\bibitem{gomaa}
+Gomaa, Hassan. \textit{Software Modeling and Design: UML, Use Cases, Patterns, and Software Architectures}. Cambridge University Press, 2011.
+
+\bibitem{progit}
+Scott Chacon, Ben Straub. \textit{Pro Git}, 2\textsuperscript{e} éd. Apress, 2014. \url{https://git-scm.com/book/en/v2}
+
+\bibitem{scrum}
+Schwaber, Ken et Sutherland, Jeff. \textit{The Scrum Guide}, 2020. \url{https://scrumguides.org/}
+
+\bibitem{accessibility}
+W3C. \textit{Web Content Accessibility Guidelines (WCAG) 2.1}. 2018. \url{https://www.w3.org/TR/WCAG21/}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{thebibliography}
+
+%_________________%
+\end{document}
