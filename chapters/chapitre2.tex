@@ -2,16 +2,12 @@
 \minitoc
 \label{chap2}
 
-\newcommand{\boxedfullwidthimage}[1]{%
-    \fbox{\includegraphics[width=\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax]{#1}}%
-}
 \setlength{\emergencystretch}{3em}
 
 \newpage
 
 %=====================================%
 \section{Introduction}
-\label{sec21}
 %---------------------------------------------------------%
 Le rapport d'action a présenté une synthèse du projet IPANEMA et de ses résultats. Ce rapport 
 d'étude revient plus en détail sur la démarche suivie : l'analyse du besoin métier, le diagnostic 
@@ -46,7 +42,7 @@ Cette dimension est au cœur du projet présenté dans ce rapport.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/processusde_maîtrise_des_Tierces.jpg}
+    \roundedfullwidthimage{cover/figures/processusde_maîtrise_des_Tierces.jpg}
     \caption{Positionnement d’IPANEMA dans le processus de maîtrise des Tierces Parties.}
     \label{fig:processusde_maîtrise_des_Tierces}
 \end{figure}
@@ -79,7 +75,7 @@ Qualité.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg}
+    \roundedfullwidthimage{cover/figures/Périmètre_du_projet_IPANEMA_v2.jpg}
     \caption{Périmètre du projet IPANEMA v2 : répartition entre la Partie A (application Power Apps, prestataire externe) et la Partie B (Data \& Reporting, périmètre de mon projet).}
     \label{fig:Perimètre_du_projet_IPANEMA_v2}
 \end{figure}
@@ -139,7 +135,7 @@ devront être modélisées, comme le montre la partie suivante.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{cover/figures/useripanema.png}
+    \roundedimage[0.85\textwidth]{cover/figures/useripanema.png}
     \caption{Les quatre profils d'utilisateurs d'IPANEMA et leur rôle dans le processus d'évaluation des Tierces Parties.}
     \label{fig:quatre_profils_d'utilisateurs}
 \end{figure}
@@ -168,14 +164,14 @@ diagnostic présenté en 2.3.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png}
+    \roundedimage[0.85\textwidth]{cover/figures/Processus_d’évaluation_d’une_Tierce_Partie1.png}
     \caption{Processus d'évaluation d'une Tierce Partie, de la création de la campagne au reporting. }
     \label{fig:processus_evaluation_tierce_partie_1}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png}
+    \roundedimage[0.85\textwidth]{cover/figures/Processus_d’évaluation_d’une_Tierce_Partie2.png}
     \caption{Processus d'évaluation d'une Tierce Partie, de la création de la campagne au reporting.}
     \label{fig:processus_evaluation_tierce_partie_2}
 \end{figure}
@@ -265,7 +261,7 @@ granularités différentes dans une même table a progressivement montré ses li
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/Architecture_initiale_d’IPANEMA1.png}
+    \roundedfullwidthimage{cover/figures/Architecture_initiale_d’IPANEMA1.png}
     \caption{Architecture initiale d'IPANEMA : des sources de données jusqu'à la restitution de l'équipe Qualité (AQ R\&D DCPC).}
     \label{Architecture_initiale_d'IPANEMA}
 \end{figure}
@@ -281,7 +277,7 @@ principe de manière simplifiée.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/Principedeconstructiondel’anciennetableàplat.png}
+    \roundedfullwidthimage{cover/figures/Principedeconstructiondel’anciennetableàplat.png}
     \caption{Principe de construction de l'ancienne table à plat : jointures successives des listes SharePoint en cascade.}
     \label{jointures_successives_des_listes}
 \end{figure}
@@ -295,7 +291,7 @@ loin dans ce chapitre.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/AncienworkflowAlteryx1.png}
+    \roundedfullwidthimage{cover/figures/AncienworkflowAlteryx1.png}
     \caption{Ancien workflow Alteryx.}
     \label{Ancien_workflow_alteryx}
 \end{figure}
@@ -349,6 +345,8 @@ dupliquées, certaines correspondaient à des critères ou des évaluations pour
 note n'avait réellement été attribuée par l'utilisateur : l'évaluation était simplement absente, 
 non renseignée. Le traitement existant, plutôt que de conserver cette absence de valeur telle 
 quelle, la remplaçait automatiquement par 0. \\
+
+
 C'est à ce stade que le problème devient critique : dans la logique de notation du RI et 
 du RCP (cf. 2.2.3), 0 n'est pas une valeur neutre mais c'est la meilleure note possible, celle 
 correspondant au niveau de risque le plus favorable. Une case vide, remplie automatiquement 
@@ -392,7 +390,7 @@ cohérente et satisfaisante.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{cover/figures/satisfactionparcritèrepourCebiphar.png}
+    \roundedimage[0.7\textwidth]{cover/figures/satisfactionparcritèrepourCebiphar.png}
     \caption{Ancien dashboard Tableau : satisfaction par critère pour Cebiphar (campagne 2025), avec une valeur anormalement basse sur le critère Innovation (0,39).}
     \label{valeur_anormalement_basse}
 \end{figure}
@@ -408,7 +406,7 @@ les autres critères de ce partenaire.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/NouveaudashboardPowerBI.png}
+    \roundedfullwidthimage{cover/figures/NouveaudashboardPowerBI.png}
     \caption{Nouveau dashboard Power BI : satisfaction par critère pour Cebiphar (campagne 2025), avec une valeur corrigée de 1,00 sur le critère Innovation.}
     \label{Nouveau_dashboard_Power_BI}
 \end{figure}
@@ -422,7 +420,7 @@ le calcul de la moyenne.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png}
+    \roundedfullwidthimage{cover/figures/Extrait_de_la_liste_SharePoint_CriteriaEvaluation.png}
     \caption{Extrait de la liste SharePoint CriteriaEvaluation, filtré sur le critère Innovation : les notes effectivement attribuées valent toutes 1, confirmant la valeur restituée par Power BI.}
     \label{Extrait_de_la_liste_SharePoint_CriteriaEvaluation}
 \end{figure}
@@ -479,7 +477,7 @@ des risques associés.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{cover/figures/FormalisationdubesoinduprojetIPANEMA.png}
+    \roundedimage[0.6\textwidth]{cover/figures/FormalisationdubesoinduprojetIPANEMA.png}
     \caption{Formalisation du besoin du projet IPANEMA selon la méthode « bête à cornes »}
     \label{Formalisation_du_besoin_du_projet_IPANEMA}
 \end{figure}
@@ -498,19 +496,24 @@ les utilisateurs de sa traduction technique.
 \begin{table}[htbp]
 \centering
 \renewcommand{\arraystretch}{1.5}
-\begin{tabularx}{\textwidth}{@{} >{\bfseries\raggedright\arraybackslash}p{3cm} X X @{}}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{3cm}|X|X|}
 \hline
 Catégorie & \textbf{Besoin exprimé} & \textbf{Traduction technique} \\
 \hline
 Fiabilité des données & Ne pas afficher les partenaires non évalués ; garantir des statuts à jour et cohérents entre les vues & Filtrage explicite sur le statut d'évaluation ; correction de la logique de sélection du dernier enregistrement par Tierce Partie \\
+\hline
 
 Distinction évaluation/note & Pouvoir différencier une absence d'évaluation d'une note réellement attribuée à 0 & Traitement explicite des valeurs manquantes en amont du calcul des risques (cf. 2.3.3) \\
+\hline
 
 Fraîcheur des données & Disposer de données actualisées quotidiennement, exprimé lors du déploiement sur le serveur & Planification du rafraîchissement à la fois du flux Alteryx et du modèle Power BI, alignée sur le rythme quotidien des extraits SharePoint et de l'export TrackWise (cf. 2.3.1) \\
+\hline
 
 Lisibilité visuelle & Harmoniser les couleurs et l'ordre des niveaux de risque ; améliorer l'échelle et la taille des textes & Palette conditionnelle unique et mise en forme homogène sur l'ensemble des visuels \\
+\hline
 
 Nomenclature & Utiliser des noms significatifs plutôt que des noms techniques de tables et colonnes & Renommage des champs exposés dans le modèle sémantique \\
+\hline
 
 Ergonomie & Faciliter la navigation et le filtrage (accès direct à l'application, filtres sur statut actif) & Ajustements dans les limites permises par Power BI \\
 \hline
@@ -529,16 +532,22 @@ structurantes, qui ont orienté la conception de la nouvelle architecture prése
 \begin{table}[htbp]
 \centering
 \renewcommand{\arraystretch}{1.5}
-\begin{tabularx}{\textwidth}{@{} l X X @{}}
+\begin{tabularx}{\textwidth}{| l | X | X |}
 \hline
 \textbf{ID} & \textbf{Exigence} & \textbf{Limite identifiée (cf. 2.3)} \\
 \hline
 E01 & Disposer de données fiables & Duplications, valeurs manquantes interprétées comme des notes \\
+\hline
 E02 & Restituer correctement les risques RI, RCP et RG & Complexité des calculs, incohérence entre vues \\
+\hline
 E03 & Garantir l'unicité et l'actualité de chaque enregistrement par Tierce Partie & Statuts obsolètes remontés \\
+\hline
 E04 & Assurer une actualisation quotidienne de bout en bout, du flux Alteryx jusqu'au modèle Power BI & Rythme quotidien des sources (SharePoint, TrackWise) non exploité jusqu'au dashboard \\
+\hline
 E05 & Faciliter l'analyse par une restitution lisible et homogène & Lisibilité, performances \\
+\hline
 E06 & Faciliter la maintenance par un modèle structuré & Table unique complexe \\
+\hline
 E07 & Intégrer la restitution à l'écosystème Microsoft & Reporting sous Tableau \\
 \hline
 \end{tabularx}
@@ -599,7 +608,7 @@ les relations et les mesures nécessaires à la restitution.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png}
+    \roundedimage[0.6\textwidth]{cover/figures/ArchitecturegénéraledelachaînedetraitementIPANEMA.png}
     \caption{Architecture générale de la chaîne de traitement IPANEMA.}
     \label{Architecture_générale_de_la_chaîne_de_traitement_IPANEMA}
 \end{figure}
@@ -610,7 +619,7 @@ organisées avant leur restitution.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMAavantetaprèslarefonte.png}
+    \roundedimage[0.6\textwidth]{cover/figures/Comparaisondel’architectureDataetdécisionnelled’IPANEMAavantetaprèslarefonte.png}
     \caption{Comparaison de l'architecture Data et décisionnelle d'IPANEMA avant et après la refonte}
     \label{Comparaison_de_l'architecture_Data_et_décisionnelle_avant_apres}
 \end{figure}
@@ -636,7 +645,7 @@ identifiée en 2.4.3 (E06).
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/En-tête documentaire standard appliqué au workflow DS_IPANEMA.png}
+    \roundedfullwidthimage{cover/figures/En-tête documentaire standard appliqué au workflow DS_IPANEMA.png}
     \caption{En-tête documentaire standard appliqué au workflow DS\_IPANEMA, conforme à la convention utilisée par l'équipe sur l'ensemble de ses flux Alteryx}
     \label{documentaire_standard_appliqué_au_workflow_DS_IPANEMA}
 \end{figure}
@@ -649,7 +658,7 @@ tables concernées, pour extraire la valeur utile et fiabiliser les clés de rap
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe technique des identifiants.png}
+    \roundedfullwidthimage{cover/figures/Formule REGEX_Replace appliquée pour nettoyer le préfixe technique des identifiants.png}
     \caption{Formule REGEX\_Replace appliquée pour nettoyer le préfixe technique des identifiants SharePoint (exemple sur Projects\_refPartnairID).}
     \label{Formule_REGEX_Replace_appliquée_pour_nettoyer_le_préfixe}
 \end{figure}
@@ -706,16 +715,20 @@ communes.
 \begin{table}[htbp]
 \centering
 \renewcommand{\arraystretch}{1.4}
-\begin{tabularx}{\textwidth}{@{} l l X l @{}}
+\begin{tabularx}{\textwidth}{|l|l|X|l|}
 \hline
 \textbf{Table} & \textbf{Type} & \textbf{Grain (1 ligne =)} & \textbf{Clé} \\
 \hline
 DIM\_Campaign & Dimension & 1 campagne d'évaluation annuelle & \texttt{Campaign\_ID} \\
+\hline
 DIM\_Criteria & Dimension & 1 critère d'évaluation & \texttt{Criteria\_ID} \\
+\hline
 DIM\_Partners & Dimension & 1 Tierce Partie & \texttt{Partners\_ID} \\
+\hline
 DIM\_Projects & Dimension & 1 projet, rattaché à un partenaire & \texttt{Projects\_ID} \\
 \hline
 FACT\_Evaluation & Fait & 1 note attribuée à un critère, dans une évaluation & \texttt{CriteriaEvaluation\_ID} \\
+\hline
 FACT\_PartnerRisks & Fait & 1 niveau de risque pour un partenaire, dans une campagne & \parbox[t]{4.5cm}{\texttt{PartnerRisks\_refPartner Id} \\ + \texttt{PartnerRisks\_refCampaign Id}} \\
 \hline
 \end{tabularx}
@@ -728,7 +741,7 @@ d'actualisation du modèle.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/Modèle_sémantique_Power_BI_relations_entre_les_tables .png}
+    \roundedfullwidthimage{cover/figures/Modèle_sémantique_Power_BI_relations_entre_les_tables .png}
     \caption{ Modèle sémantique Power BI : relations entre les tables de dimension et les deux tables de faits.}
     \label{Modèle_sémantique_Power_BI_relations_entre_les_tables}
 \end{figure}
@@ -765,7 +778,7 @@ risque calculé pour une évaluation de 2024.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png}
+    \roundedimage[0.6\textwidth]{cover/figures/Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id.png}
     \caption{Table DIM\_Criteria triée par Criteria\_refCampaign Id : coexistence des critères par défaut et de leurs copies versionnées par campagne.}
     \label{Table_DIM_Criteria_triée_par_Criteria_refCampaign_Id}
 \end{figure}
@@ -891,7 +904,7 @@ vers l'ensemble des autres vues, organisées par thème.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png}
+    \roundedfullwidthimage{cover/figures/Paged’accueil du dashboard Power BI IPANEMA.png}
     \caption{Page d'accueil du dashboard Power BI IPANEMA, avec menu de navigation vers l'ensemble des vues. }
     \label{Page_d'accueil_du_dashboard_Power_BI_IPANEMA}
 \end{figure}
@@ -904,7 +917,7 @@ dashboard, pensée comme point d'entrée synthétique sur un partenaire donné.
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/AllResultsTP1.png}
+    \roundedfullwidthimage{cover/figures/AllResultsTP1.png}
     \caption{Vue "All Results TP" : synthèse transversale d'une Tierce Partie sélectionnée.}
     \label{All_results_TP}
 \end{figure}
@@ -928,7 +941,7 @@ les quatre niveaux LOW à VERY HIGH issus de la grille de correspondance RI × R
  
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/Vue Risk Global (RG)CDMO.png}
+    \roundedfullwidthimage{cover/figures/Vue Risk Global (RG)CDMO.png}
     \caption{Vue "Risk Global (RG) — CDMO" : répartition du Risque Global pour les Tierces Parties de statut CDMO.}
     \label{Vue_Risk_Global_(RG)_CDMO}
 \end{figure}
@@ -955,7 +968,7 @@ satisfaction et insatisfaction relevée lors des échanges avec les utilisateurs
 
 \begin{figure}[H]
     \centering
-    \boxedfullwidthimage{cover/figures/VueGlobalSatisfaction.png}
+    \roundedfullwidthimage{cover/figures/VueGlobalSatisfaction.png}
     \caption{Vue "Global Satisfaction" : comparaison de la satisfaction globale entre Tierces Parties.}
     \label{Vue_Global_Satisfaction}
 \end{figure}
@@ -1046,22 +1059,22 @@ en 2.8.
 \begin{table}[htbp]
 \centering
 \renewcommand{\arraystretch}{1.5}
-\begin{tabularx}{\textwidth}{@{} l p{5cm} X @{}}
+\begin{tabularx}{\textwidth}{| l | p{5cm} | X |}
 \hline
 \textbf{ID} & \textbf{Exigence} & \textbf{État} \\
 \hline
 E01 & Disposer de données fiables & Atteint sur le plan technique --- le mécanisme de distinction entre absence d'évaluation et note attribuée est implémenté et vérifié sur le cas Cebiphar (cf. 2.3.3) ; confirmation attendue en recette sur d'autres cas \\
-
+\hline
 E02 & Restituer correctement les risques RI, RCP et RG & Atteint --- les mesures DAX correspondantes sont opérationnelles et centralisées au niveau du modèle (cf. 2.5.5), garantissant leur cohérence entre les différentes vues \\
-
+\hline
 E03 & Garantir l'unicité et l'actualité de chaque enregistrement par Tierce Partie & Atteint sur le plan technique --- la correction portant sur la sélection du dernier enregistrement en date a été implémentée (cf. 2.4.2) ; à confirmer sur l'ensemble des cas lors des ateliers \\
-
+\hline
 E04 & Assurer une actualisation quotidienne de bout en bout & Atteint --- le rafraîchissement du workflow Alteryx et du modèle Power BI est aligné sur le rythme quotidien des sources (cf. 2.5.3) \\
-
+\hline
 E05 & Faciliter l'analyse par une restitution lisible et homogène & Partiellement atteint --- l'essentiel des demandes de lisibilité (couleurs, échelles, textes) a été traité (cf. 2.4.2) ; validation définitive de l'ergonomie prévue en recette \\
-
+\hline
 E06 & Faciliter la maintenance par un modèle structuré & Atteint --- le passage d'une table unique à un modèle en constellation documenté (cf. 2.5.3, 2.5.4) répond directement à cette exigence \\
-
+\hline
 E07 & Intégrer la restitution à l'écosystème Microsoft & Atteint --- le dashboard est publié et opérationnel sur le service Power BI (cf. 2.7.2) \\
 \hline
 \end{tabularx}

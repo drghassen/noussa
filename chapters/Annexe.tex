@@ -1,109 +1,129 @@
 \clearpage
-\chapter*{Annexes}
+\chapter*{Section Annexes}
 \addcontentsline{toc}{chapter}{Annexes}
 
-\newcommand{\captureannexe}[1]{%
-\begin{figure}[H]
-    \centering
-    \fbox{%
-        \begin{minipage}[c][6cm][c]{0.92\textwidth}
-            \centering
-            \textit{Capture à insérer : #1}
-        \end{minipage}
-    }
-\end{figure}
-}
-
-\section*{Annexe 3 — Vue ``Risk Intrinsink (RI)'' du dashboard Power BI IPANEMA}
-\addcontentsline{toc}{section}{Annexe 3 — Vue ``Risk Intrinsink (RI)'' du dashboard Power BI IPANEMA}
+\section*{Annexe 1 — Vue ``Risk Intrinsink (RI)'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 1 — Vue ``Risk Intrinsink (RI)'' du dashboard Power BI IPANEMA}
 
 Cette vue restitue la répartition des Tierces Parties selon leur niveau de Risque
-Intrinsèque (LOW, MEDIUM, HIGH), calculé conformément à la méthodologie décrite
-en 2.2.3. Un graphique en anneau présente la répartition globale des niveaux de risque,
+Intrinsèque (LOW, MEDIUM, HIGH), calculé conformément à la méthodologie décrite en
+2.2.3. Un graphique en anneau présente la répartition globale des niveaux de risque,
 complété par un histogramme croisant ces niveaux avec le type de Tierce Partie
 (sous-traitant clinique ou non clinique, prestataire de service, CDMO, distributeur
-commercial et/ou pharmaceutique). Un tableau détaillé liste, pour chaque partenaire,
-son type de tiers, son activité, son type de sous-traitance et son niveau de RI, permettant
-une lecture individuelle en complément de la vue synthétique.
+commercial et/ou pharmaceutique). Un tableau détaillé liste, pour chaque partenaire, son
+type de tiers, son activité, son type de sous-traitance et son niveau de RI, permettant une
+lecture individuelle en complément de la vue synthétique.
 
-\captureannexe{vue Risk Intrinsink (RI)}
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/annex1.png}
+    \label{fig:annexe1_risk_intrinsink}
+\end{figure}
 
-\section*{Annexe 4 — Vue ``Risk Compliance \& Performance (RCP) — Tous''\\du dashboard Power BI IPANEMA}
-\addcontentsline{toc}{section}{Annexe 4 — Vue ``Risk Compliance \& Performance (RCP) — Tous'' du dashboard Power BI IPANEMA}
+\section*{Annexe 2 — Vue ``Risk Compliance \& Performance (RCP) — Tous''\\du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 2 — Vue ``Risk Compliance \& Performance (RCP) — Tous'' du dashboard Power BI IPANEMA}
 
-Cette vue présente la répartition de l'ensemble des Tierces Parties selon leur niveau de
-Risque Conformité et Performance, sans distinction de statut CDMO. Comme pour la
-vue RI, un graphique en anneau et un histogramme par type de tiers offrent une vision
+Cette vue présente la répartition de l'ensemble des Tierces Parties selon leur niveau
+de Risque Conformité et Performance, sans distinction de statut CDMO. Comme pour la vue
+RI, un graphique en anneau et un histogramme par type de tiers offrent une vision
 synthétique, tandis qu'un tableau restitue le détail par partenaire, incluant la note RCP
 obtenue et le niveau de risque correspondant.
 
-\captureannexe{vue Risk Compliance \& Performance (RCP) — Tous}
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/annex2.png}
+    \label{fig:annexe2_rcp_tous}
+\end{figure}
 
-\section*{Annexe 5 — Vue ``Risk Compliance \& Performance (RCP) — CDMO''\\du dashboard Power BI IPANEMA}
-\addcontentsline{toc}{section}{Annexe 5 — Vue ``Risk Compliance \& Performance (RCP) — CDMO'' du dashboard Power BI IPANEMA}
+\section*{Annexe 3 — Vue ``Risk Compliance \& Performance (RCP) — CDMO''\\du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 3 — Vue ``Risk Compliance \& Performance (RCP) — CDMO'' du dashboard Power BI IPANEMA}
 
-Cette vue isole les Tierces Parties de statut CDMO afin de restituer leur niveau de RCP
-selon une logique de calcul spécifique (cf. 2.5.5, mesure RCP\_CDMO\_Level). Le tableau
-associé présente, pour chaque partenaire, la moyenne des notes RCP obtenues, le
+Cette vue isole les Tierces Parties de statut CDMO afin de restituer leur niveau de
+RCP selon une logique de calcul spécifique (cf. 2.5.5, mesure RCP\_CDMO\_Level). Le
+tableau associé présente, pour chaque partenaire, la moyenne des notes RCP obtenues, le
 premier niveau de risque enregistré ainsi que la moyenne toutes campagnes confondues,
 permettant de suivre l'évolution du niveau de risque d'une Tierce Partie CDMO dans le
 temps.
 
-\captureannexe{vue Risk Compliance \& Performance (RCP) — CDMO}
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/annex3.png}
+    \label{fig:annexe3_rcp_cdmo}
+\end{figure}
 
-\section*{Annexe 6 — Vue ``Risk Global (RG) — Tous''\\du dashboard Power BI IPANEMA}
-\addcontentsline{toc}{section}{Annexe 6 — Vue ``Risk Global (RG) — Tous'' du dashboard Power BI IPANEMA}
+\section*{Annexe 4 — Vue ``Risk Global (RG) — Tous'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 4 — Vue ``Risk Global (RG) — Tous'' du dashboard Power BI IPANEMA}
 
-Cette vue restitue la répartition de l'ensemble des Tierces Parties selon leur niveau de
-Risque Global, résultant de la combinaison matricielle du RI et du RCP décrite en 2.2.3.
-L'histogramme distingue les quatre niveaux possibles — LOW, MEDIUM, HIGH et
-VERY HIGH — croisés avec le type de tiers, offrant une vision d'ensemble du niveau de
-risque final porté par chaque catégorie de partenaires.
+Cette vue restitue la répartition de l'ensemble des Tierces Parties selon leur niveau
+de Risque Global, résultant de la combinaison matricielle du RI et du RCP décrite en 2.2.3.
+L'histogramme distingue les quatre niveaux possibles — LOW, MEDIUM, HIGH et VERY
+HIGH — croisés avec le type de tiers, offrant une vision d'ensemble du niveau de risque final
+porté par chaque catégorie de partenaires.
 
-\captureannexe{vue Risk Global (RG) — Tous}
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/annex4.png}
+    \label{fig:annexe4_risk_global_tous}
+\end{figure}
 
-\section*{Annexe 7 — Vue ``TP Qualification Status'' du dashboard Power BI IPANEMA}
-\addcontentsline{toc}{section}{Annexe 7 — Vue ``TP Qualification Status'' du dashboard Power BI IPANEMA}
+\section*{Annexe 5 — Vue ``TP Qualification Status'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 5 — Vue ``TP Qualification Status'' du dashboard Power BI IPANEMA}
 
 Cette vue restitue le statut de qualification de chaque Tierce Partie tel qu'enregistré
 dans TrackWise, indépendamment de la campagne d'évaluation en cours. Le tableau
-détaille, pour chaque partenaire, son statut actuel (qualifiée ou en attente de
-qualification), le commentaire d'audit associé ainsi que son niveau de Risque
-Intrinsèque. Cette vue a fait l'objet d'une correction spécifique portant sur la sélection
-du dernier enregistrement en date par Tierce Partie, afin de ne restituer que le statut
-réellement à jour (cf. 2.4.2).
+détaille, pour chaque partenaire, son statut actuel (qualifiée ou en attente de qualification), le
+commentaire d'audit associé ainsi que son niveau de Risque Intrinsèque. Cette vue a fait
+l'objet d'une correction spécifique portant sur la sélection du dernier enregistrement en date
+par Tierce Partie, afin de ne restituer que le statut réellement à jour (cf. 2.4.2).
 
-\captureannexe{vue TP Qualification Status}
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/annex5.png}
+    \label{fig:annexe5_tp_qualification_status}
+\end{figure}
 
-\section*{Annexe 8 — Vue ``Evaluated Projects List'' du dashboard Power BI IPANEMA}
-\addcontentsline{toc}{section}{Annexe 8 — Vue ``Evaluated Projects List'' du dashboard Power BI IPANEMA}
+\section*{Annexe 6 — Vue ``Evaluated Projects List'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 6 — Vue ``Evaluated Projects List'' du dashboard Power BI IPANEMA}
 
-Cette vue liste l'ensemble des projets évalués, rattachés à leur Tierce Partie respective.
-Le tableau présente, pour chaque projet, sa référence commerciale, son code de
+Cette vue liste l'ensemble des projets évalués, rattachés à leur Tierce Partie
+respective. Le tableau présente, pour chaque projet, sa référence commerciale, son code de
 spécification, sa stratégie de développement, son étape d'avancement, ainsi que les
 commentaires renseignés par l'utilisateur ayant créé l'évaluation.
 
-\captureannexe{vue Evaluated Projects List}
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/annex6.png}
+    \label{fig:annexe6_evaluated_projects_list}
+\end{figure}
 
-\section*{Annexe 9 — Vue ``Quality Agreements'' du dashboard Power BI IPANEMA}
-\addcontentsline{toc}{section}{Annexe 9 — Vue ``Quality Agreements'' du dashboard Power BI IPANEMA}
+\section*{Annexe 7 — Vue ``Quality Agreements'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 7 — Vue ``Quality Agreements'' du dashboard Power BI IPANEMA}
 
-Cette vue recense, pour chaque Tierce Partie, l'existence et les caractéristiques de son
-accord qualité enregistré dans TrackWise. Le tableau croise cette information avec le
+Cette vue recense, pour chaque Tierce Partie, l'existence et les caractéristiques de
+son accord qualité enregistré dans TrackWise. Le tableau croise cette information avec le
 niveau de Risque Intrinsèque du partenaire, son statut de qualification, le statut de son
 produit ainsi que la date de mise à jour de l'accord, offrant une vision consolidée des
 engagements qualité en vigueur.
 
-\captureannexe{vue Quality Agreements}
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/annex7.png}
+    \label{fig:annexe7_quality_agreements}
+\end{figure}
 
-\section*{Annexe 10 — Vue ``Satisfaction''\\du dashboard Power BI IPANEMA}
-\addcontentsline{toc}{section}{Annexe 10 — Vue ``Satisfaction'' du dashboard Power BI IPANEMA}
+\section*{Annexe 8 — Vue ``Satisfaction'' du dashboard Power BI IPANEMA}
+\addcontentsline{toc}{section}{Annexe 8 — Vue ``Satisfaction'' du dashboard Power BI IPANEMA}
 
-Cette vue compare la satisfaction obtenue par chaque Tierce Partie sur les six critères
-d'évaluation RCP Métier (compétences techniques, innovation, qualité des livrables,
-réactivité et respect des délais, relationnel, traçabilité). Les histogrammes appliquent
-une mise en forme conditionnelle par couleur, accompagnée d'un avertissement
-rappelant explicitement le sens de lecture de l'échelle — une précaution destinée à éviter
-toute confusion entre un niveau de satisfaction élevé et un niveau d'insatisfaction élevé.
+Cette vue compare la satisfaction obtenue par chaque Tierce Partie sur les six
+critères d'évaluation RCP Métier (compétences techniques, innovation, qualité des livrables,
+réactivité et respect des délais, relationnel, traçabilité). Les histogrammes appliquent une
+mise en forme conditionnelle par couleur, accompagnée d'un avertissement rappelant
+explicitement le sens de lecture de l'échelle — une précaution destinée à éviter toute
+confusion entre un niveau de satisfaction élevé et un niveau d'insatisfaction élevé.
 
-\captureannexe{vue Satisfaction}
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/annex8.png}
+    \label{fig:annexe8_satisfaction}
+\end{figure}
+    

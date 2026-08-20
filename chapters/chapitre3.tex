@@ -1,4 +1,204 @@
-   \chapter{Développement de l’application }
+   \chapter{ Management de projet }
  \label{chap3}
  \minitoc
+ \section{Introduction}
+ \label{sec21}
+
+Ce chapitre détaille les éléments de conduite de projet présentés de façon synthétique 
+dans le rapport d'action : découpage et suivi des tâches, planning prévisionnel et réalisé, 
+démarche et outils, organisation de l'équipe, et missions menées en parallèle du projet 
+IPANEMA.
  
+\section{Découpage et suivi du projet}
+
+Le projet a été découpé, dès son lancement, en cinq grandes phases elles-mêmes 
+déclinées en tâches plus fines, structurant l'ensemble du déroulement jusqu'à la mise en 
+production : cadrage et correction du modèle de données, refonte du flux Alteryx, modélisation 
+Power BI, développement des mesures DAX et réalisation du dashboard, puis recette et mise 
+en production. Ce découpage a été formalisé avec mon maître d'apprentissage sous forme de 
+cartes mentales, et suivi au fil du projet à l'aide d'un tableau Kanban, dont une vue simplifiée 
+est présentée ci-dessous.
+
+\begin{figure}
+    \centering
+    \roundedfullwidthimage{cover/figures/Vue_simplifiée_du_tableau_Kanban_de_suivi.png}
+    \caption{Vue simplifiée du tableau Kanban de suivi du projet IPANEMA.}
+    \label{fig:Vue_simplifiée_du_tableau_Kanban_de_suivi}
+\end{figure}
+
+À la date de rédaction de ce mémoire, seules les tâches liées à la recette et à la mise en 
+production restent au statut « À faire », ce qui traduit un projet en phase finale, dont le 
+développement est intégralement terminé.
+
+\section{Planning prévisionnel et réalisé — analyse des écarts}
+
+Dès le lancement du projet, le 23 février 2026, j'ai construit avec Laurent un planning 
+prévisionnel détaillé pour les quatre phases de réalisation décrite dans 1., avec les échéances 
+suivantes : fin du cadrage et de la correction du modèle de données le 13 mars, fin de la 
+refonte du flux Alteryx le 24 avril, fin de la modélisation Power BI et du développement des 
+mesures DAX le 5 juin, puis fin de la réalisation du dashboard et des validations progressives 
+le 13 juillet. Ce travail de planification en amont, mené conjointement avec mon maître 
+d'apprentissage, a permis d'anticiper la charge de chaque phase, de sécuriser les jalons du 
+projet et de fiabiliser le suivi d'avancement tout au long des cinq mois de développement. \\
+
+Dans les faits, le planning réalisé a suivi ce découpage jusqu'au 13 juillet, avant de 
+s'écarter du prévisionnel sur un point notable : le projet a été mis en stand-by du 13 au 29 
+juillet 2026, période durant laquelle j'ai été mobilisée sur une mission au Brazilian Innovation 
+Center (BIC) de Pierre Fabre à Rio de Janeiro. Cette interruption a mécaniquement décalé la 
+reprise des travaux et, combinée aux contraintes de disponibilité des parties prenantes en 
+période estivale, a conduit à reporter l'ouverture des ateliers de recette au-delà de la date 
+initialement prévue.
+
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/Planning_prévisionnel_vs_réalisé.png}
+    \caption{Planning prévisionnel vs réalisé, avec l'écart lié à la mission BIC.}
+    \label{fig:Planning_prévisionnel_et_réalisé}
+\end{figure}
+
+Cet écart illustre une contrainte propre au contexte d'une alternance : le planning d'un 
+projet doit composer avec d'autres engagements de l'apprenti au sein de l'entreprise. Il n'a pas 
+remis en cause la faisabilité du projet, mais a nécessité un ajustement du calendrier de recette, 
+discuté et validé avec Laurent et l'équipe Qualité à la reprise.
+
+\section{Démarche et outils}
+
+Le projet a été conduit selon une démarche agile adaptée au fonctionnement de l'équipe, 
+plutôt qu'un cycle en V strict : plutôt que de figer l'ensemble des spécifications avant tout 
+développement, le projet a démarré par la correction du modèle de données en lien avec le 
+prestataire, puis a progressé par itérations successives, structurées par la boucle 
+
+\begin{center}
+\small\sffamily
+\textbf{Planifier} $\longrightarrow$ 
+\textbf{Réaliser} $\longrightarrow$ 
+\textbf{Tester} $\longrightarrow$ 
+\textbf{Recueillir les retours} $\longrightarrow$ 
+\textbf{Ajuster}
+\end{center}
+
+Cette boucle s'est concrétisée par des tests et revues réalisés progressivement pendant le 
+développement avec l'interlocuteur métier, plutôt qu'une validation reportée à la seule fin du 
+projet. \\
+
+Le suivi opérationnel s'est appuyé sur le tableau Kanban présenté au §1, complété par 
+des cartes mentales pour la structuration des tâches. Des réunions bimensuelles réunissant 
+l'équipe métier (équipe Qualité) et Laurent ont rythmé le projet, permettant de partager 
+l'avancement, valider les orientations et définir les prochaines étapes. Entre ces points, j'ai 
+conduit mes travaux en autonomie ; en cas de blocage, je sollicitais directement Laurent, qui 
+m'aidait à le résoudre ou m'orientait vers la personne compétente lorsque je ne l'avais pas 
+encore identifiée moi-même. \\
+
+Sur le plan technique, le développement s'est appuyé sur Power BI Desktop et Alteryx 
+Designer en environnement local, avec publication respective sur Power BI Service et Alteryx 
+Server pour l'exécution en production. Les données sources (listes SharePoint générées par 
+l'application IPANEMA) et les échanges d'équipe se sont appuyés sur l'écosystème Microsoft 
+365 (SharePoint, Teams). 
+
+\section{Organisation et relations avec l'équipe}
+
+Le projet s'est déroulé dans un contexte de réorganisation de la R\&D DCPC. Avant cette 
+réorganisation, l'équipe IT-Data R\&D DCPC formait un groupe unique, de taille plus réduite, 
+rattaché directement à Yves Labourdique. Depuis, cette équipe a été redéployée au sein d'une 
+nouvelle Direction Portfolio et Transformation Digitale, structurée en trois services placés 
+chacun sous la responsabilité d'un manager dédié : Transformation / Data et Portefeuille, 
+Digital Product Science, et Digital Product Dev et Perf — mon équipe, dirigée par Audrey 
+Olivan et composée d'une dizaine de collaborateurs.
+
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/Organigramme_avant_après_la_réorganisation.png}
+    \caption{Organigramme avant / après la réorganisation.}
+    \label{fig:Organigramme_avant_après_la_réorganisation}
+\end{figure}
+
+
+Cette réorganisation répondait à l'ambition de regrouper les compétences de gestion de 
+portefeuille, de digital, de data et d'intelligence artificielle au sein d'une direction unique, afin 
+de renforcer l'accompagnement des services de la R\&D, de mutualiser les compétences et de 
+favoriser le développement des expertises. Pour le projet IPANEMA, cette transition n'a pas 
+modifié le cadrage opérationnel assuré par Laurent, mais elle a fait évoluer le contexte 
+managérial dans lequel le projet s'inscrivait, avec un rattachement désormais clarifié au sein 
+d'un pôle Digital Product Dev et Perf explicitement dédié aux produits et outils digitaux. \\
+
+Au-delà de la relation avec mon maître d'apprentissage, le projet a nécessité une 
+collaboration directe et régulière avec l'équipe Qualité, commanditaire et utilisatrice finale du 
+dashboard : réunion de recueil du besoin en amont, tests et revues progressifs pendant le 
+développement, échange sur la liste des personnes autorisées à accéder au dashboard, et 
+définition conjointe des scénarios de recette. \\
+
+Cette dynamique d'équipe s'est notamment illustrée lors d'une journée de département 
+réunissant l'ensemble des collaborateurs autour d'activités de team building et d'un temps 
+d'échange collectif sur les objectifs de l'année à venir et les axes stratégiques du groupe.
+
+\begin{figure}[H]
+    \centering
+    \roundedfullwidthimage{cover/figures/equipe1.jpg}
+    \caption{Journée de département, 10 juillet 2026.}
+    \label{fig:Journée_de_département}
+\end{figure}
+
+
+\section{Missions parallèles}
+
+En complément du projet IPANEMA, plusieurs missions ont été menées en parallèle au 
+cours de cette première année d'alternance, illustrant la diversité des contextes rencontrés. \\
+
+Une mission de trois semaines a été réalisée au Brazilian Innovation Center (BIC) de 
+Pierre Fabre à Rio de Janeiro, du 13 au 29 juillet 2026 — mission à l'origine de l'écart de 
+planning décrit au §2. Elle a couvert un inventaire complet des dashboards et bases de 
+données du BIC, le déploiement d'un dashboard Power BI de gestion des fournisseurs (traduit 
+du portugais vers l'anglais), ainsi qu'une présentation d'acculturation à l'intelligence artificielle 
+pour l'équipe locale.\\
+
+En parallèle, j'ai contribué au flux de sourcing destiné à être intégré au système Raw 
+Material Insights (présenté en détail dans mon rapport du premier semestre), en développant 
+un pipeline Python intégré à Alteryx permettant de consolider des formulaires Excel multi
+onglets issus des fournisseurs. \\
+
+J'ai également corrigé un flux cassé pour l'équipe analytique, et développé un dashboard 
+pour l'équipe caractérisation. \\
+
+Enfin, j'ai coécrit avec Laurent les spécifications du projet Préfo Actifs[3], une étude de 
+faisabilité (POC) portée par le service d'innovation galénique. Ce service évalue l'introduction 
+de nouveaux principes actifs dans les formules galéniques au moyen d'analyses de risques, 
+historiquement ralenties par la dispersion des données nécessaires entre plusieurs systèmes 
+d'information et fichiers de travail. L'objectif du POC est de modéliser ces données de 
+formulation en vue d'analyses prédictives et prescriptives, avec la possibilité, à terme, d'un 
+agent conversationnel capable de répondre à des questions métier ciblées (compatibilité entre 
+actifs, mode d'introduction, plage de pH...). \\
+
+Ma contribution a porté sur l'identification et la cartographie des sources de données 
+mobilisables : la table i-formula de la Data Market Place (DMP), les données de formule issues 
+de Teexma, ainsi que plusieurs fichiers de travail SharePoint (dossiers actifs, analyse de 
+risques Innothèque - ADRI, et retours d'expérience - REX). Cette cartographie a permis de 
+préparer la construction d'un flux Alteryx consolidant ces sources hétérogènes vers un dossier 
+de sortie documenté, en cohérence avec le dictionnaire de données du projet. 
+
+\begin{figure}[H]
+  \centering
+  \roundedfullwidthimage{cover/figures/Sources_de_données_identifiées_pour_le_projet_Préfo_Actifs.png}
+  \caption{Sources de données identifiées pour le projet Préfo Actifs.}
+  \label{fig:Sources_de_données_identifiées_pour_le_projet_Préfo_Actifs}
+\end{figure}
+
+Le projet est organisé en lots pour permettre une livraison progressive : une première 
+vue synthétique, puis l'ensemble des vues avec le template graphique du groupe, avant une 
+amélioration itérative de l'ergonomie et des fonctionnalités — une démarche de priorisation 
+similaire à celle retenue pour IPANEMA. \\
+
+Prises ensemble, ces missions parallèles montrent une même logique transposée à des 
+contextes différents : recueillir un besoin métier, cartographier des sources de données 
+hétérogènes, et construire une chaîne de traitement fiable jusqu'à la restitution. Elles ont 
+également contribué à consolider ma maîtrise d'Alteryx et de Power BI au-delà du seul 
+périmètre d'IPANEMA, et à diversifier mes interlocuteurs au sein de la R\&D DCPC (équipes 
+Sourcing, Analytique, Caractérisation, Innovation galénique), en complément de l'équipe 
+Qualité.
+
+\section{Conclusion}
+
+Au total, ce chapitre a montré une conduite de projet structurée dès le lancement, un 
+planning tenu à un aléa près assumé et anticipé dans son traitement, une démarche itérative 
+outillée par le Kanban et les cartes mentales, et une équipe dont l'organisation a évolué en 
+cours de projet sans remettre en cause le cadrage opérationnel du projet IPANEMA. Le 
+chapitre suivant revient sur le bilan personnel de cette première année d'alternance.
